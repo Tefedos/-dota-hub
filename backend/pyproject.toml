@@ -1,0 +1,38 @@
+[project]
+name = "dota-hub-api"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi==0.159.0",
+  "uvicorn==0.54.0",
+  "pydantic==2.13.5",
+  "pydantic-settings==2.16.1",
+  "SQLAlchemy[asyncio]==2.0.55",
+  "asyncpg==0.32.0",
+  "alembic==1.20.0",
+  "PyJWT==2.15.1",
+  "aiogram==3.31.0",
+  "httpx==0.28.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "mypy==1.20.2", "pytest-asyncio==1.4.0"]
+
+[tool.setuptools.package-data]
+app = ["data/*.json"]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = ["postgres: requires a separate local PostgreSQL test database"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["app", "tests"]

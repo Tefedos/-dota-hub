@@ -1,0 +1,3 @@
+# Optional QA tooling, installed separately from the application environment.
+ruff==0.17.1
+pip-audit==2.10.1

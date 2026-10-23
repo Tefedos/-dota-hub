@@ -1,0 +1,12 @@
+
+> dota-hub@0.1.0 test
+> vitest run --run
+
+
+ RUN  v5.0.5 /Users/artemfedoseev/.codex/.chatgpt-projects/g-p-6ad91adda7e08191a8921416b367c275/dota-hub/frontend
+
+
+ Test Files  2 passed (2)
+      Tests  20 passed (20)
+   Start at  08:38:00
+   Duration  2.24s (environment 65%, tests 20%, import 12%, transform 4%)

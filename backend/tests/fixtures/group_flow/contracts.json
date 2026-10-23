@@ -1,0 +1,4105 @@
+{
+  "components": {
+    "schemas": {
+      "AdvantagePoint": {
+        "additionalProperties": false,
+        "properties": {
+          "advantage_for": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Team"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "source_field": {
+            "title": "Source Field",
+            "type": "string"
+          },
+          "time_seconds": {
+            "title": "Time Seconds",
+            "type": "integer"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "title": "Value"
+          }
+        },
+        "required": [
+          "time_seconds",
+          "value",
+          "advantage_for",
+          "source_field"
+        ],
+        "title": "AdvantagePoint",
+        "type": "object"
+      },
+      "AnalysisState": {
+        "additionalProperties": false,
+        "properties": {
+          "available_sections": {
+            "default": [],
+            "items": {
+              "enum": [
+                "overview",
+                "players",
+                "draft",
+                "ruiner",
+                "timeline"
+              ],
+              "type": "string"
+            },
+            "title": "Available Sections",
+            "type": "array"
+          },
+          "error_code": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error Code"
+          },
+          "status": {
+            "enum": [
+              "queued",
+              "running",
+              "ready",
+              "failed"
+            ],
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status"
+        ],
+        "title": "AnalysisState",
+        "type": "object"
+      },
+      "DataQuality": {
+        "additionalProperties": false,
+        "properties": {
+          "draft_order": {
+            "$ref": "#/components/schemas/QualityStatus"
+          },
+          "roles": {
+            "$ref": "#/components/schemas/QualityStatus"
+          },
+          "stats": {
+            "$ref": "#/components/schemas/QualityStatus"
+          },
+          "summary": {
+            "$ref": "#/components/schemas/QualityStatus"
+          },
+          "timeline": {
+            "$ref": "#/components/schemas/QualityStatus"
+          }
+        },
+        "required": [
+          "summary",
+          "stats",
+          "draft_order",
+          "timeline",
+          "roles"
+        ],
+        "title": "DataQuality",
+        "type": "object"
+      },
+      "DraftAction": {
+        "additionalProperties": false,
+        "properties": {
+          "hero_id": {
+            "anyOf": [
+              {
+                "exclusiveMinimum": 0.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Id"
+          },
+          "is_pick": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Is Pick"
+          },
+          "order": {
+            "anyOf": [
+              {
+                "minimum": 0.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Order"
+          },
+          "source_order": {
+            "minimum": 0.0,
+            "title": "Source Order",
+            "type": "integer"
+          },
+          "team": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Team"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "team_code": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Team Code"
+          }
+        },
+        "required": [
+          "source_order",
+          "is_pick",
+          "team_code",
+          "team"
+        ],
+        "title": "DraftAction",
+        "type": "object"
+      },
+      "DraftReport": {
+        "additionalProperties": false,
+        "properties": {
+          "actions": {
+            "items": {
+              "$ref": "#/components/schemas/DraftAction"
+            },
+            "title": "Actions",
+            "type": "array"
+          },
+          "config_digest": {
+            "title": "Config Digest",
+            "type": "string"
+          },
+          "draft_advantage": {
+            "enum": [
+              "Radiant",
+              "Dire",
+              "approximately_even",
+              "insufficient_data"
+            ],
+            "title": "Draft Advantage",
+            "type": "string"
+          },
+          "evidence_coverage": {
+            "title": "Evidence Coverage",
+            "type": "number"
+          },
+          "evidence_digest": {
+            "title": "Evidence Digest",
+            "type": "string"
+          },
+          "limitations": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Limitations",
+            "type": "array"
+          },
+          "match_id": {
+            "title": "Match Id",
+            "type": "string"
+          },
+          "mode": {
+            "enum": [
+              "SEQUENTIAL",
+              "FINAL_ONLY"
+            ],
+            "title": "Mode",
+            "type": "string"
+          },
+          "model_version": {
+            "title": "Model Version",
+            "type": "string"
+          },
+          "patch": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Patch"
+          },
+          "pick_events": {
+            "items": {
+              "$ref": "#/components/schemas/PickEvaluation"
+            },
+            "title": "Pick Events",
+            "type": "array"
+          },
+          "source_quality": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Source Quality",
+            "type": "array"
+          },
+          "teams": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/TeamDraftScore"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/Team"
+            },
+            "title": "Teams",
+            "type": "object"
+          },
+          "visibility_policy": {
+            "title": "Visibility Policy",
+            "type": "string"
+          }
+        },
+        "required": [
+          "match_id",
+          "patch",
+          "mode",
+          "visibility_policy",
+          "source_quality",
+          "actions",
+          "pick_events",
+          "teams",
+          "draft_advantage",
+          "model_version",
+          "config_digest",
+          "evidence_digest",
+          "evidence_coverage",
+          "limitations"
+        ],
+        "title": "DraftReport",
+        "type": "object"
+      },
+      "Evaluation": {
+        "additionalProperties": false,
+        "properties": {
+          "axes": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "propertyNames": {
+              "enum": [
+                "matchup",
+                "synergy",
+                "balance",
+                "phase",
+                "win_condition"
+              ]
+            },
+            "title": "Axes",
+            "type": "object"
+          },
+          "confidence": {
+            "default": "low",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ],
+            "title": "Confidence",
+            "type": "string"
+          },
+          "evidence_coverage": {
+            "default": 0,
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Evidence Coverage",
+            "type": "number"
+          },
+          "grade": {
+            "anyOf": [
+              {
+                "enum": [
+                  "хороший",
+                  "средний",
+                  "спорный",
+                  "неудачный"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Grade"
+          },
+          "reasons": {
+            "default": [],
+            "items": {
+              "$ref": "#/components/schemas/Reason"
+            },
+            "title": "Reasons",
+            "type": "array"
+          },
+          "score": {
+            "anyOf": [
+              {
+                "maximum": 100.0,
+                "minimum": 0.0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Score"
+          }
+        },
+        "title": "Evaluation",
+        "type": "object"
+      },
+      "EvidenceStatus": {
+        "enum": [
+          "confirmed",
+          "estimated",
+          "unknown"
+        ],
+        "title": "EvidenceStatus",
+        "type": "string"
+      },
+      "FarmPositionEvidence": {
+        "additionalProperties": false,
+        "properties": {
+          "evidence": {
+            "$ref": "#/components/schemas/EvidenceStatus",
+            "default": "unknown"
+          },
+          "position": {
+            "anyOf": [
+              {
+                "maximum": 5.0,
+                "minimum": 1.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Position"
+          },
+          "source_field": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Field"
+          }
+        },
+        "title": "FarmPositionEvidence",
+        "type": "object"
+      },
+      "JsonValue": {},
+      "LaterInfluence": {
+        "additionalProperties": false,
+        "properties": {
+          "action_order": {
+            "title": "Action Order",
+            "type": "integer"
+          },
+          "hero_id": {
+            "title": "Hero Id",
+            "type": "integer"
+          },
+          "reasons": {
+            "items": {
+              "$ref": "#/components/schemas/Reason"
+            },
+            "title": "Reasons",
+            "type": "array"
+          },
+          "score_delta": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Score Delta"
+          }
+        },
+        "required": [
+          "hero_id",
+          "action_order",
+          "score_delta",
+          "reasons"
+        ],
+        "title": "LaterInfluence",
+        "type": "object"
+      },
+      "MatchEnvelope_AnalysisState_": {
+        "additionalProperties": false,
+        "properties": {
+          "analyzed_at": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Analyzed At"
+          },
+          "available_sections": {
+            "default": [],
+            "items": {
+              "enum": [
+                "overview",
+                "players",
+                "draft",
+                "ruiner",
+                "timeline"
+              ],
+              "type": "string"
+            },
+            "title": "Available Sections",
+            "type": "array"
+          },
+          "completeness": {
+            "anyOf": [
+              {
+                "enum": [
+                  "full",
+                  "partial",
+                  "missing"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Completeness"
+          },
+          "config_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Config Version"
+          },
+          "data": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/AnalysisState"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "error": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/MatchError"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limitations": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Limitations",
+            "type": "array"
+          },
+          "match_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Match Id"
+          },
+          "model_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Model Version"
+          },
+          "retry_after_seconds": {
+            "anyOf": [
+              {
+                "minimum": 1.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Retry After Seconds"
+          },
+          "schema_version": {
+            "const": 1,
+            "default": 1,
+            "title": "Schema Version",
+            "type": "integer"
+          },
+          "status": {
+            "enum": [
+              "queued",
+              "running",
+              "ready",
+              "failed"
+            ],
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status"
+        ],
+        "title": "MatchEnvelope[AnalysisState]",
+        "type": "object"
+      },
+      "MatchEnvelope_DraftReport_": {
+        "additionalProperties": false,
+        "properties": {
+          "analyzed_at": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Analyzed At"
+          },
+          "available_sections": {
+            "default": [],
+            "items": {
+              "enum": [
+                "overview",
+                "players",
+                "draft",
+                "ruiner",
+                "timeline"
+              ],
+              "type": "string"
+            },
+            "title": "Available Sections",
+            "type": "array"
+          },
+          "completeness": {
+            "anyOf": [
+              {
+                "enum": [
+                  "full",
+                  "partial",
+                  "missing"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Completeness"
+          },
+          "config_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Config Version"
+          },
+          "data": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/DraftReport"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "error": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/MatchError"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limitations": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Limitations",
+            "type": "array"
+          },
+          "match_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Match Id"
+          },
+          "model_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Model Version"
+          },
+          "retry_after_seconds": {
+            "anyOf": [
+              {
+                "minimum": 1.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Retry After Seconds"
+          },
+          "schema_version": {
+            "const": 1,
+            "default": 1,
+            "title": "Schema Version",
+            "type": "integer"
+          },
+          "status": {
+            "enum": [
+              "queued",
+              "running",
+              "ready",
+              "failed"
+            ],
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status"
+        ],
+        "title": "MatchEnvelope[DraftReport]",
+        "type": "object"
+      },
+      "MatchEnvelope_OverviewReport_": {
+        "additionalProperties": false,
+        "properties": {
+          "analyzed_at": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Analyzed At"
+          },
+          "available_sections": {
+            "default": [],
+            "items": {
+              "enum": [
+                "overview",
+                "players",
+                "draft",
+                "ruiner",
+                "timeline"
+              ],
+              "type": "string"
+            },
+            "title": "Available Sections",
+            "type": "array"
+          },
+          "completeness": {
+            "anyOf": [
+              {
+                "enum": [
+                  "full",
+                  "partial",
+                  "missing"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Completeness"
+          },
+          "config_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Config Version"
+          },
+          "data": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/OverviewReport"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "error": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/MatchError"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limitations": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Limitations",
+            "type": "array"
+          },
+          "match_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Match Id"
+          },
+          "model_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Model Version"
+          },
+          "retry_after_seconds": {
+            "anyOf": [
+              {
+                "minimum": 1.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Retry After Seconds"
+          },
+          "schema_version": {
+            "const": 1,
+            "default": 1,
+            "title": "Schema Version",
+            "type": "integer"
+          },
+          "status": {
+            "enum": [
+              "queued",
+              "running",
+              "ready",
+              "failed"
+            ],
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status"
+        ],
+        "title": "MatchEnvelope[OverviewReport]",
+        "type": "object"
+      },
+      "MatchEnvelope_PlayersReport_": {
+        "additionalProperties": false,
+        "properties": {
+          "analyzed_at": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Analyzed At"
+          },
+          "available_sections": {
+            "default": [],
+            "items": {
+              "enum": [
+                "overview",
+                "players",
+                "draft",
+                "ruiner",
+                "timeline"
+              ],
+              "type": "string"
+            },
+            "title": "Available Sections",
+            "type": "array"
+          },
+          "completeness": {
+            "anyOf": [
+              {
+                "enum": [
+                  "full",
+                  "partial",
+                  "missing"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Completeness"
+          },
+          "config_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Config Version"
+          },
+          "data": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/PlayersReport"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "error": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/MatchError"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limitations": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Limitations",
+            "type": "array"
+          },
+          "match_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Match Id"
+          },
+          "model_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Model Version"
+          },
+          "retry_after_seconds": {
+            "anyOf": [
+              {
+                "minimum": 1.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Retry After Seconds"
+          },
+          "schema_version": {
+            "const": 1,
+            "default": 1,
+            "title": "Schema Version",
+            "type": "integer"
+          },
+          "status": {
+            "enum": [
+              "queued",
+              "running",
+              "ready",
+              "failed"
+            ],
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status"
+        ],
+        "title": "MatchEnvelope[PlayersReport]",
+        "type": "object"
+      },
+      "MatchEnvelope_RuinerReport_": {
+        "additionalProperties": false,
+        "properties": {
+          "analyzed_at": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Analyzed At"
+          },
+          "available_sections": {
+            "default": [],
+            "items": {
+              "enum": [
+                "overview",
+                "players",
+                "draft",
+                "ruiner",
+                "timeline"
+              ],
+              "type": "string"
+            },
+            "title": "Available Sections",
+            "type": "array"
+          },
+          "completeness": {
+            "anyOf": [
+              {
+                "enum": [
+                  "full",
+                  "partial",
+                  "missing"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Completeness"
+          },
+          "config_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Config Version"
+          },
+          "data": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/RuinerReport"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "error": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/MatchError"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limitations": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Limitations",
+            "type": "array"
+          },
+          "match_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Match Id"
+          },
+          "model_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Model Version"
+          },
+          "retry_after_seconds": {
+            "anyOf": [
+              {
+                "minimum": 1.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Retry After Seconds"
+          },
+          "schema_version": {
+            "const": 1,
+            "default": 1,
+            "title": "Schema Version",
+            "type": "integer"
+          },
+          "status": {
+            "enum": [
+              "queued",
+              "running",
+              "ready",
+              "failed"
+            ],
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status"
+        ],
+        "title": "MatchEnvelope[RuinerReport]",
+        "type": "object"
+      },
+      "MatchEnvelope_TimelineReport_": {
+        "additionalProperties": false,
+        "properties": {
+          "analyzed_at": {
+            "anyOf": [
+              {
+                "format": "date-time",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Analyzed At"
+          },
+          "available_sections": {
+            "default": [],
+            "items": {
+              "enum": [
+                "overview",
+                "players",
+                "draft",
+                "ruiner",
+                "timeline"
+              ],
+              "type": "string"
+            },
+            "title": "Available Sections",
+            "type": "array"
+          },
+          "completeness": {
+            "anyOf": [
+              {
+                "enum": [
+                  "full",
+                  "partial",
+                  "missing"
+                ],
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Completeness"
+          },
+          "config_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Config Version"
+          },
+          "data": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/TimelineReport"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "error": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/MatchError"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limitations": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Limitations",
+            "type": "array"
+          },
+          "match_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Match Id"
+          },
+          "model_version": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Model Version"
+          },
+          "retry_after_seconds": {
+            "anyOf": [
+              {
+                "minimum": 1.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Retry After Seconds"
+          },
+          "schema_version": {
+            "const": 1,
+            "default": 1,
+            "title": "Schema Version",
+            "type": "integer"
+          },
+          "status": {
+            "enum": [
+              "queued",
+              "running",
+              "ready",
+              "failed"
+            ],
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "status"
+        ],
+        "title": "MatchEnvelope[TimelineReport]",
+        "type": "object"
+      },
+      "MatchError": {
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "title": "Code",
+            "type": "string"
+          },
+          "message": {
+            "title": "Message",
+            "type": "string"
+          },
+          "retryable": {
+            "title": "Retryable",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "code",
+          "message",
+          "retryable"
+        ],
+        "title": "MatchError",
+        "type": "object"
+      },
+      "OverviewPlayer": {
+        "additionalProperties": false,
+        "properties": {
+          "display_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Display Name"
+          },
+          "hero_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Id"
+          },
+          "hero_image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Image Url"
+          },
+          "hero_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Name"
+          },
+          "player_slot": {
+            "title": "Player Slot",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "player_slot"
+        ],
+        "title": "OverviewPlayer",
+        "type": "object"
+      },
+      "OverviewReport": {
+        "additionalProperties": false,
+        "properties": {
+          "data_quality": {
+            "$ref": "#/components/schemas/DataQuality"
+          },
+          "dire": {
+            "$ref": "#/components/schemas/OverviewTeam"
+          },
+          "duration": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Duration"
+          },
+          "game_mode": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Game Mode"
+          },
+          "game_mode_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Game Mode Name"
+          },
+          "limitations": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Limitations",
+            "type": "array"
+          },
+          "match_id": {
+            "title": "Match Id",
+            "type": "string"
+          },
+          "patch": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Patch"
+          },
+          "patch_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Patch Name"
+          },
+          "radiant": {
+            "$ref": "#/components/schemas/OverviewTeam"
+          },
+          "source_status": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Status"
+          },
+          "start_time": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Start Time"
+          },
+          "team_stats": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/OverviewTeamStatsBySide"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "winner": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Team"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "match_id",
+          "duration",
+          "radiant",
+          "dire",
+          "winner",
+          "start_time",
+          "game_mode",
+          "patch",
+          "data_quality",
+          "source_status"
+        ],
+        "title": "OverviewReport",
+        "type": "object"
+      },
+      "OverviewTeam": {
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Name"
+          },
+          "players": {
+            "default": [],
+            "items": {
+              "$ref": "#/components/schemas/OverviewPlayer"
+            },
+            "title": "Players",
+            "type": "array"
+          },
+          "score": {
+            "anyOf": [
+              {
+                "minimum": 0.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Score"
+          },
+          "team": {
+            "$ref": "#/components/schemas/Team"
+          },
+          "team_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Team Id"
+          }
+        },
+        "required": [
+          "team"
+        ],
+        "title": "OverviewTeam",
+        "type": "object"
+      },
+      "OverviewTeamStats": {
+        "additionalProperties": false,
+        "properties": {
+          "kills": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Kills"
+          },
+          "roshan_kills": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Roshan Kills"
+          },
+          "towers_destroyed": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Towers Destroyed"
+          }
+        },
+        "title": "OverviewTeamStats",
+        "type": "object"
+      },
+      "OverviewTeamStatsBySide": {
+        "additionalProperties": false,
+        "properties": {
+          "dire": {
+            "$ref": "#/components/schemas/OverviewTeamStats"
+          },
+          "radiant": {
+            "$ref": "#/components/schemas/OverviewTeamStats"
+          }
+        },
+        "required": [
+          "radiant",
+          "dire"
+        ],
+        "title": "OverviewTeamStatsBySide",
+        "type": "object"
+      },
+      "PerformanceSelection": {
+        "additionalProperties": false,
+        "properties": {
+          "evidence": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Evidence",
+            "type": "array"
+          },
+          "selected_player_slot": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Selected Player Slot"
+          },
+          "selected_team": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Team"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "selection_status": {
+            "default": "no_confident_selection",
+            "enum": [
+              "selected",
+              "no_confident_selection"
+            ],
+            "title": "Selection Status",
+            "type": "string"
+          }
+        },
+        "title": "PerformanceSelection",
+        "type": "object"
+      },
+      "PerformanceSignal": {
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "title": "Code",
+            "type": "string"
+          },
+          "comparison_slots": {
+            "default": [],
+            "items": {
+              "type": "integer"
+            },
+            "title": "Comparison Slots",
+            "type": "array"
+          },
+          "magnitude": {
+            "default": 0,
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Magnitude",
+            "type": "number"
+          },
+          "metric": {
+            "title": "Metric",
+            "type": "string"
+          },
+          "reference": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Reference"
+          },
+          "source_ref": {
+            "default": "normalized_match",
+            "title": "Source Ref",
+            "type": "string"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          },
+          "value": {
+            "title": "Value",
+            "type": "number"
+          }
+        },
+        "required": [
+          "code",
+          "text",
+          "metric",
+          "value"
+        ],
+        "title": "PerformanceSignal",
+        "type": "object"
+      },
+      "PickEvaluation": {
+        "additionalProperties": false,
+        "properties": {
+          "action_order": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Action Order"
+          },
+          "ally_synergies": {
+            "default": [],
+            "items": {
+              "$ref": "#/components/schemas/Reason"
+            },
+            "title": "Ally Synergies",
+            "type": "array"
+          },
+          "at_pick": {
+            "$ref": "#/components/schemas/Evaluation"
+          },
+          "at_pick_score": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "At Pick Score"
+          },
+          "cons": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Cons",
+            "type": "array"
+          },
+          "countered_heroes": {
+            "default": [],
+            "items": {
+              "type": "integer"
+            },
+            "title": "Countered Heroes",
+            "type": "array"
+          },
+          "final_context": {
+            "$ref": "#/components/schemas/Evaluation"
+          },
+          "final_score": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Final Score"
+          },
+          "hero_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Id"
+          },
+          "hero_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Name"
+          },
+          "later_revealed_counters": {
+            "default": [],
+            "items": {
+              "$ref": "#/components/schemas/LaterInfluence"
+            },
+            "title": "Later Revealed Counters",
+            "type": "array"
+          },
+          "post_pick_delta": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Post Pick Delta"
+          },
+          "pros": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Pros",
+            "type": "array"
+          },
+          "resource_warnings": {
+            "default": [],
+            "items": {
+              "$ref": "#/components/schemas/Reason"
+            },
+            "title": "Resource Warnings",
+            "type": "array"
+          },
+          "source_order": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Order"
+          },
+          "stage": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stage"
+          },
+          "team": {
+            "$ref": "#/components/schemas/Team"
+          },
+          "threatened_by_heroes": {
+            "default": [],
+            "items": {
+              "type": "integer"
+            },
+            "title": "Threatened By Heroes",
+            "type": "array"
+          },
+          "visibility": {
+            "$ref": "#/components/schemas/PickVisibility"
+          }
+        },
+        "required": [
+          "hero_id",
+          "team",
+          "action_order",
+          "source_order",
+          "stage",
+          "visibility",
+          "at_pick",
+          "final_context",
+          "at_pick_score",
+          "final_score",
+          "post_pick_delta"
+        ],
+        "title": "PickEvaluation",
+        "type": "object"
+      },
+      "PickVisibility": {
+        "additionalProperties": false,
+        "properties": {
+          "bans_known_before": {
+            "default": [],
+            "items": {
+              "type": "integer"
+            },
+            "title": "Bans Known Before",
+            "type": "array"
+          },
+          "enemy_hidden_or_unknown": {
+            "default": 5,
+            "maximum": 5.0,
+            "minimum": 0.0,
+            "title": "Enemy Hidden Or Unknown",
+            "type": "integer"
+          },
+          "enemy_revealed_before": {
+            "default": [],
+            "items": {
+              "type": "integer"
+            },
+            "title": "Enemy Revealed Before",
+            "type": "array"
+          },
+          "own_known_picks_before": {
+            "default": [],
+            "items": {
+              "type": "integer"
+            },
+            "title": "Own Known Picks Before",
+            "type": "array"
+          },
+          "sequence_confidence": {
+            "default": "low",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ],
+            "title": "Sequence Confidence",
+            "type": "string"
+          },
+          "stage_index": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stage Index"
+          }
+        },
+        "title": "PickVisibility",
+        "type": "object"
+      },
+      "PlayerPerformance": {
+        "additionalProperties": false,
+        "properties": {
+          "axes": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "title": "Axes",
+            "type": "object"
+          },
+          "confidence": {
+            "default": "low",
+            "enum": [
+              "low",
+              "medium"
+            ],
+            "title": "Confidence",
+            "type": "string"
+          },
+          "error_index": {
+            "anyOf": [
+              {
+                "maximum": 100.0,
+                "minimum": 0.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Error Index"
+          },
+          "evidence_coverage": {
+            "default": 0,
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Evidence Coverage",
+            "type": "number"
+          },
+          "hero_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Id"
+          },
+          "limitations": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Limitations",
+            "type": "array"
+          },
+          "missing_metrics": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Missing Metrics",
+            "type": "array"
+          },
+          "negative_signals": {
+            "default": [],
+            "items": {
+              "$ref": "#/components/schemas/PerformanceSignal"
+            },
+            "title": "Negative Signals",
+            "type": "array"
+          },
+          "observed_metrics": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "title": "Observed Metrics",
+            "type": "object"
+          },
+          "player_slot": {
+            "title": "Player Slot",
+            "type": "integer"
+          },
+          "position": {
+            "$ref": "#/components/schemas/FarmPositionEvidence"
+          },
+          "positive_credit": {
+            "default": 0,
+            "minimum": 0.0,
+            "title": "Positive Credit",
+            "type": "number"
+          },
+          "positive_signals": {
+            "default": [],
+            "items": {
+              "$ref": "#/components/schemas/PerformanceSignal"
+            },
+            "title": "Positive Signals",
+            "type": "array"
+          },
+          "reason_codes": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Reason Codes",
+            "type": "array"
+          },
+          "role_group": {
+            "enum": [
+              "core",
+              "support",
+              "unknown"
+            ],
+            "title": "Role Group",
+            "type": "string"
+          },
+          "team": {
+            "$ref": "#/components/schemas/Team"
+          },
+          "team_player_number": {
+            "title": "Team Player Number",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "player_slot",
+          "team_player_number",
+          "hero_id",
+          "team",
+          "position",
+          "role_group",
+          "axes",
+          "observed_metrics"
+        ],
+        "title": "PlayerPerformance",
+        "type": "object"
+      },
+      "PlayersReport": {
+        "additionalProperties": false,
+        "properties": {
+          "completeness_scope": {
+            "const": "core_player_stats",
+            "default": "core_player_stats",
+            "title": "Completeness Scope",
+            "type": "string"
+          },
+          "hero_catalog_revision": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Catalog Revision"
+          },
+          "item_catalog_revision": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Item Catalog Revision"
+          },
+          "limitations": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Limitations",
+            "type": "array"
+          },
+          "match_id": {
+            "title": "Match Id",
+            "type": "string"
+          },
+          "players": {
+            "items": {
+              "$ref": "#/components/schemas/PublicPlayer"
+            },
+            "title": "Players",
+            "type": "array"
+          }
+        },
+        "required": [
+          "match_id",
+          "players"
+        ],
+        "title": "PlayersReport",
+        "type": "object"
+      },
+      "Position": {
+        "enum": [
+          "safe_lane",
+          "mid_lane",
+          "off_lane",
+          "jungle",
+          "unknown"
+        ],
+        "title": "Position",
+        "type": "string"
+      },
+      "PositionEvidence": {
+        "additionalProperties": false,
+        "properties": {
+          "confidence": {
+            "anyOf": [
+              {
+                "maximum": 1.0,
+                "minimum": 0.0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Confidence"
+          },
+          "evidence": {
+            "$ref": "#/components/schemas/EvidenceStatus"
+          },
+          "position": {
+            "$ref": "#/components/schemas/Position"
+          },
+          "source_field": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Field"
+          }
+        },
+        "required": [
+          "position",
+          "evidence"
+        ],
+        "title": "PositionEvidence",
+        "type": "object"
+      },
+      "PublicItem": {
+        "additionalProperties": false,
+        "properties": {
+          "image_key": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Image Key"
+          },
+          "image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Image Url"
+          },
+          "item_id": {
+            "minimum": 0.0,
+            "title": "Item Id",
+            "type": "integer"
+          },
+          "name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Name"
+          },
+          "status": {
+            "enum": [
+              "empty",
+              "known",
+              "unmapped"
+            ],
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "item_id",
+          "status"
+        ],
+        "title": "PublicItem",
+        "type": "object"
+      },
+      "PublicPlayer": {
+        "additionalProperties": false,
+        "properties": {
+          "assists": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Assists"
+          },
+          "backpack_item_details": {
+            "anyOf": [
+              {
+                "items": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/components/schemas/PublicItem"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Backpack Item Details"
+          },
+          "backpack_items": {
+            "anyOf": [
+              {
+                "items": {
+                  "anyOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Backpack Items"
+          },
+          "buyback_count": {
+            "anyOf": [
+              {
+                "minimum": 0.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Buyback Count"
+          },
+          "deaths": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Deaths"
+          },
+          "denies": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Denies"
+          },
+          "display_name": {
+            "title": "Display Name",
+            "type": "string"
+          },
+          "gpm": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gpm"
+          },
+          "hero_damage": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Damage"
+          },
+          "hero_healing": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Healing"
+          },
+          "hero_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Id"
+          },
+          "hero_image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Image Url"
+          },
+          "hero_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Name"
+          },
+          "is_anonymous": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Is Anonymous"
+          },
+          "item_details": {
+            "anyOf": [
+              {
+                "items": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/components/schemas/PublicItem"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Item Details"
+          },
+          "items": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "title": "Items",
+            "type": "array"
+          },
+          "kills": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Kills"
+          },
+          "last_hits": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Last Hits"
+          },
+          "level": {
+            "anyOf": [
+              {
+                "minimum": 1.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Level"
+          },
+          "name_source": {
+            "anyOf": [
+              {
+                "const": "opendota",
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Name Source"
+          },
+          "net_worth": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Net Worth"
+          },
+          "neutral_item": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Neutral Item"
+          },
+          "neutral_item_details": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/PublicItem"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "obs_placed": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Obs Placed"
+          },
+          "performance_position": {
+            "$ref": "#/components/schemas/FarmPositionEvidence"
+          },
+          "player_slot": {
+            "title": "Player Slot",
+            "type": "integer"
+          },
+          "position": {
+            "$ref": "#/components/schemas/PositionEvidence"
+          },
+          "sen_placed": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Sen Placed"
+          },
+          "stun_duration_seconds": {
+            "anyOf": [
+              {
+                "minimum": 0.0,
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stun Duration Seconds"
+          },
+          "team": {
+            "$ref": "#/components/schemas/Team"
+          },
+          "team_player_number": {
+            "title": "Team Player Number",
+            "type": "integer"
+          },
+          "tower_damage": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Tower Damage"
+          },
+          "xpm": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Xpm"
+          }
+        },
+        "required": [
+          "player_slot",
+          "team",
+          "team_player_number",
+          "display_name",
+          "hero_id",
+          "hero_name",
+          "kills",
+          "deaths",
+          "assists",
+          "last_hits",
+          "denies",
+          "gpm",
+          "xpm",
+          "hero_damage",
+          "tower_damage",
+          "hero_healing",
+          "net_worth",
+          "items",
+          "neutral_item",
+          "position"
+        ],
+        "title": "PublicPlayer",
+        "type": "object"
+      },
+      "QualityStatus": {
+        "enum": [
+          "complete",
+          "partial",
+          "unavailable"
+        ],
+        "title": "QualityStatus",
+        "type": "string"
+      },
+      "Reason": {
+        "additionalProperties": false,
+        "properties": {
+          "code": {
+            "title": "Code",
+            "type": "string"
+          },
+          "confidence": {
+            "default": "low",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ],
+            "title": "Confidence",
+            "type": "string"
+          },
+          "evidence": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "number"
+                }
+              ]
+            },
+            "title": "Evidence",
+            "type": "object"
+          },
+          "hero_ids": {
+            "default": [],
+            "items": {
+              "type": "integer"
+            },
+            "title": "Hero Ids",
+            "type": "array"
+          },
+          "kind": {
+            "enum": [
+              "mechanic",
+              "statistic",
+              "composition",
+              "limitation"
+            ],
+            "title": "Kind",
+            "type": "string"
+          },
+          "patch_applicability": {
+            "default": "not_verified",
+            "title": "Patch Applicability",
+            "type": "string"
+          },
+          "polarity": {
+            "enum": [
+              "positive",
+              "negative",
+              "neutral"
+            ],
+            "title": "Polarity",
+            "type": "string"
+          },
+          "scope": {
+            "default": "data",
+            "enum": [
+              "individual",
+              "interaction",
+              "team",
+              "data"
+            ],
+            "title": "Scope",
+            "type": "string"
+          },
+          "source_refs": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Source Refs",
+            "type": "array"
+          },
+          "text": {
+            "title": "Text",
+            "type": "string"
+          }
+        },
+        "required": [
+          "code",
+          "text",
+          "kind",
+          "polarity"
+        ],
+        "title": "Reason",
+        "type": "object"
+      },
+      "RuinerReport": {
+        "additionalProperties": false,
+        "properties": {
+          "config_digest": {
+            "title": "Config Digest",
+            "type": "string"
+          },
+          "limitations": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Limitations",
+            "type": "array"
+          },
+          "match_id": {
+            "title": "Match Id",
+            "type": "string"
+          },
+          "model_version": {
+            "title": "Model Version",
+            "type": "string"
+          },
+          "players": {
+            "items": {
+              "$ref": "#/components/schemas/PlayerPerformance"
+            },
+            "title": "Players",
+            "type": "array"
+          },
+          "quality": {
+            "enum": [
+              "sufficient",
+              "partial",
+              "insufficient"
+            ],
+            "title": "Quality",
+            "type": "string"
+          },
+          "summary": {
+            "$ref": "#/components/schemas/PerformanceSelection"
+          },
+          "teams": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/TeamPerformanceReport"
+            },
+            "propertyNames": {
+              "$ref": "#/components/schemas/Team"
+            },
+            "title": "Teams",
+            "type": "object"
+          }
+        },
+        "required": [
+          "match_id",
+          "model_version",
+          "config_digest",
+          "quality",
+          "teams",
+          "players",
+          "summary",
+          "limitations"
+        ],
+        "title": "RuinerReport",
+        "type": "object"
+      },
+      "Team": {
+        "enum": [
+          "radiant",
+          "dire"
+        ],
+        "title": "Team",
+        "type": "string"
+      },
+      "TeamDraftScore": {
+        "additionalProperties": false,
+        "properties": {
+          "breakdown": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "title": "Breakdown",
+            "type": "object"
+          },
+          "evaluation": {
+            "$ref": "#/components/schemas/Evaluation"
+          },
+          "likely_vulnerabilities": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Likely Vulnerabilities",
+            "type": "array"
+          },
+          "team": {
+            "$ref": "#/components/schemas/Team"
+          },
+          "team_win_conditions": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Team Win Conditions",
+            "type": "array"
+          }
+        },
+        "required": [
+          "team",
+          "evaluation",
+          "breakdown",
+          "team_win_conditions",
+          "likely_vulnerabilities"
+        ],
+        "title": "TeamDraftScore",
+        "type": "object"
+      },
+      "TeamPerformanceReport": {
+        "additionalProperties": false,
+        "properties": {
+          "minimum_margin": {
+            "title": "Minimum Margin",
+            "type": "integer"
+          },
+          "player_slots": {
+            "items": {
+              "type": "integer"
+            },
+            "title": "Player Slots",
+            "type": "array"
+          },
+          "scored_players": {
+            "title": "Scored Players",
+            "type": "integer"
+          },
+          "selection": {
+            "$ref": "#/components/schemas/PerformanceSelection"
+          },
+          "team": {
+            "$ref": "#/components/schemas/Team"
+          },
+          "threshold": {
+            "title": "Threshold",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "team",
+          "player_slots",
+          "scored_players",
+          "selection",
+          "threshold",
+          "minimum_margin"
+        ],
+        "title": "TeamPerformanceReport",
+        "type": "object"
+      },
+      "TimelineActor": {
+        "additionalProperties": false,
+        "properties": {
+          "hero_id": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Id"
+          },
+          "hero_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Hero Name"
+          },
+          "player_slot": {
+            "maximum": 255.0,
+            "minimum": 0.0,
+            "title": "Player Slot",
+            "type": "integer"
+          },
+          "team": {
+            "$ref": "#/components/schemas/Team"
+          }
+        },
+        "required": [
+          "player_slot",
+          "team"
+        ],
+        "title": "TimelineActor",
+        "type": "object"
+      },
+      "TimelineEvent": {
+        "additionalProperties": false,
+        "properties": {
+          "actors": {
+            "items": {
+              "$ref": "#/components/schemas/TimelineActor"
+            },
+            "title": "Actors",
+            "type": "array"
+          },
+          "dedupe_key": {
+            "title": "Dedupe Key",
+            "type": "string"
+          },
+          "description": {
+            "title": "Description",
+            "type": "string"
+          },
+          "display_clock": {
+            "title": "Display Clock",
+            "type": "string"
+          },
+          "evidence": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/JsonValue"
+            },
+            "title": "Evidence",
+            "type": "object"
+          },
+          "evidence_quality": {
+            "enum": [
+              "confirmed",
+              "partial"
+            ],
+            "title": "Evidence Quality",
+            "type": "string"
+          },
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "original_ref": {
+            "title": "Original Ref",
+            "type": "string"
+          },
+          "original_refs": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Original Refs",
+            "type": "array"
+          },
+          "reason_codes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Reason Codes",
+            "type": "array"
+          },
+          "related_event_ids": {
+            "default": [],
+            "items": {
+              "type": "string"
+            },
+            "title": "Related Event Ids",
+            "type": "array"
+          },
+          "side": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Team"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "source_field": {
+            "title": "Source Field",
+            "type": "string"
+          },
+          "team": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Team"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "time_end": {
+            "title": "Time End",
+            "type": "integer"
+          },
+          "time_precision": {
+            "enum": [
+              "exact",
+              "interval"
+            ],
+            "title": "Time Precision",
+            "type": "string"
+          },
+          "time_seconds": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Time Seconds"
+          },
+          "time_start": {
+            "title": "Time Start",
+            "type": "integer"
+          },
+          "type": {
+            "title": "Type",
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "time_seconds",
+          "time_start",
+          "time_end",
+          "time_precision",
+          "display_clock",
+          "type",
+          "team",
+          "side",
+          "actors",
+          "description",
+          "evidence",
+          "evidence_quality",
+          "source_field",
+          "original_ref",
+          "original_refs",
+          "dedupe_key",
+          "reason_codes"
+        ],
+        "title": "TimelineEvent",
+        "type": "object"
+      },
+      "TimelineReport": {
+        "additionalProperties": false,
+        "properties": {
+          "available_types": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Available Types",
+            "type": "array"
+          },
+          "empty_state_text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Empty State Text"
+          },
+          "event_coverage": {
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Event Coverage",
+            "type": "number"
+          },
+          "events": {
+            "items": {
+              "$ref": "#/components/schemas/TimelineEvent"
+            },
+            "title": "Events",
+            "type": "array"
+          },
+          "gold_adv_points": {
+            "items": {
+              "$ref": "#/components/schemas/AdvantagePoint"
+            },
+            "title": "Gold Adv Points",
+            "type": "array"
+          },
+          "limitations": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Limitations",
+            "type": "array"
+          },
+          "match_id": {
+            "title": "Match Id",
+            "type": "string"
+          },
+          "missing_event_types": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Missing Event Types",
+            "type": "array"
+          },
+          "quality": {
+            "$ref": "#/components/schemas/QualityStatus"
+          },
+          "supported_event_types": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Supported Event Types",
+            "type": "array"
+          },
+          "timeline_data_status": {
+            "$ref": "#/components/schemas/QualityStatus"
+          },
+          "turning_points": {
+            "items": {
+              "$ref": "#/components/schemas/TurningPoint"
+            },
+            "title": "Turning Points",
+            "type": "array"
+          },
+          "xp_adv_points": {
+            "items": {
+              "$ref": "#/components/schemas/AdvantagePoint"
+            },
+            "title": "Xp Adv Points",
+            "type": "array"
+          }
+        },
+        "required": [
+          "match_id",
+          "quality",
+          "timeline_data_status",
+          "available_types",
+          "supported_event_types",
+          "missing_event_types",
+          "event_coverage",
+          "empty_state_text",
+          "events",
+          "gold_adv_points",
+          "xp_adv_points",
+          "turning_points",
+          "limitations"
+        ],
+        "title": "TimelineReport",
+        "type": "object"
+      },
+      "TurningPoint": {
+        "additionalProperties": false,
+        "properties": {
+          "confidence": {
+            "enum": [
+              "low",
+              "medium"
+            ],
+            "title": "Confidence",
+            "type": "string"
+          },
+          "delta": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              }
+            ],
+            "title": "Delta"
+          },
+          "direction": {
+            "$ref": "#/components/schemas/Team"
+          },
+          "evidence": {
+            "additionalProperties": {
+              "$ref": "#/components/schemas/JsonValue"
+            },
+            "title": "Evidence",
+            "type": "object"
+          },
+          "gold_delta": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Gold Delta"
+          },
+          "reason_codes": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Reason Codes",
+            "type": "array"
+          },
+          "related_event_ids": {
+            "items": {
+              "type": "string"
+            },
+            "title": "Related Event Ids",
+            "type": "array"
+          },
+          "time_end": {
+            "title": "Time End",
+            "type": "integer"
+          },
+          "time_start": {
+            "title": "Time Start",
+            "type": "integer"
+          },
+          "xp_delta": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Xp Delta"
+          }
+        },
+        "required": [
+          "time_start",
+          "time_end",
+          "delta",
+          "gold_delta",
+          "xp_delta",
+          "direction",
+          "reason_codes",
+          "confidence",
+          "related_event_ids",
+          "evidence"
+        ],
+        "title": "TurningPoint",
+        "type": "object"
+      }
+    }
+  },
+  "paths": {
+    "/api/v1/matches/{match_id}/analysis/status": {
+      "get": {
+        "operationId": "analysis_status_api_v1_matches__match_id__analysis_status_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "match_id",
+            "required": true,
+            "schema": {
+              "title": "Match Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "202": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Accepted"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Unauthorized"
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Unprocessable Content"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Too Many Requests"
+          },
+          "502": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Bad Gateway"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Service Unavailable"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Analysis Status",
+        "tags": [
+          "matches"
+        ]
+      }
+    },
+    "/api/v1/matches/{match_id}/draft": {
+      "get": {
+        "operationId": "draft_api_v1_matches__match_id__draft_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "match_id",
+            "required": true,
+            "schema": {
+              "title": "Match Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_DraftReport_"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "202": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Accepted"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Unauthorized"
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Unprocessable Content"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Too Many Requests"
+          },
+          "502": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Bad Gateway"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Service Unavailable"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Draft",
+        "tags": [
+          "matches"
+        ]
+      }
+    },
+    "/api/v1/matches/{match_id}/overview": {
+      "get": {
+        "operationId": "overview_api_v1_matches__match_id__overview_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "match_id",
+            "required": true,
+            "schema": {
+              "title": "Match Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_OverviewReport_"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "202": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Accepted"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Unauthorized"
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Unprocessable Content"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Too Many Requests"
+          },
+          "502": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Bad Gateway"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Service Unavailable"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Overview",
+        "tags": [
+          "matches"
+        ]
+      }
+    },
+    "/api/v1/matches/{match_id}/players": {
+      "get": {
+        "operationId": "players_api_v1_matches__match_id__players_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "match_id",
+            "required": true,
+            "schema": {
+              "title": "Match Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_PlayersReport_"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "202": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Accepted"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Unauthorized"
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Unprocessable Content"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Too Many Requests"
+          },
+          "502": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Bad Gateway"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Service Unavailable"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Players",
+        "tags": [
+          "matches"
+        ]
+      }
+    },
+    "/api/v1/matches/{match_id}/ruiner": {
+      "get": {
+        "operationId": "ruiner_api_v1_matches__match_id__ruiner_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "match_id",
+            "required": true,
+            "schema": {
+              "title": "Match Id",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_RuinerReport_"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "202": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Accepted"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Unauthorized"
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Unprocessable Content"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Too Many Requests"
+          },
+          "502": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Bad Gateway"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Service Unavailable"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Ruiner",
+        "tags": [
+          "matches"
+        ]
+      }
+    },
+    "/api/v1/matches/{match_id}/timeline": {
+      "get": {
+        "operationId": "timeline_api_v1_matches__match_id__timeline_get",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "match_id",
+            "required": true,
+            "schema": {
+              "title": "Match Id",
+              "type": "string"
+            }
+          },
+          {
+            "in": "query",
+            "name": "type",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Type"
+            }
+          },
+          {
+            "in": "query",
+            "name": "side",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "$ref": "#/components/schemas/Team"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Side"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_TimelineReport_"
+                }
+              }
+            },
+            "description": "Successful Response"
+          },
+          "202": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Accepted"
+          },
+          "401": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Unauthorized"
+          },
+          "403": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Forbidden"
+          },
+          "404": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Not Found"
+          },
+          "422": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Unprocessable Content"
+          },
+          "429": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Too Many Requests"
+          },
+          "502": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Bad Gateway"
+          },
+          "503": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MatchEnvelope_AnalysisState_"
+                }
+              }
+            },
+            "description": "Service Unavailable"
+          }
+        },
+        "security": [
+          {
+            "HTTPBearer": []
+          }
+        ],
+        "summary": "Timeline",
+        "tags": [
+          "matches"
+        ]
+      }
+    }
+  },
+  "schema_version": 1
+}

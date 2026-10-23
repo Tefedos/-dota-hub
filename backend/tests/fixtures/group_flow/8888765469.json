@@ -1,0 +1,389 @@
+{
+  "match_id": 8888765469,
+  "duration": 2400,
+  "start_time": 1700000000,
+  "patch": 999,
+  "game_mode": 22,
+  "lobby_type": 7,
+  "radiant_win": true,
+  "radiant_score": 30,
+  "dire_score": 20,
+  "radiant_team_id": 9000000000000001,
+  "dire_team": {
+    "team_id": 9000000000000002,
+    "name": "Dire Fixture"
+  },
+  "radiant_name": "Radiant Fixture",
+  "players": [
+    {
+      "player_slot": 0,
+      "hero_id": 1,
+      "kills": 0,
+      "deaths": 0,
+      "assists": 7,
+      "last_hits": 120,
+      "denies": 5,
+      "gold_per_min": 500,
+      "xp_per_min": 600,
+      "hero_damage": 15000,
+      "tower_damage": 2000,
+      "hero_healing": 0,
+      "net_worth": 18000,
+      "lane_role": 1,
+      "item_0": 1,
+      "item_1": 2,
+      "item_2": 3,
+      "item_3": 4,
+      "item_4": 5,
+      "item_5": 6,
+      "item_neutral": 42,
+      "purchase_time": {
+        "blink": [
+          800,
+          1600
+        ],
+        "boots": 120
+      },
+      "kills_log": [],
+      "buyback_log": [],
+      "purchase_log": []
+    },
+    {
+      "player_slot": 1,
+      "hero_id": 2,
+      "kills": 5,
+      "deaths": 2,
+      "assists": 7,
+      "last_hits": 120,
+      "denies": 5,
+      "gold_per_min": 500,
+      "xp_per_min": 600,
+      "hero_damage": 15000,
+      "tower_damage": 2000,
+      "hero_healing": 0,
+      "net_worth": 18000,
+      "lane_role": 2,
+      "item_0": 1,
+      "item_1": 2,
+      "item_2": 3,
+      "item_3": 4,
+      "item_4": 5,
+      "item_5": 6,
+      "item_neutral": 42,
+      "purchase_time": {
+        "blink": [
+          800,
+          1600
+        ],
+        "boots": 120
+      },
+      "kills_log": [],
+      "buyback_log": [],
+      "purchase_log": []
+    },
+    {
+      "player_slot": 2,
+      "hero_id": 3,
+      "kills": 5,
+      "deaths": 2,
+      "assists": 7,
+      "last_hits": 120,
+      "denies": 5,
+      "gold_per_min": 500,
+      "xp_per_min": 600,
+      "hero_damage": 15000,
+      "tower_damage": 2000,
+      "hero_healing": 0,
+      "net_worth": 18000,
+      "lane_role": 3,
+      "item_0": 1,
+      "item_1": 2,
+      "item_2": 3,
+      "item_3": 4,
+      "item_4": 5,
+      "item_5": 6,
+      "item_neutral": 42,
+      "purchase_time": {
+        "blink": [
+          800,
+          1600
+        ],
+        "boots": 120
+      },
+      "kills_log": [],
+      "buyback_log": [],
+      "purchase_log": []
+    },
+    {
+      "player_slot": 3,
+      "hero_id": 4,
+      "kills": 5,
+      "deaths": 2,
+      "assists": 7,
+      "last_hits": 120,
+      "denies": 5,
+      "gold_per_min": 500,
+      "xp_per_min": 600,
+      "hero_damage": 15000,
+      "tower_damage": 2000,
+      "hero_healing": 0,
+      "net_worth": 18000,
+      "lane_role": 4,
+      "item_0": 1,
+      "item_1": 2,
+      "item_2": 3,
+      "item_3": 4,
+      "item_4": 5,
+      "item_5": 6,
+      "item_neutral": 42,
+      "purchase_time": {
+        "blink": [
+          800,
+          1600
+        ],
+        "boots": 120
+      },
+      "kills_log": [],
+      "buyback_log": [],
+      "purchase_log": []
+    },
+    {
+      "player_slot": 4,
+      "hero_id": 5,
+      "kills": 5,
+      "deaths": 2,
+      "assists": 7,
+      "last_hits": 120,
+      "denies": 5,
+      "gold_per_min": 500,
+      "xp_per_min": 600,
+      "hero_damage": 15000,
+      "tower_damage": 2000,
+      "hero_healing": 0,
+      "net_worth": 18000,
+      "lane_role": 1,
+      "item_0": 1,
+      "item_1": 2,
+      "item_2": 3,
+      "item_3": 4,
+      "item_4": 5,
+      "item_5": 6,
+      "item_neutral": 42,
+      "purchase_time": {
+        "blink": [
+          800,
+          1600
+        ],
+        "boots": 120
+      },
+      "kills_log": [],
+      "buyback_log": [],
+      "purchase_log": []
+    },
+    {
+      "player_slot": 128,
+      "hero_id": 100,
+      "kills": 5,
+      "deaths": 2,
+      "assists": 7,
+      "last_hits": 120,
+      "denies": 5,
+      "gold_per_min": 500,
+      "xp_per_min": 600,
+      "hero_damage": 15000,
+      "tower_damage": 2000,
+      "hero_healing": 0,
+      "net_worth": 18000,
+      "lane_role": 1,
+      "item_0": 1,
+      "item_1": 2,
+      "item_2": 3,
+      "item_3": 4,
+      "item_4": 5,
+      "item_5": 6,
+      "item_neutral": 42,
+      "purchase_time": {
+        "blink": [
+          800,
+          1600
+        ],
+        "boots": 120
+      },
+      "kills_log": [],
+      "buyback_log": [],
+      "purchase_log": []
+    },
+    {
+      "player_slot": 129,
+      "hero_id": 101,
+      "kills": 5,
+      "deaths": 2,
+      "assists": 7,
+      "last_hits": 120,
+      "denies": 5,
+      "gold_per_min": 500,
+      "xp_per_min": 600,
+      "hero_damage": 15000,
+      "tower_damage": 2000,
+      "hero_healing": 0,
+      "net_worth": 18000,
+      "lane_role": 2,
+      "item_0": 1,
+      "item_1": 2,
+      "item_2": 3,
+      "item_3": 4,
+      "item_4": 5,
+      "item_5": 6,
+      "item_neutral": 42,
+      "purchase_time": {
+        "blink": [
+          800,
+          1600
+        ],
+        "boots": 120
+      },
+      "kills_log": [],
+      "buyback_log": [],
+      "purchase_log": []
+    },
+    {
+      "player_slot": 130,
+      "hero_id": 102,
+      "kills": 5,
+      "deaths": 2,
+      "assists": 7,
+      "last_hits": 120,
+      "denies": 5,
+      "gold_per_min": 500,
+      "xp_per_min": 600,
+      "hero_damage": 15000,
+      "tower_damage": 2000,
+      "hero_healing": 0,
+      "net_worth": 18000,
+      "lane_role": 3,
+      "item_0": 1,
+      "item_1": 2,
+      "item_2": 3,
+      "item_3": 4,
+      "item_4": 5,
+      "item_5": 6,
+      "item_neutral": 42,
+      "purchase_time": {
+        "blink": [
+          800,
+          1600
+        ],
+        "boots": 120
+      },
+      "kills_log": [],
+      "buyback_log": [],
+      "purchase_log": []
+    },
+    {
+      "player_slot": 131,
+      "hero_id": 103,
+      "kills": 5,
+      "deaths": 2,
+      "assists": 7,
+      "last_hits": 120,
+      "denies": 5,
+      "gold_per_min": 500,
+      "xp_per_min": 600,
+      "hero_damage": 15000,
+      "tower_damage": 2000,
+      "hero_healing": 0,
+      "net_worth": 18000,
+      "lane_role": 4,
+      "item_0": 1,
+      "item_1": 2,
+      "item_2": 3,
+      "item_3": 4,
+      "item_4": 5,
+      "item_5": 6,
+      "item_neutral": 42,
+      "purchase_time": {
+        "blink": [
+          800,
+          1600
+        ],
+        "boots": 120
+      },
+      "kills_log": [],
+      "buyback_log": [],
+      "purchase_log": []
+    },
+    {
+      "player_slot": 132,
+      "hero_id": 104,
+      "kills": 5,
+      "deaths": 2,
+      "assists": 7,
+      "last_hits": 120,
+      "denies": 5,
+      "gold_per_min": 500,
+      "xp_per_min": 600,
+      "hero_damage": 15000,
+      "tower_damage": 2000,
+      "hero_healing": 0,
+      "net_worth": 18000,
+      "lane_role": 1,
+      "item_0": 1,
+      "item_1": 2,
+      "item_2": 3,
+      "item_3": 4,
+      "item_4": 5,
+      "item_5": 6,
+      "item_neutral": 42,
+      "purchase_time": {
+        "blink": [
+          800,
+          1600
+        ],
+        "boots": 120
+      },
+      "kills_log": [],
+      "buyback_log": [],
+      "purchase_log": []
+    }
+  ],
+  "picks_bans": [
+    {
+      "is_pick": true,
+      "hero_id": 1,
+      "team": 0,
+      "order": 0
+    },
+    {
+      "is_pick": false,
+      "hero_id": 2,
+      "team": 1,
+      "order": 1
+    }
+  ],
+  "objectives": [
+    {
+      "type": "CHAT_MESSAGE_FIRSTBLOOD",
+      "time": 10
+    }
+  ],
+  "kills_log": [
+    {
+      "time": 10,
+      "key": "npc_dota_hero_fixture"
+    }
+  ],
+  "teamfights": [],
+  "radiant_gold_adv": [
+    0,
+    100,
+    -100,
+    200
+  ],
+  "radiant_xp_adv": [
+    0,
+    100,
+    -100,
+    200
+  ],
+  "fixture_note": "Synthetic contract fixture. No live request was made for this match ID."
+}

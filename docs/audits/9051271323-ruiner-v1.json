@@ -1,0 +1,850 @@
+{
+  "match_id": "9051271323",
+  "model_version": "ruiner_v1",
+  "config_digest": "31147c647698fe40a5109d8520227d2e62f5d203aa5299a5585e3c1f5c6779a8",
+  "quality": "partial",
+  "teams": {
+    "radiant": {
+      "team": "radiant",
+      "player_slots": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "scored_players": 4,
+      "selection": {
+        "selected_player_slot": null,
+        "selected_team": null,
+        "selection_status": "no_confident_selection",
+        "evidence": [
+          "incomplete_or_low_confidence_team"
+        ]
+      },
+      "threshold": 70,
+      "minimum_margin": 15
+    },
+    "dire": {
+      "team": "dire",
+      "player_slots": [
+        128,
+        129,
+        130,
+        131,
+        132
+      ],
+      "scored_players": 5,
+      "selection": {
+        "selected_player_slot": null,
+        "selected_team": null,
+        "selection_status": "no_confident_selection",
+        "evidence": [
+          "incomplete_or_low_confidence_team"
+        ]
+      },
+      "threshold": 70,
+      "minimum_margin": 15
+    }
+  },
+  "players": [
+    {
+      "player_slot": 0,
+      "team_player_number": 1,
+      "hero_id": 123,
+      "team": "radiant",
+      "position": {
+        "position": null,
+        "evidence": "unknown",
+        "source_field": null
+      },
+      "role_group": "unknown",
+      "error_index": 25,
+      "confidence": "low",
+      "evidence_coverage": 1.0,
+      "axes": {
+        "survival": 0.4999999999999999,
+        "participation": 0.0
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.3724780134505949,
+        "kill_participation": 0.8,
+        "kda": 0.6666666666666666,
+        "gpm": null,
+        "xpm": null,
+        "hero_damage_per_min": null,
+        "tower_damage_per_min": null,
+        "healing_per_min": null,
+        "obs_placed": null,
+        "sen_placed": null,
+        "observer_kills": null,
+        "sentry_kills": null
+      },
+      "positive_credit": 0.0,
+      "positive_signals": [
+        {
+          "code": "positive:kill_participation",
+          "text": "Участие в командных убийствах: положительный вклад относительно сравниваемых союзников.",
+          "metric": "kill_participation",
+          "value": 0.8,
+          "reference": 0.6,
+          "comparison_slots": [
+            2,
+            3,
+            4
+          ],
+          "magnitude": 0.333333,
+          "source_ref": "normalized_match"
+        }
+      ],
+      "negative_signals": [
+        {
+          "code": "relative_high:deaths_per_min",
+          "text": "Смертность в минуту: отклонение от медианы сравниваемых союзников; это сигнал, а не доказательство ошибки.",
+          "metric": "deaths_per_min",
+          "value": 0.3725,
+          "reference": 0.2483,
+          "comparison_slots": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "magnitude": 0.5,
+          "source_ref": "normalized_match"
+        }
+      ],
+      "missing_metrics": [
+        "gpm",
+        "xpm",
+        "hero_damage_per_min",
+        "tower_damage_per_min",
+        "healing_per_min",
+        "obs_placed",
+        "sen_placed",
+        "observer_kills",
+        "sentry_kills"
+      ],
+      "reason_codes": [
+        "position_unknown",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:hero_damage_per_min",
+        "comparison_unavailable:tower_damage_per_min",
+        "comparison_unavailable:healing_per_min",
+        "comparison_unavailable:obs_placed",
+        "comparison_unavailable:sen_placed",
+        "comparison_unavailable:observer_kills",
+        "comparison_unavailable:sentry_kills",
+        "positive:kill_participation",
+        "relative_high:deaths_per_min"
+      ],
+      "limitations": [
+        "Позиция 1–5 не подтверждена; уверенность низкая. Линия и имя героя не доказывают роль.",
+        "Сравнение внутри команды и ролевой группы; проверенной популяционной нормы нет. KDA не дублирует штрафы за смерти и участие."
+      ]
+    },
+    {
+      "player_slot": 1,
+      "team_player_number": 2,
+      "hero_id": 111,
+      "team": "radiant",
+      "position": {
+        "position": null,
+        "evidence": "unknown",
+        "source_field": null
+      },
+      "role_group": "unknown",
+      "error_index": null,
+      "confidence": "low",
+      "evidence_coverage": 0.5,
+      "axes": {
+        "survival": 0.0,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.24831867563372995,
+        "kill_participation": null,
+        "kda": 1.5,
+        "gpm": null,
+        "xpm": null,
+        "hero_damage_per_min": null,
+        "tower_damage_per_min": null,
+        "healing_per_min": null,
+        "obs_placed": null,
+        "sen_placed": null,
+        "observer_kills": null,
+        "sentry_kills": null
+      },
+      "positive_credit": 0.0,
+      "positive_signals": [],
+      "negative_signals": [],
+      "missing_metrics": [
+        "kill_participation",
+        "gpm",
+        "xpm",
+        "hero_damage_per_min",
+        "tower_damage_per_min",
+        "healing_per_min",
+        "obs_placed",
+        "sen_placed",
+        "observer_kills",
+        "sentry_kills"
+      ],
+      "reason_codes": [
+        "position_unknown",
+        "economy_not_penalized",
+        "team_kills_missing_small_or_inconsistent",
+        "kda_descriptive_only",
+        "comparison_unavailable:kill_participation",
+        "comparison_unavailable:hero_damage_per_min",
+        "comparison_unavailable:tower_damage_per_min",
+        "comparison_unavailable:healing_per_min",
+        "comparison_unavailable:obs_placed",
+        "comparison_unavailable:sen_placed",
+        "comparison_unavailable:observer_kills",
+        "comparison_unavailable:sentry_kills",
+        "insufficient_data"
+      ],
+      "limitations": [
+        "Позиция 1–5 не подтверждена; уверенность низкая. Линия и имя героя не доказывают роль.",
+        "Сравнение внутри команды и ролевой группы; проверенной популяционной нормы нет. KDA не дублирует штрафы за смерти и участие."
+      ]
+    },
+    {
+      "player_slot": 2,
+      "team_player_number": 3,
+      "hero_id": 43,
+      "team": "radiant",
+      "position": {
+        "position": null,
+        "evidence": "unknown",
+        "source_field": null
+      },
+      "role_group": "unknown",
+      "error_index": 32,
+      "confidence": "low",
+      "evidence_coverage": 1.0,
+      "axes": {
+        "survival": 0.4999999999999999,
+        "participation": 0.14285714285714282
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.3724780134505949,
+        "kill_participation": 0.6,
+        "kda": 0.5,
+        "gpm": null,
+        "xpm": null,
+        "hero_damage_per_min": null,
+        "tower_damage_per_min": null,
+        "healing_per_min": null,
+        "obs_placed": null,
+        "sen_placed": null,
+        "observer_kills": null,
+        "sentry_kills": null
+      },
+      "positive_credit": 0.0,
+      "positive_signals": [],
+      "negative_signals": [
+        {
+          "code": "relative_high:deaths_per_min",
+          "text": "Смертность в минуту: отклонение от медианы сравниваемых союзников; это сигнал, а не доказательство ошибки.",
+          "metric": "deaths_per_min",
+          "value": 0.3725,
+          "reference": 0.2483,
+          "comparison_slots": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "magnitude": 0.5,
+          "source_ref": "normalized_match"
+        }
+      ],
+      "missing_metrics": [
+        "gpm",
+        "xpm",
+        "hero_damage_per_min",
+        "tower_damage_per_min",
+        "healing_per_min",
+        "obs_placed",
+        "sen_placed",
+        "observer_kills",
+        "sentry_kills"
+      ],
+      "reason_codes": [
+        "position_unknown",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:hero_damage_per_min",
+        "comparison_unavailable:tower_damage_per_min",
+        "comparison_unavailable:healing_per_min",
+        "comparison_unavailable:obs_placed",
+        "comparison_unavailable:sen_placed",
+        "comparison_unavailable:observer_kills",
+        "comparison_unavailable:sentry_kills",
+        "relative_high:deaths_per_min"
+      ],
+      "limitations": [
+        "Позиция 1–5 не подтверждена; уверенность низкая. Линия и имя героя не доказывают роль.",
+        "Сравнение внутри команды и ролевой группы; проверенной популяционной нормы нет. KDA не дублирует штрафы за смерти и участие."
+      ]
+    },
+    {
+      "player_slot": 3,
+      "team_player_number": 4,
+      "hero_id": 67,
+      "team": "radiant",
+      "position": {
+        "position": null,
+        "evidence": "unknown",
+        "source_field": null
+      },
+      "role_group": "unknown",
+      "error_index": 7,
+      "confidence": "low",
+      "evidence_coverage": 1.0,
+      "axes": {
+        "survival": 0.0,
+        "participation": 0.14285714285714282
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.24831867563372995,
+        "kill_participation": 0.6,
+        "kda": 0.75,
+        "gpm": null,
+        "xpm": null,
+        "hero_damage_per_min": null,
+        "tower_damage_per_min": null,
+        "healing_per_min": null,
+        "obs_placed": null,
+        "sen_placed": null,
+        "observer_kills": null,
+        "sentry_kills": null
+      },
+      "positive_credit": 0.0,
+      "positive_signals": [],
+      "negative_signals": [],
+      "missing_metrics": [
+        "gpm",
+        "xpm",
+        "hero_damage_per_min",
+        "tower_damage_per_min",
+        "healing_per_min",
+        "obs_placed",
+        "sen_placed",
+        "observer_kills",
+        "sentry_kills"
+      ],
+      "reason_codes": [
+        "position_unknown",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:hero_damage_per_min",
+        "comparison_unavailable:tower_damage_per_min",
+        "comparison_unavailable:healing_per_min",
+        "comparison_unavailable:obs_placed",
+        "comparison_unavailable:sen_placed",
+        "comparison_unavailable:observer_kills",
+        "comparison_unavailable:sentry_kills"
+      ],
+      "limitations": [
+        "Позиция 1–5 не подтверждена; уверенность низкая. Линия и имя героя не доказывают роль.",
+        "Сравнение внутри команды и ролевой группы; проверенной популяционной нормы нет. KDA не дублирует штрафы за смерти и участие."
+      ]
+    },
+    {
+      "player_slot": 4,
+      "team_player_number": 5,
+      "hero_id": 81,
+      "team": "radiant",
+      "position": {
+        "position": null,
+        "evidence": "unknown",
+        "source_field": null
+      },
+      "role_group": "unknown",
+      "error_index": 0,
+      "confidence": "low",
+      "evidence_coverage": 1.0,
+      "axes": {
+        "survival": 0.0,
+        "participation": 0.0
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.1551991722710812,
+        "kill_participation": 0.7,
+        "kda": 1.4,
+        "gpm": null,
+        "xpm": null,
+        "hero_damage_per_min": null,
+        "tower_damage_per_min": null,
+        "healing_per_min": null,
+        "obs_placed": null,
+        "sen_placed": null,
+        "observer_kills": null,
+        "sentry_kills": null
+      },
+      "positive_credit": 0.0,
+      "positive_signals": [
+        {
+          "code": "positive:deaths_per_min",
+          "text": "Смертность в минуту: положительный вклад относительно сравниваемых союзников.",
+          "metric": "deaths_per_min",
+          "value": 0.1552,
+          "reference": 0.3104,
+          "comparison_slots": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "magnitude": 0.5,
+          "source_ref": "normalized_match"
+        }
+      ],
+      "negative_signals": [],
+      "missing_metrics": [
+        "gpm",
+        "xpm",
+        "hero_damage_per_min",
+        "tower_damage_per_min",
+        "healing_per_min",
+        "obs_placed",
+        "sen_placed",
+        "observer_kills",
+        "sentry_kills"
+      ],
+      "reason_codes": [
+        "position_unknown",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:hero_damage_per_min",
+        "comparison_unavailable:tower_damage_per_min",
+        "comparison_unavailable:healing_per_min",
+        "comparison_unavailable:obs_placed",
+        "comparison_unavailable:sen_placed",
+        "comparison_unavailable:observer_kills",
+        "comparison_unavailable:sentry_kills",
+        "positive:deaths_per_min"
+      ],
+      "limitations": [
+        "Позиция 1–5 не подтверждена; уверенность низкая. Линия и имя героя не доказывают роль.",
+        "Сравнение внутри команды и ролевой группы; проверенной популяционной нормы нет. KDA не дублирует штрафы за смерти и участие."
+      ]
+    },
+    {
+      "player_slot": 128,
+      "team_player_number": 1,
+      "hero_id": 7,
+      "team": "dire",
+      "position": {
+        "position": null,
+        "evidence": "unknown",
+        "source_field": null
+      },
+      "role_group": "unknown",
+      "error_index": 2,
+      "confidence": "low",
+      "evidence_coverage": 1.0,
+      "axes": {
+        "survival": 0.0,
+        "participation": 0.03125000000000004
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.062079668908432487,
+        "kill_participation": 0.6888888888888889,
+        "kda": 15.5,
+        "gpm": null,
+        "xpm": null,
+        "hero_damage_per_min": null,
+        "tower_damage_per_min": null,
+        "healing_per_min": null,
+        "obs_placed": null,
+        "sen_placed": null,
+        "observer_kills": null,
+        "sentry_kills": null
+      },
+      "positive_credit": 0.0,
+      "positive_signals": [],
+      "negative_signals": [],
+      "missing_metrics": [
+        "gpm",
+        "xpm",
+        "hero_damage_per_min",
+        "tower_damage_per_min",
+        "healing_per_min",
+        "obs_placed",
+        "sen_placed",
+        "observer_kills",
+        "sentry_kills"
+      ],
+      "reason_codes": [
+        "position_unknown",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:hero_damage_per_min",
+        "comparison_unavailable:tower_damage_per_min",
+        "comparison_unavailable:healing_per_min",
+        "comparison_unavailable:obs_placed",
+        "comparison_unavailable:sen_placed",
+        "comparison_unavailable:observer_kills",
+        "comparison_unavailable:sentry_kills"
+      ],
+      "limitations": [
+        "Позиция 1–5 не подтверждена; уверенность низкая. Линия и имя героя не доказывают роль.",
+        "Сравнение внутри команды и ролевой группы; проверенной популяционной нормы нет. KDA не дублирует штрафы за смерти и участие."
+      ]
+    },
+    {
+      "player_slot": 129,
+      "team_player_number": 2,
+      "hero_id": 35,
+      "team": "dire",
+      "position": {
+        "position": null,
+        "evidence": "unknown",
+        "source_field": null
+      },
+      "role_group": "unknown",
+      "error_index": 50,
+      "confidence": "low",
+      "evidence_coverage": 1.0,
+      "axes": {
+        "survival": 0.9999999999999997,
+        "participation": 0.0
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.09311950336264872,
+        "kill_participation": 0.7777777777777778,
+        "kda": 11.666666666666666,
+        "gpm": null,
+        "xpm": null,
+        "hero_damage_per_min": null,
+        "tower_damage_per_min": null,
+        "healing_per_min": null,
+        "obs_placed": null,
+        "sen_placed": null,
+        "observer_kills": null,
+        "sentry_kills": null
+      },
+      "positive_credit": 0.0,
+      "positive_signals": [],
+      "negative_signals": [
+        {
+          "code": "relative_high:deaths_per_min",
+          "text": "Смертность в минуту: отклонение от медианы сравниваемых союзников; это сигнал, а не доказательство ошибки.",
+          "metric": "deaths_per_min",
+          "value": 0.0931,
+          "reference": 0.0466,
+          "comparison_slots": [
+            128,
+            130,
+            131,
+            132
+          ],
+          "magnitude": 1.0,
+          "source_ref": "normalized_match"
+        }
+      ],
+      "missing_metrics": [
+        "gpm",
+        "xpm",
+        "hero_damage_per_min",
+        "tower_damage_per_min",
+        "healing_per_min",
+        "obs_placed",
+        "sen_placed",
+        "observer_kills",
+        "sentry_kills"
+      ],
+      "reason_codes": [
+        "position_unknown",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:hero_damage_per_min",
+        "comparison_unavailable:tower_damage_per_min",
+        "comparison_unavailable:healing_per_min",
+        "comparison_unavailable:obs_placed",
+        "comparison_unavailable:sen_placed",
+        "comparison_unavailable:observer_kills",
+        "comparison_unavailable:sentry_kills",
+        "relative_high:deaths_per_min"
+      ],
+      "limitations": [
+        "Позиция 1–5 не подтверждена; уверенность низкая. Линия и имя героя не доказывают роль.",
+        "Сравнение внутри команды и ролевой группы; проверенной популяционной нормы нет. KDA не дублирует штрафы за смерти и участие."
+      ]
+    },
+    {
+      "player_slot": 130,
+      "team_player_number": 3,
+      "hero_id": 9,
+      "team": "dire",
+      "position": {
+        "position": null,
+        "evidence": "unknown",
+        "source_field": null
+      },
+      "role_group": "unknown",
+      "error_index": 9,
+      "confidence": "low",
+      "evidence_coverage": 1.0,
+      "axes": {
+        "survival": 0.0,
+        "participation": 0.1818181818181819
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.031039834454216243,
+        "kill_participation": 0.6,
+        "kda": 27.0,
+        "gpm": null,
+        "xpm": null,
+        "hero_damage_per_min": null,
+        "tower_damage_per_min": null,
+        "healing_per_min": null,
+        "obs_placed": null,
+        "sen_placed": null,
+        "observer_kills": null,
+        "sentry_kills": null
+      },
+      "positive_credit": 0.0,
+      "positive_signals": [
+        {
+          "code": "positive:deaths_per_min",
+          "text": "Смертность в минуту: положительный вклад относительно сравниваемых союзников.",
+          "metric": "deaths_per_min",
+          "value": 0.031,
+          "reference": 0.0776,
+          "comparison_slots": [
+            128,
+            129,
+            131,
+            132
+          ],
+          "magnitude": 0.6,
+          "source_ref": "normalized_match"
+        }
+      ],
+      "negative_signals": [],
+      "missing_metrics": [
+        "gpm",
+        "xpm",
+        "hero_damage_per_min",
+        "tower_damage_per_min",
+        "healing_per_min",
+        "obs_placed",
+        "sen_placed",
+        "observer_kills",
+        "sentry_kills"
+      ],
+      "reason_codes": [
+        "position_unknown",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:hero_damage_per_min",
+        "comparison_unavailable:tower_damage_per_min",
+        "comparison_unavailable:healing_per_min",
+        "comparison_unavailable:obs_placed",
+        "comparison_unavailable:sen_placed",
+        "comparison_unavailable:observer_kills",
+        "comparison_unavailable:sentry_kills",
+        "positive:deaths_per_min"
+      ],
+      "limitations": [
+        "Позиция 1–5 не подтверждена; уверенность низкая. Линия и имя героя не доказывают роль.",
+        "Сравнение внутри команды и ролевой группы; проверенной популяционной нормы нет. KDA не дублирует штрафы за смерти и участие."
+      ]
+    },
+    {
+      "player_slot": 131,
+      "team_player_number": 4,
+      "hero_id": 23,
+      "team": "dire",
+      "position": {
+        "position": null,
+        "evidence": "unknown",
+        "source_field": null
+      },
+      "role_group": "unknown",
+      "error_index": 0,
+      "confidence": "low",
+      "evidence_coverage": 1.0,
+      "axes": {
+        "survival": 0.0,
+        "participation": 0.0
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.031039834454216243,
+        "kill_participation": 0.8222222222222222,
+        "kda": 37.0,
+        "gpm": null,
+        "xpm": null,
+        "hero_damage_per_min": null,
+        "tower_damage_per_min": null,
+        "healing_per_min": null,
+        "obs_placed": null,
+        "sen_placed": null,
+        "observer_kills": null,
+        "sentry_kills": null
+      },
+      "positive_credit": 0.0,
+      "positive_signals": [
+        {
+          "code": "positive:deaths_per_min",
+          "text": "Смертность в минуту: положительный вклад относительно сравниваемых союзников.",
+          "metric": "deaths_per_min",
+          "value": 0.031,
+          "reference": 0.0776,
+          "comparison_slots": [
+            128,
+            129,
+            130,
+            132
+          ],
+          "magnitude": 0.6,
+          "source_ref": "normalized_match"
+        },
+        {
+          "code": "positive:kill_participation",
+          "text": "Участие в командных убийствах: положительный вклад относительно сравниваемых союзников.",
+          "metric": "kill_participation",
+          "value": 0.8222,
+          "reference": 0.6667,
+          "comparison_slots": [
+            128,
+            129,
+            130,
+            132
+          ],
+          "magnitude": 0.233333,
+          "source_ref": "normalized_match"
+        }
+      ],
+      "negative_signals": [],
+      "missing_metrics": [
+        "gpm",
+        "xpm",
+        "hero_damage_per_min",
+        "tower_damage_per_min",
+        "healing_per_min",
+        "obs_placed",
+        "sen_placed",
+        "observer_kills",
+        "sentry_kills"
+      ],
+      "reason_codes": [
+        "position_unknown",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:hero_damage_per_min",
+        "comparison_unavailable:tower_damage_per_min",
+        "comparison_unavailable:healing_per_min",
+        "comparison_unavailable:obs_placed",
+        "comparison_unavailable:sen_placed",
+        "comparison_unavailable:observer_kills",
+        "comparison_unavailable:sentry_kills",
+        "positive:deaths_per_min",
+        "positive:kill_participation"
+      ],
+      "limitations": [
+        "Позиция 1–5 не подтверждена; уверенность низкая. Линия и имя героя не доказывают роль.",
+        "Сравнение внутри команды и ролевой группы; проверенной популяционной нормы нет. KDA не дублирует штрафы за смерти и участие."
+      ]
+    },
+    {
+      "player_slot": 132,
+      "team_player_number": 5,
+      "hero_id": 85,
+      "team": "dire",
+      "position": {
+        "position": null,
+        "evidence": "unknown",
+        "source_field": null
+      },
+      "role_group": "unknown",
+      "error_index": 56,
+      "confidence": "low",
+      "evidence_coverage": 1.0,
+      "axes": {
+        "survival": 0.9999999999999997,
+        "participation": 0.12121212121212123
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.09311950336264872,
+        "kill_participation": 0.6444444444444445,
+        "kda": 9.666666666666666,
+        "gpm": null,
+        "xpm": null,
+        "hero_damage_per_min": null,
+        "tower_damage_per_min": null,
+        "healing_per_min": null,
+        "obs_placed": null,
+        "sen_placed": null,
+        "observer_kills": null,
+        "sentry_kills": null
+      },
+      "positive_credit": 0.0,
+      "positive_signals": [],
+      "negative_signals": [
+        {
+          "code": "relative_high:deaths_per_min",
+          "text": "Смертность в минуту: отклонение от медианы сравниваемых союзников; это сигнал, а не доказательство ошибки.",
+          "metric": "deaths_per_min",
+          "value": 0.0931,
+          "reference": 0.0466,
+          "comparison_slots": [
+            128,
+            129,
+            130,
+            131
+          ],
+          "magnitude": 1.0,
+          "source_ref": "normalized_match"
+        }
+      ],
+      "missing_metrics": [
+        "gpm",
+        "xpm",
+        "hero_damage_per_min",
+        "tower_damage_per_min",
+        "healing_per_min",
+        "obs_placed",
+        "sen_placed",
+        "observer_kills",
+        "sentry_kills"
+      ],
+      "reason_codes": [
+        "position_unknown",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:hero_damage_per_min",
+        "comparison_unavailable:tower_damage_per_min",
+        "comparison_unavailable:healing_per_min",
+        "comparison_unavailable:obs_placed",
+        "comparison_unavailable:sen_placed",
+        "comparison_unavailable:observer_kills",
+        "comparison_unavailable:sentry_kills",
+        "relative_high:deaths_per_min"
+      ],
+      "limitations": [
+        "Позиция 1–5 не подтверждена; уверенность низкая. Линия и имя героя не доказывают роль.",
+        "Сравнение внутри команды и ролевой группы; проверенной популяционной нормы нет. KDA не дублирует штрафы за смерти и участие."
+      ]
+    }
+  ],
+  "summary": {
+    "selected_player_slot": null,
+    "selected_team": null,
+    "selection_status": "no_confident_selection",
+    "evidence": [
+      "team_context_not_provided"
+    ]
+  },
+  "limitations": [
+    "Индекс 0–100 отражает относительные признаки проблемного исполнения, не вероятность виновности и не причинность.",
+    "Результат матча и оценки драфта не используются. Radiant и Dire анализируются независимо.",
+    "Веса, пороги и ролевые группы — гипотезы ruiner_v1; малые группы и различия героев ограничивают выводы."
+  ]
+}

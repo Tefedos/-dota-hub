@@ -1,0 +1,2176 @@
+{
+  "schema_version": 1,
+  "source": "opendota",
+  "source_fetched_at": "2026-10-22T00:00:00+00:00",
+  "status": "FOUND_PARTIAL",
+  "fixture_note": "Allowlisted projection of OpenDota match response; no player identifiers or chat.",
+  "match": {
+    "match_id": 9051271323,
+    "duration": 1933,
+    "start_time": 1792339707,
+    "patch": 60,
+    "game_mode": 22,
+    "lobby_type": 7,
+    "radiant_win": false,
+    "radiant_score": 10,
+    "dire_score": 45,
+    "radiant_gold_adv": [
+      0,
+      564,
+      641,
+      218,
+      -172,
+      151,
+      -505,
+      -711,
+      -695,
+      -1023,
+      -1554,
+      -1598,
+      -1841,
+      -1731,
+      -1825,
+      -2563,
+      -2090,
+      -4252,
+      -5905,
+      -7397,
+      -8968,
+      -11354,
+      -11250,
+      -12360,
+      -15868,
+      -18489,
+      -19786,
+      -20965,
+      -24316,
+      -26505,
+      -23464,
+      -23881,
+      -27958
+    ],
+    "radiant_xp_adv": [
+      0,
+      -20,
+      -154,
+      -501,
+      -849,
+      -559,
+      -1326,
+      -1413,
+      -868,
+      -1038,
+      -1605,
+      -1804,
+      -2483,
+      -2674,
+      -2911,
+      -3006,
+      -4080,
+      -6586,
+      -9293,
+      -9442,
+      -11892,
+      -15599,
+      -11670,
+      -14017,
+      -19726,
+      -21699,
+      -24591,
+      -27703,
+      -30731,
+      -30672,
+      -26826,
+      -29554,
+      -35959
+    ],
+    "objectives": [
+      {
+        "time": 9,
+        "type": "CHAT_MESSAGE_FIRSTBLOOD",
+        "key": "5",
+        "slot": 1,
+        "player_slot": 1,
+        "victim_player_slot": 128
+      },
+      {
+        "time": 520,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_death_prophet",
+        "key": "npc_dota_badguys_tower1_mid",
+        "slot": 2,
+        "player_slot": 2
+      },
+      {
+        "time": 957,
+        "type": "building_kill",
+        "unit": "npc_dota_goodguys_siege",
+        "key": "npc_dota_badguys_tower1_top"
+      },
+      {
+        "time": 965,
+        "type": "building_kill",
+        "unit": "npc_dota_badguys_siege",
+        "key": "npc_dota_goodguys_tower1_bot"
+      },
+      {
+        "time": 1048,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_death_prophet",
+        "key": "npc_dota_goodguys_tower1_top",
+        "slot": 2,
+        "player_slot": 2
+      },
+      {
+        "time": 1112,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_sniper",
+        "key": "npc_dota_goodguys_tower2_bot",
+        "slot": 6,
+        "player_slot": 129
+      },
+      {
+        "time": 1177,
+        "type": "building_kill",
+        "unit": "npc_dota_creep_badguys_melee",
+        "key": "npc_dota_goodguys_tower1_mid"
+      },
+      {
+        "time": 1246,
+        "type": "building_kill",
+        "unit": "npc_dota_badguys_siege",
+        "key": "npc_dota_goodguys_tower2_mid"
+      },
+      {
+        "time": 1299,
+        "type": "CHAT_MESSAGE_MINIBOSS_KILL",
+        "team": 3,
+        "slot": 9,
+        "player_slot": 132
+      },
+      {
+        "time": 1425,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_sniper",
+        "key": "npc_dota_goodguys_tower3_bot",
+        "slot": 6,
+        "player_slot": 129
+      },
+      {
+        "time": 1452,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_kunkka",
+        "key": "npc_dota_goodguys_range_rax_bot",
+        "slot": 8,
+        "player_slot": 131
+      },
+      {
+        "time": 1462,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_sniper",
+        "key": "npc_dota_goodguys_melee_rax_bot",
+        "slot": 6,
+        "player_slot": 129
+      },
+      {
+        "time": 1585,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_sniper",
+        "key": "npc_dota_goodguys_tower2_top",
+        "slot": 6,
+        "player_slot": 129
+      },
+      {
+        "time": 1647,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_sniper",
+        "key": "npc_dota_goodguys_tower3_top",
+        "slot": 6,
+        "player_slot": 129
+      },
+      {
+        "time": 1666,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_sniper",
+        "key": "npc_dota_goodguys_range_rax_top",
+        "slot": 6,
+        "player_slot": 129
+      },
+      {
+        "time": 1679,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_earthshaker",
+        "key": "npc_dota_goodguys_melee_rax_top",
+        "slot": 5,
+        "player_slot": 128
+      },
+      {
+        "time": 1708,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_sniper",
+        "key": "npc_dota_goodguys_tower3_mid",
+        "slot": 6,
+        "player_slot": 129
+      },
+      {
+        "time": 1717,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_mirana",
+        "key": "npc_dota_goodguys_range_rax_mid",
+        "slot": 7,
+        "player_slot": 130
+      },
+      {
+        "time": 1727,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_sniper",
+        "key": "npc_dota_goodguys_melee_rax_mid",
+        "slot": 6,
+        "player_slot": 129
+      },
+      {
+        "time": 1902,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_sniper",
+        "key": "npc_dota_goodguys_tower4",
+        "slot": 6,
+        "player_slot": 129
+      },
+      {
+        "time": 1918,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_sniper",
+        "key": "npc_dota_goodguys_tower4",
+        "slot": 6,
+        "player_slot": 129
+      },
+      {
+        "time": 1933,
+        "type": "building_kill",
+        "unit": "npc_dota_hero_sniper",
+        "key": "npc_dota_goodguys_fort",
+        "slot": 6,
+        "player_slot": 129
+      }
+    ],
+    "teamfights": [
+      {
+        "start": 825,
+        "end": 879,
+        "last_death": 864,
+        "deaths": 4,
+        "players": [
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          }
+        ]
+      },
+      {
+        "start": 974,
+        "end": 1010,
+        "last_death": 995,
+        "deaths": 3,
+        "players": [
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          }
+        ]
+      },
+      {
+        "start": 1014,
+        "end": 1053,
+        "last_death": 1038,
+        "deaths": 3,
+        "players": [
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          }
+        ]
+      },
+      {
+        "start": 1209,
+        "end": 1245,
+        "last_death": 1230,
+        "deaths": 3,
+        "players": [
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          }
+        ]
+      },
+      {
+        "start": 1368,
+        "end": 1408,
+        "last_death": 1393,
+        "deaths": 4,
+        "players": [
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          }
+        ]
+      },
+      {
+        "start": 1578,
+        "end": 1626,
+        "last_death": 1611,
+        "deaths": 7,
+        "players": [
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          }
+        ]
+      },
+      {
+        "start": 1724,
+        "end": 1766,
+        "last_death": 1751,
+        "deaths": 6,
+        "players": [
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 1,
+            "buybacks": 0
+          },
+          {
+            "deaths": 0,
+            "buybacks": 0
+          }
+        ]
+      }
+    ],
+    "players": [
+      {
+        "player_slot": 0,
+        "hero_id": 123,
+        "kills": 1,
+        "deaths": 12,
+        "assists": 7,
+        "kills_log": [
+          {
+            "time": 1742,
+            "key": "npc_dota_hero_sniper"
+          }
+        ],
+        "buyback_log": [
+          {
+            "time": 1925,
+            "type": "buyback_log",
+            "slot": 0,
+            "player_slot": 0
+          }
+        ],
+        "purchase_log": [
+          {
+            "time": -89,
+            "key": "tango"
+          },
+          {
+            "time": -89,
+            "key": "branches"
+          },
+          {
+            "time": -89,
+            "key": "branches"
+          },
+          {
+            "time": -89,
+            "key": "blood_grenade"
+          },
+          {
+            "time": -89,
+            "key": "magic_stick"
+          },
+          {
+            "time": -89,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 63,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 63,
+            "key": "ward_observer"
+          },
+          {
+            "time": 108,
+            "key": "sobi_mask"
+          },
+          {
+            "time": 168,
+            "key": "clarity"
+          },
+          {
+            "time": 175,
+            "key": "magic_wand"
+          },
+          {
+            "time": 271,
+            "key": "ring_of_basilius"
+          },
+          {
+            "time": 326,
+            "key": "wizard_hat"
+          },
+          {
+            "time": 570,
+            "key": "boots"
+          },
+          {
+            "time": 658,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 660,
+            "key": "ward_observer"
+          },
+          {
+            "time": 692,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 804,
+            "key": "arcane_boots"
+          },
+          {
+            "time": 945,
+            "key": "shawl"
+          },
+          {
+            "time": 991,
+            "key": "ward_observer"
+          },
+          {
+            "time": 992,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1029,
+            "key": "tpscroll"
+          },
+          {
+            "time": 1274,
+            "key": "smoke_of_deceit"
+          },
+          {
+            "time": 1275,
+            "key": "smoke_of_deceit"
+          },
+          {
+            "time": 1467,
+            "key": "shadow_amulet"
+          },
+          {
+            "time": 1742,
+            "key": "glimmer_cape"
+          },
+          {
+            "time": 1809,
+            "key": "staff_of_wizardry"
+          },
+          {
+            "time": 1896,
+            "key": "dust"
+          }
+        ]
+      },
+      {
+        "player_slot": 1,
+        "hero_id": 111,
+        "kills": 1,
+        "deaths": 8,
+        "assists": 11,
+        "kills_log": [
+          {
+            "time": 9,
+            "key": "npc_dota_hero_earthshaker"
+          }
+        ],
+        "buyback_log": [],
+        "purchase_log": [
+          {
+            "time": -89,
+            "key": "blood_grenade"
+          },
+          {
+            "time": -70,
+            "key": "sobi_mask"
+          },
+          {
+            "time": -70,
+            "key": "ring_of_basilius"
+          },
+          {
+            "time": 33,
+            "key": "boots"
+          },
+          {
+            "time": 131,
+            "key": "clarity"
+          },
+          {
+            "time": 131,
+            "key": "clarity"
+          },
+          {
+            "time": 218,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 239,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 241,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 315,
+            "key": "wizard_hat"
+          },
+          {
+            "time": 391,
+            "key": "ward_observer"
+          },
+          {
+            "time": 442,
+            "key": "ward_observer"
+          },
+          {
+            "time": 524,
+            "key": "arcane_boots"
+          },
+          {
+            "time": 564,
+            "key": "clarity"
+          },
+          {
+            "time": 564,
+            "key": "clarity"
+          },
+          {
+            "time": 566,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 566,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 756,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 756,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 866,
+            "key": "void_stone"
+          },
+          {
+            "time": 872,
+            "key": "ward_observer"
+          },
+          {
+            "time": 873,
+            "key": "ward_observer"
+          },
+          {
+            "time": 873,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 873,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 904,
+            "key": "tpscroll"
+          },
+          {
+            "time": 930,
+            "key": "tpscroll"
+          },
+          {
+            "time": 993,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1054,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1107,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1126,
+            "key": "ward_observer"
+          },
+          {
+            "time": 1173,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1237,
+            "key": "energy_booster"
+          },
+          {
+            "time": 1264,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1264,
+            "key": "ward_observer"
+          },
+          {
+            "time": 1317,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1388,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1398,
+            "key": "ward_observer"
+          },
+          {
+            "time": 1464,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1529,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1530,
+            "key": "ward_observer"
+          },
+          {
+            "time": 1598,
+            "key": "aether_lens"
+          },
+          {
+            "time": 1598,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1661,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1666,
+            "key": "ward_observer"
+          },
+          {
+            "time": 1742,
+            "key": "staff_of_wizardry"
+          },
+          {
+            "time": 1749,
+            "key": "fluffy_hat"
+          },
+          {
+            "time": 1749,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1811,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1812,
+            "key": "ward_observer"
+          },
+          {
+            "time": 1875,
+            "key": "ward_sentry"
+          }
+        ]
+      },
+      {
+        "player_slot": 2,
+        "hero_id": 43,
+        "kills": 5,
+        "deaths": 12,
+        "assists": 1,
+        "kills_log": [
+          {
+            "time": 423,
+            "key": "npc_dota_hero_sniper"
+          },
+          {
+            "time": 854,
+            "key": "npc_dota_hero_sniper"
+          },
+          {
+            "time": 989,
+            "key": "npc_dota_hero_undying"
+          },
+          {
+            "time": 1593,
+            "key": "npc_dota_hero_undying"
+          },
+          {
+            "time": 1608,
+            "key": "npc_dota_hero_earthshaker"
+          }
+        ],
+        "buyback_log": [],
+        "purchase_log": [
+          {
+            "time": -89,
+            "key": "branches"
+          },
+          {
+            "time": -89,
+            "key": "branches"
+          },
+          {
+            "time": -89,
+            "key": "faerie_fire"
+          },
+          {
+            "time": 51,
+            "key": "bottle"
+          },
+          {
+            "time": 79,
+            "key": "magic_stick"
+          },
+          {
+            "time": 188,
+            "key": "boots"
+          },
+          {
+            "time": 224,
+            "key": "magic_wand"
+          },
+          {
+            "time": 335,
+            "key": "blitz_knuckles"
+          },
+          {
+            "time": 423,
+            "key": "robe"
+          },
+          {
+            "time": 447,
+            "key": "oblivion_staff"
+          },
+          {
+            "time": 447,
+            "key": "sobi_mask"
+          },
+          {
+            "time": 463,
+            "key": "ward_observer"
+          },
+          {
+            "time": 464,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 465,
+            "key": "enchanted_mango"
+          },
+          {
+            "time": 501,
+            "key": "chainmail"
+          },
+          {
+            "time": 524,
+            "key": "orb_of_venom"
+          },
+          {
+            "time": 598,
+            "key": "witch_blade"
+          },
+          {
+            "time": 864,
+            "key": "travel_boots"
+          },
+          {
+            "time": 1052,
+            "key": "point_booster"
+          },
+          {
+            "time": 1133,
+            "key": "staff_of_wizardry"
+          },
+          {
+            "time": 1475,
+            "key": "ogre_axe"
+          },
+          {
+            "time": 1593,
+            "key": "blade_of_alacrity"
+          },
+          {
+            "time": 1603,
+            "key": "ultimate_scepter"
+          },
+          {
+            "time": 1863,
+            "key": "mithril_hammer"
+          }
+        ]
+      },
+      {
+        "player_slot": 3,
+        "hero_id": 67,
+        "kills": 1,
+        "deaths": 8,
+        "assists": 5,
+        "kills_log": [
+          {
+            "time": 1739,
+            "key": "npc_dota_hero_mirana"
+          }
+        ],
+        "buyback_log": [],
+        "purchase_log": [
+          {
+            "time": -89,
+            "key": "quelling_blade"
+          },
+          {
+            "time": -89,
+            "key": "tango"
+          },
+          {
+            "time": -89,
+            "key": "magic_stick"
+          },
+          {
+            "time": -89,
+            "key": "circlet"
+          },
+          {
+            "time": 28,
+            "key": "branches"
+          },
+          {
+            "time": 28,
+            "key": "branches"
+          },
+          {
+            "time": 93,
+            "key": "sobi_mask"
+          },
+          {
+            "time": 121,
+            "key": "ring_of_protection"
+          },
+          {
+            "time": 164,
+            "key": "flask"
+          },
+          {
+            "time": 203,
+            "key": "magic_wand"
+          },
+          {
+            "time": 339,
+            "key": "urn_of_shadows"
+          },
+          {
+            "time": 358,
+            "key": "boots_of_elves"
+          },
+          {
+            "time": 410,
+            "key": "gloves"
+          },
+          {
+            "time": 518,
+            "key": "power_treads"
+          },
+          {
+            "time": 518,
+            "key": "boots"
+          },
+          {
+            "time": 1137,
+            "key": "relic"
+          },
+          {
+            "time": 1150,
+            "key": "tpscroll"
+          },
+          {
+            "time": 1253,
+            "key": "tpscroll"
+          },
+          {
+            "time": 1339,
+            "key": "radiance"
+          },
+          {
+            "time": 1339,
+            "key": "talisman_of_evasion"
+          },
+          {
+            "time": 1568,
+            "key": "blade_of_alacrity"
+          },
+          {
+            "time": 1608,
+            "key": "boots_of_elves"
+          },
+          {
+            "time": 1740,
+            "key": "yasha"
+          },
+          {
+            "time": 1822,
+            "key": "diadem"
+          }
+        ]
+      },
+      {
+        "player_slot": 4,
+        "hero_id": 81,
+        "kills": 2,
+        "deaths": 5,
+        "assists": 5,
+        "kills_log": [
+          {
+            "time": 926,
+            "key": "npc_dota_hero_undying"
+          },
+          {
+            "time": 1751,
+            "key": "npc_dota_hero_kunkka"
+          }
+        ],
+        "buyback_log": [],
+        "purchase_log": [
+          {
+            "time": -81,
+            "key": "tango"
+          },
+          {
+            "time": -80,
+            "key": "branches"
+          },
+          {
+            "time": -80,
+            "key": "gauntlets"
+          },
+          {
+            "time": -79,
+            "key": "magic_stick"
+          },
+          {
+            "time": -79,
+            "key": "quelling_blade"
+          },
+          {
+            "time": 123,
+            "key": "branches"
+          },
+          {
+            "time": 134,
+            "key": "circlet"
+          },
+          {
+            "time": 211,
+            "key": "boots"
+          },
+          {
+            "time": 238,
+            "key": "tango"
+          },
+          {
+            "time": 264,
+            "key": "magic_wand"
+          },
+          {
+            "time": 264,
+            "key": "bracer"
+          },
+          {
+            "time": 444,
+            "key": "helm_of_iron_will"
+          },
+          {
+            "time": 521,
+            "key": "gloves"
+          },
+          {
+            "time": 617,
+            "key": "blades_of_attack"
+          },
+          {
+            "time": 774,
+            "key": "tpscroll"
+          },
+          {
+            "time": 796,
+            "key": "armlet"
+          },
+          {
+            "time": 942,
+            "key": "ogre_axe"
+          },
+          {
+            "time": 1017,
+            "key": "broadsword"
+          },
+          {
+            "time": 1303,
+            "key": "echo_sabre"
+          },
+          {
+            "time": 1303,
+            "key": "void_stone"
+          },
+          {
+            "time": 1349,
+            "key": "gloves"
+          },
+          {
+            "time": 1504,
+            "key": "belt_of_strength"
+          },
+          {
+            "time": 1518,
+            "key": "power_treads"
+          },
+          {
+            "time": 1550,
+            "key": "smoke_of_deceit"
+          },
+          {
+            "time": 1758,
+            "key": "aghanims_shard"
+          }
+        ]
+      },
+      {
+        "player_slot": 128,
+        "hero_id": 7,
+        "kills": 6,
+        "deaths": 2,
+        "assists": 25,
+        "kills_log": [
+          {
+            "time": 708,
+            "key": "npc_dota_hero_death_prophet"
+          },
+          {
+            "time": 1038,
+            "key": "npc_dota_hero_chaos_knight"
+          },
+          {
+            "time": 1092,
+            "key": "npc_dota_hero_chaos_knight"
+          },
+          {
+            "time": 1453,
+            "key": "npc_dota_hero_spectre"
+          },
+          {
+            "time": 1746,
+            "key": "npc_dota_hero_death_prophet"
+          },
+          {
+            "time": 1746,
+            "key": "npc_dota_hero_oracle"
+          }
+        ],
+        "buyback_log": [],
+        "purchase_log": [
+          {
+            "time": -89,
+            "key": "tango"
+          },
+          {
+            "time": -89,
+            "key": "gauntlets"
+          },
+          {
+            "time": -89,
+            "key": "circlet"
+          },
+          {
+            "time": -89,
+            "key": "enchanted_mango"
+          },
+          {
+            "time": 24,
+            "key": "bracer"
+          },
+          {
+            "time": 134,
+            "key": "boots"
+          },
+          {
+            "time": 200,
+            "key": "sobi_mask"
+          },
+          {
+            "time": 284,
+            "key": "ring_of_basilius"
+          },
+          {
+            "time": 294,
+            "key": "clarity"
+          },
+          {
+            "time": 340,
+            "key": "wizard_hat"
+          },
+          {
+            "time": 439,
+            "key": "arcane_boots"
+          },
+          {
+            "time": 780,
+            "key": "blink"
+          },
+          {
+            "time": 1109,
+            "key": "staff_of_wizardry"
+          },
+          {
+            "time": 1109,
+            "key": "ogre_axe"
+          },
+          {
+            "time": 1110,
+            "key": "blade_of_alacrity"
+          },
+          {
+            "time": 1259,
+            "key": "ultimate_scepter"
+          },
+          {
+            "time": 1259,
+            "key": "point_booster"
+          },
+          {
+            "time": 1427,
+            "key": "aghanims_shard"
+          },
+          {
+            "time": 1724,
+            "key": "ring_of_tarrasque"
+          },
+          {
+            "time": 1812,
+            "key": "refresher"
+          },
+          {
+            "time": 1812,
+            "key": "tiara_of_selemene"
+          },
+          {
+            "time": 1829,
+            "key": "tpscroll"
+          }
+        ]
+      },
+      {
+        "player_slot": 129,
+        "hero_id": 35,
+        "kills": 19,
+        "deaths": 3,
+        "assists": 16,
+        "kills_log": [
+          {
+            "time": 840,
+            "key": "npc_dota_hero_hoodwink"
+          },
+          {
+            "time": 1224,
+            "key": "npc_dota_hero_oracle"
+          },
+          {
+            "time": 1230,
+            "key": "npc_dota_hero_death_prophet"
+          },
+          {
+            "time": 1364,
+            "key": "npc_dota_hero_hoodwink"
+          },
+          {
+            "time": 1383,
+            "key": "npc_dota_hero_spectre"
+          },
+          {
+            "time": 1385,
+            "key": "npc_dota_hero_oracle"
+          },
+          {
+            "time": 1386,
+            "key": "npc_dota_hero_chaos_knight"
+          },
+          {
+            "time": 1393,
+            "key": "npc_dota_hero_death_prophet"
+          },
+          {
+            "time": 1593,
+            "key": "npc_dota_hero_chaos_knight"
+          },
+          {
+            "time": 1595,
+            "key": "npc_dota_hero_hoodwink"
+          },
+          {
+            "time": 1596,
+            "key": "npc_dota_hero_oracle"
+          },
+          {
+            "time": 1611,
+            "key": "npc_dota_hero_death_prophet"
+          },
+          {
+            "time": 1653,
+            "key": "npc_dota_hero_hoodwink"
+          },
+          {
+            "time": 1656,
+            "key": "npc_dota_hero_oracle"
+          },
+          {
+            "time": 1680,
+            "key": "npc_dota_hero_death_prophet"
+          },
+          {
+            "time": 1881,
+            "key": "npc_dota_hero_spectre"
+          },
+          {
+            "time": 1915,
+            "key": "npc_dota_hero_oracle"
+          },
+          {
+            "time": 1921,
+            "key": "npc_dota_hero_hoodwink"
+          },
+          {
+            "time": 1928,
+            "key": "npc_dota_hero_hoodwink"
+          }
+        ],
+        "buyback_log": [],
+        "purchase_log": [
+          {
+            "time": -89,
+            "key": "slippers"
+          },
+          {
+            "time": -89,
+            "key": "circlet"
+          },
+          {
+            "time": -89,
+            "key": "tango"
+          },
+          {
+            "time": -89,
+            "key": "magic_stick"
+          },
+          {
+            "time": 93,
+            "key": "wraith_band"
+          },
+          {
+            "time": 140,
+            "key": "boots_of_elves"
+          },
+          {
+            "time": 195,
+            "key": "boots"
+          },
+          {
+            "time": 282,
+            "key": "gloves"
+          },
+          {
+            "time": 327,
+            "key": "power_treads"
+          },
+          {
+            "time": 409,
+            "key": "javelin"
+          },
+          {
+            "time": 500,
+            "key": "gloves"
+          },
+          {
+            "time": 509,
+            "key": "enchanted_mango"
+          },
+          {
+            "time": 692,
+            "key": "mithril_hammer"
+          },
+          {
+            "time": 725,
+            "key": "maelstrom"
+          },
+          {
+            "time": 872,
+            "key": "blade_of_alacrity"
+          },
+          {
+            "time": 880,
+            "key": "belt_of_strength"
+          },
+          {
+            "time": 944,
+            "key": "tpscroll"
+          },
+          {
+            "time": 958,
+            "key": "dragon_lance"
+          },
+          {
+            "time": 1128,
+            "key": "hyperstone"
+          },
+          {
+            "time": 1142,
+            "key": "mjollnir"
+          },
+          {
+            "time": 1180,
+            "key": "tpscroll"
+          },
+          {
+            "time": 1182,
+            "key": "tpscroll"
+          },
+          {
+            "time": 1345,
+            "key": "claymore"
+          },
+          {
+            "time": 1346,
+            "key": "blades_of_attack"
+          },
+          {
+            "time": 1346,
+            "key": "lesser_crit"
+          },
+          {
+            "time": 1410,
+            "key": "demon_edge"
+          },
+          {
+            "time": 1490,
+            "key": "greater_crit"
+          },
+          {
+            "time": 1502,
+            "key": "lifesteal"
+          },
+          {
+            "time": 1694,
+            "key": "claymore"
+          },
+          {
+            "time": 1714,
+            "key": "eagle"
+          },
+          {
+            "time": 1738,
+            "key": "butterfly"
+          },
+          {
+            "time": 1738,
+            "key": "talisman_of_evasion"
+          }
+        ]
+      },
+      {
+        "player_slot": 130,
+        "hero_id": 9,
+        "kills": 6,
+        "deaths": 1,
+        "assists": 21,
+        "kills_log": [
+          {
+            "time": 841,
+            "key": "npc_dota_hero_spectre"
+          },
+          {
+            "time": 864,
+            "key": "npc_dota_hero_death_prophet"
+          },
+          {
+            "time": 1029,
+            "key": "npc_dota_hero_spectre"
+          },
+          {
+            "time": 1145,
+            "key": "npc_dota_hero_death_prophet"
+          },
+          {
+            "time": 1414,
+            "key": "npc_dota_hero_hoodwink"
+          },
+          {
+            "time": 1740,
+            "key": "npc_dota_hero_spectre"
+          }
+        ],
+        "buyback_log": [],
+        "purchase_log": [
+          {
+            "time": -89,
+            "key": "tango"
+          },
+          {
+            "time": -89,
+            "key": "branches"
+          },
+          {
+            "time": -89,
+            "key": "magic_stick"
+          },
+          {
+            "time": -89,
+            "key": "smoke_of_deceit"
+          },
+          {
+            "time": -89,
+            "key": "circlet"
+          },
+          {
+            "time": 179,
+            "key": "branches"
+          },
+          {
+            "time": 184,
+            "key": "sobi_mask"
+          },
+          {
+            "time": 216,
+            "key": "magic_wand"
+          },
+          {
+            "time": 262,
+            "key": "ring_of_protection"
+          },
+          {
+            "time": 409,
+            "key": "tango"
+          },
+          {
+            "time": 430,
+            "key": "urn_of_shadows"
+          },
+          {
+            "time": 604,
+            "key": "boots"
+          },
+          {
+            "time": 604,
+            "key": "sobi_mask"
+          },
+          {
+            "time": 604,
+            "key": "ring_of_basilius"
+          },
+          {
+            "time": 657,
+            "key": "wizard_hat"
+          },
+          {
+            "time": 827,
+            "key": "arcane_boots"
+          },
+          {
+            "time": 924,
+            "key": "diadem"
+          },
+          {
+            "time": 1067,
+            "key": "ward_observer"
+          },
+          {
+            "time": 1067,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1068,
+            "key": "smoke_of_deceit"
+          },
+          {
+            "time": 1068,
+            "key": "smoke_of_deceit"
+          },
+          {
+            "time": 1108,
+            "key": "spirit_vessel"
+          },
+          {
+            "time": 1473,
+            "key": "tpscroll"
+          },
+          {
+            "time": 1473,
+            "key": "tpscroll"
+          },
+          {
+            "time": 1473,
+            "key": "tpscroll"
+          },
+          {
+            "time": 1793,
+            "key": "ghost"
+          },
+          {
+            "time": 1803,
+            "key": "ethereal_blade"
+          },
+          {
+            "time": 1803,
+            "key": "ultimate_orb"
+          }
+        ]
+      },
+      {
+        "player_slot": 131,
+        "hero_id": 23,
+        "kills": 11,
+        "deaths": 1,
+        "assists": 26,
+        "kills_log": [
+          {
+            "time": 429,
+            "key": "npc_dota_hero_hoodwink"
+          },
+          {
+            "time": 598,
+            "key": "npc_dota_hero_death_prophet"
+          },
+          {
+            "time": 734,
+            "key": "npc_dota_hero_hoodwink"
+          },
+          {
+            "time": 989,
+            "key": "npc_dota_hero_oracle"
+          },
+          {
+            "time": 995,
+            "key": "npc_dota_hero_death_prophet"
+          },
+          {
+            "time": 1037,
+            "key": "npc_dota_hero_oracle"
+          },
+          {
+            "time": 1229,
+            "key": "npc_dota_hero_hoodwink"
+          },
+          {
+            "time": 1333,
+            "key": "npc_dota_hero_death_prophet"
+          },
+          {
+            "time": 1610,
+            "key": "npc_dota_hero_spectre"
+          },
+          {
+            "time": 1675,
+            "key": "npc_dota_hero_spectre"
+          },
+          {
+            "time": 1915,
+            "key": "npc_dota_hero_death_prophet"
+          }
+        ],
+        "buyback_log": [],
+        "purchase_log": [
+          {
+            "time": -89,
+            "key": "tango"
+          },
+          {
+            "time": -89,
+            "key": "quelling_blade"
+          },
+          {
+            "time": -89,
+            "key": "gauntlets"
+          },
+          {
+            "time": -89,
+            "key": "circlet"
+          },
+          {
+            "time": -89,
+            "key": "branches"
+          },
+          {
+            "time": -89,
+            "key": "branches"
+          },
+          {
+            "time": 126,
+            "key": "bottle"
+          },
+          {
+            "time": 220,
+            "key": "blades_of_attack"
+          },
+          {
+            "time": 249,
+            "key": "bracer"
+          },
+          {
+            "time": 307,
+            "key": "circlet"
+          },
+          {
+            "time": 307,
+            "key": "gauntlets"
+          },
+          {
+            "time": 307,
+            "key": "bracer"
+          },
+          {
+            "time": 365,
+            "key": "boots"
+          },
+          {
+            "time": 429,
+            "key": "chainmail"
+          },
+          {
+            "time": 484,
+            "key": "phase_boots"
+          },
+          {
+            "time": 598,
+            "key": "broadsword"
+          },
+          {
+            "time": 734,
+            "key": "splintmail"
+          },
+          {
+            "time": 746,
+            "key": "tpscroll"
+          },
+          {
+            "time": 815,
+            "key": "blade_mail"
+          },
+          {
+            "time": 1020,
+            "key": "point_booster"
+          },
+          {
+            "time": 1066,
+            "key": "ogre_axe"
+          },
+          {
+            "time": 1131,
+            "key": "staff_of_wizardry"
+          },
+          {
+            "time": 1240,
+            "key": "blade_of_alacrity"
+          },
+          {
+            "time": 1288,
+            "key": "ultimate_scepter"
+          },
+          {
+            "time": 1397,
+            "key": "aghanims_shard"
+          }
+        ]
+      },
+      {
+        "player_slot": 132,
+        "hero_id": 85,
+        "kills": 3,
+        "deaths": 3,
+        "assists": 26,
+        "kills_log": [
+          {
+            "time": 188,
+            "key": "npc_dota_hero_hoodwink"
+          },
+          {
+            "time": 351,
+            "key": "npc_dota_hero_hoodwink"
+          },
+          {
+            "time": 1518,
+            "key": "npc_dota_hero_chaos_knight"
+          }
+        ],
+        "buyback_log": [],
+        "purchase_log": [
+          {
+            "time": -89,
+            "key": "ward_sentry"
+          },
+          {
+            "time": -89,
+            "key": "tango"
+          },
+          {
+            "time": -89,
+            "key": "sobi_mask"
+          },
+          {
+            "time": -89,
+            "key": "blood_grenade"
+          },
+          {
+            "time": -89,
+            "key": "magic_stick"
+          },
+          {
+            "time": 142,
+            "key": "ring_of_basilius"
+          },
+          {
+            "time": 236,
+            "key": "boots"
+          },
+          {
+            "time": 329,
+            "key": "blood_grenade"
+          },
+          {
+            "time": 329,
+            "key": "ward_observer"
+          },
+          {
+            "time": 329,
+            "key": "ward_observer"
+          },
+          {
+            "time": 330,
+            "key": "ward_observer"
+          },
+          {
+            "time": 331,
+            "key": "ward_observer"
+          },
+          {
+            "time": 334,
+            "key": "clarity"
+          },
+          {
+            "time": 359,
+            "key": "wizard_hat"
+          },
+          {
+            "time": 459,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 496,
+            "key": "arcane_boots"
+          },
+          {
+            "time": 529,
+            "key": "sobi_mask"
+          },
+          {
+            "time": 562,
+            "key": "ring_of_protection"
+          },
+          {
+            "time": 610,
+            "key": "circlet"
+          },
+          {
+            "time": 685,
+            "key": "tpscroll"
+          },
+          {
+            "time": 784,
+            "key": "urn_of_shadows"
+          },
+          {
+            "time": 861,
+            "key": "tpscroll"
+          },
+          {
+            "time": 873,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 873,
+            "key": "ward_observer"
+          },
+          {
+            "time": 873,
+            "key": "ward_observer"
+          },
+          {
+            "time": 874,
+            "key": "ward_observer"
+          },
+          {
+            "time": 874,
+            "key": "ward_observer"
+          },
+          {
+            "time": 874,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 874,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1048,
+            "key": "diadem"
+          },
+          {
+            "time": 1166,
+            "key": "ward_observer"
+          },
+          {
+            "time": 1166,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1166,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1276,
+            "key": "spirit_vessel"
+          },
+          {
+            "time": 1288,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1288,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1288,
+            "key": "ward_observer"
+          },
+          {
+            "time": 1485,
+            "key": "ring_of_regen"
+          },
+          {
+            "time": 1485,
+            "key": "headdress"
+          },
+          {
+            "time": 1485,
+            "key": "chainmail"
+          },
+          {
+            "time": 1485,
+            "key": "mekansm"
+          },
+          {
+            "time": 1561,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1561,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1561,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1561,
+            "key": "ward_sentry"
+          },
+          {
+            "time": 1561,
+            "key": "ward_observer"
+          },
+          {
+            "time": 1562,
+            "key": "ward_observer"
+          },
+          {
+            "time": 1563,
+            "key": "smoke_of_deceit"
+          },
+          {
+            "time": 1564,
+            "key": "smoke_of_deceit"
+          },
+          {
+            "time": 1727,
+            "key": "guardian_greaves"
+          }
+        ]
+      }
+    ]
+  }
+}

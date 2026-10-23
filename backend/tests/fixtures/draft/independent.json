@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "source": "opendota",
+  "source_fetched_at": "2026-10-22T11:00:00+00:00",
+  "match": {
+    "match_id": 1000000001,
+    "duration": 2400,
+    "patch": 60,
+    "game_mode": 22,
+    "radiant_win": true,
+    "radiant_score": 0,
+    "dire_score": 0,
+    "players": [
+      {
+        "hero_id": 2,
+        "player_slot": 0,
+        "kills": 0,
+        "deaths": 0,
+        "assists": 0
+      },
+      {
+        "hero_id": 3,
+        "player_slot": 1,
+        "kills": 0,
+        "deaths": 0,
+        "assists": 0
+      },
+      {
+        "hero_id": 6,
+        "player_slot": 2,
+        "kills": 0,
+        "deaths": 0,
+        "assists": 0
+      },
+      {
+        "hero_id": 8,
+        "player_slot": 3,
+        "kills": 0,
+        "deaths": 0,
+        "assists": 0
+      },
+      {
+        "hero_id": 9,
+        "player_slot": 4,
+        "kills": 0,
+        "deaths": 0,
+        "assists": 0
+      },
+      {
+        "hero_id": 18,
+        "player_slot": 128,
+        "kills": 0,
+        "deaths": 0,
+        "assists": 0
+      },
+      {
+        "hero_id": 22,
+        "player_slot": 129,
+        "kills": 0,
+        "deaths": 0,
+        "assists": 0
+      },
+      {
+        "hero_id": 26,
+        "player_slot": 130,
+        "kills": 0,
+        "deaths": 0,
+        "assists": 0
+      },
+      {
+        "hero_id": 52,
+        "player_slot": 131,
+        "kills": 0,
+        "deaths": 0,
+        "assists": 0
+      },
+      {
+        "hero_id": 54,
+        "player_slot": 132,
+        "kills": 0,
+        "deaths": 0,
+        "assists": 0
+      }
+    ],
+    "picks_bans": [
+      {
+        "hero_id": 2,
+        "team": 0,
+        "order": 0,
+        "is_pick": true
+      },
+      {
+        "hero_id": 3,
+        "team": 0,
+        "order": 1,
+        "is_pick": true
+      },
+      {
+        "hero_id": 18,
+        "team": 1,
+        "order": 2,
+        "is_pick": true
+      },
+      {
+        "hero_id": 22,
+        "team": 1,
+        "order": 3,
+        "is_pick": true
+      },
+      {
+        "hero_id": 6,
+        "team": 0,
+        "order": 4,
+        "is_pick": true
+      },
+      {
+        "hero_id": 8,
+        "team": 0,
+        "order": 5,
+        "is_pick": true
+      },
+      {
+        "hero_id": 26,
+        "team": 1,
+        "order": 6,
+        "is_pick": true
+      },
+      {
+        "hero_id": 52,
+        "team": 1,
+        "order": 7,
+        "is_pick": true
+      },
+      {
+        "hero_id": 9,
+        "team": 0,
+        "order": 8,
+        "is_pick": true
+      },
+      {
+        "hero_id": 54,
+        "team": 1,
+        "order": 9,
+        "is_pick": true
+      }
+    ]
+  }
+}

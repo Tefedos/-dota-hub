@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "match_id": "9051271323",
+  "status": "ready",
+  "available_sections": [
+    "overview",
+    "players",
+    "draft",
+    "ruiner",
+    "timeline"
+  ],
+  "data": {
+    "match_id": "9051271323",
+    "duration": 1933,
+    "radiant": {
+      "team": "radiant",
+      "team_id": null,
+      "name": null,
+      "score": 10,
+      "players": [
+        {
+          "player_slot": 0,
+          "hero_id": 123,
+          "hero_name": "Hoodwink",
+          "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/hoodwink.png",
+          "display_name": "презрение"
+        },
+        {
+          "player_slot": 1,
+          "hero_id": 111,
+          "hero_name": "Oracle",
+          "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/oracle.png",
+          "display_name": "Чай без саxара"
+        },
+        {
+          "player_slot": 2,
+          "hero_id": 43,
+          "hero_name": "Death Prophet",
+          "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/death_prophet.png",
+          "display_name": "Сахарное печенье"
+        },
+        {
+          "player_slot": 3,
+          "hero_id": 67,
+          "hero_name": "Spectre",
+          "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/spectre.png",
+          "display_name": "Конченый Пушнила"
+        },
+        {
+          "player_slot": 4,
+          "hero_id": 81,
+          "hero_name": "Chaos Knight",
+          "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/chaos_knight.png",
+          "display_name": "Haes"
+        }
+      ]
+    },
+    "dire": {
+      "team": "dire",
+      "team_id": null,
+      "name": null,
+      "score": 45,
+      "players": [
+        {
+          "player_slot": 128,
+          "hero_id": 7,
+          "hero_name": "Earthshaker",
+          "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/earthshaker.png",
+          "display_name": "muchatron"
+        },
+        {
+          "player_slot": 129,
+          "hero_id": 35,
+          "hero_name": "Sniper",
+          "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sniper.png",
+          "display_name": "c0bel"
+        },
+        {
+          "player_slot": 130,
+          "hero_id": 9,
+          "hero_name": "Mirana",
+          "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/mirana.png",
+          "display_name": "pazo"
+        },
+        {
+          "player_slot": 131,
+          "hero_id": 23,
+          "hero_name": "Kunkka",
+          "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/kunkka.png",
+          "display_name": "turu"
+        },
+        {
+          "player_slot": 132,
+          "hero_id": 85,
+          "hero_name": "Undying",
+          "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/undying.png",
+          "display_name": "Gezor"
+        }
+      ]
+    },
+    "winner": "dire",
+    "start_time": 1792339707,
+    "game_mode": 22,
+    "patch": 60,
+    "game_mode_name": "All Draft",
+    "patch_name": "7.41",
+    "team_stats": {
+      "radiant": {
+        "kills": 10,
+        "towers_destroyed": null,
+        "roshan_kills": null
+      },
+      "dire": {
+        "kills": 45,
+        "towers_destroyed": null,
+        "roshan_kills": null
+      }
+    },
+    "data_quality": {
+      "summary": "complete",
+      "stats": "complete",
+      "draft_order": "complete",
+      "timeline": "complete",
+      "roles": "complete"
+    },
+    "source_status": "FOUND_FULL",
+    "limitations": [
+      "Количество разрушенных башен и убийств Roshan не подтверждено полными данными матча."
+    ]
+  },
+  "error": null,
+  "limitations": [
+    "Количество разрушенных башен и убийств Roshan не подтверждено полными данными матча."
+  ],
+  "model_version": "overview_v2",
+  "config_version": "27a384135ae668bfeac45e834d169be45e3fb8280e8b7b7a3688d25653ff674f",
+  "analyzed_at": "2026-10-23T12:28:31.247188Z",
+  "completeness": "full",
+  "retry_after_seconds": null
+}

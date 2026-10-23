@@ -1,0 +1,1151 @@
+{
+  "source_ref": "https://api.opendota.com/api/matches/9051271323",
+  "recorded_at": "2026-10-22T17:12:42.358156+00:00",
+  "note": "Real public response; identity-free projection. Matchup rows restricted to this roster.",
+  "snapshot": {
+    "schema_version": 1,
+    "source": "opendota",
+    "source_fetched_at": "2026-10-22T17:12:28.074428+00:00",
+    "status": "FOUND_PARTIAL",
+    "presence": {
+      "match_id": {
+        "present": true,
+        "non_null": true,
+        "item_count": null
+      },
+      "duration": {
+        "present": true,
+        "non_null": true,
+        "item_count": null
+      },
+      "start_time": {
+        "present": true,
+        "non_null": true,
+        "item_count": null
+      },
+      "patch": {
+        "present": true,
+        "non_null": true,
+        "item_count": null
+      },
+      "game_mode": {
+        "present": true,
+        "non_null": true,
+        "item_count": null
+      },
+      "lobby_type": {
+        "present": true,
+        "non_null": true,
+        "item_count": null
+      },
+      "radiant_win": {
+        "present": true,
+        "non_null": true,
+        "item_count": null
+      },
+      "radiant_score": {
+        "present": true,
+        "non_null": true,
+        "item_count": null
+      },
+      "dire_score": {
+        "present": true,
+        "non_null": true,
+        "item_count": null
+      },
+      "players": {
+        "present": true,
+        "non_null": true,
+        "item_count": 10
+      },
+      "picks_bans": {
+        "present": true,
+        "non_null": true,
+        "item_count": 16
+      },
+      "objectives": {
+        "present": false,
+        "non_null": false,
+        "item_count": null
+      },
+      "teamfights": {
+        "present": false,
+        "non_null": false,
+        "item_count": null
+      },
+      "radiant_gold_adv": {
+        "present": false,
+        "non_null": false,
+        "item_count": null
+      },
+      "radiant_xp_adv": {
+        "present": false,
+        "non_null": false,
+        "item_count": null
+      }
+    },
+    "match": {
+      "match_id": 9051271323,
+      "duration": 1933,
+      "start_time": 1792339707,
+      "patch": 60,
+      "game_mode": 22,
+      "lobby_type": 7,
+      "radiant_win": false,
+      "radiant_score": 10,
+      "dire_score": 45,
+      "picks_bans": [
+        {
+          "is_pick": true,
+          "hero_id": 23,
+          "team": 1,
+          "order": 0
+        },
+        {
+          "is_pick": true,
+          "hero_id": 14,
+          "team": 1,
+          "order": 1
+        },
+        {
+          "is_pick": true,
+          "hero_id": 9,
+          "team": 1,
+          "order": 2
+        },
+        {
+          "is_pick": true,
+          "hero_id": 123,
+          "team": 0,
+          "order": 3
+        },
+        {
+          "is_pick": true,
+          "hero_id": 111,
+          "team": 0,
+          "order": 4
+        },
+        {
+          "is_pick": true,
+          "hero_id": 85,
+          "team": 1,
+          "order": 5
+        },
+        {
+          "is_pick": true,
+          "hero_id": 35,
+          "team": 1,
+          "order": 6
+        },
+        {
+          "is_pick": true,
+          "hero_id": 43,
+          "team": 0,
+          "order": 7
+        },
+        {
+          "is_pick": true,
+          "hero_id": 81,
+          "team": 0,
+          "order": 8
+        },
+        {
+          "is_pick": true,
+          "hero_id": 67,
+          "team": 0,
+          "order": 9
+        },
+        {
+          "is_pick": true,
+          "hero_id": 7,
+          "team": 1,
+          "order": 10
+        },
+        {
+          "is_pick": false,
+          "hero_id": 61,
+          "team": 0,
+          "order": 11
+        },
+        {
+          "is_pick": false,
+          "hero_id": 13,
+          "team": 0,
+          "order": 12
+        },
+        {
+          "is_pick": false,
+          "hero_id": 34,
+          "team": 0,
+          "order": 13
+        },
+        {
+          "is_pick": false,
+          "hero_id": 75,
+          "team": 0,
+          "order": 14
+        },
+        {
+          "is_pick": false,
+          "hero_id": 113,
+          "team": 0,
+          "order": 15
+        }
+      ],
+      "players": [
+        {
+          "player_slot": 0,
+          "hero_id": 123,
+          "kills": 1,
+          "deaths": 12,
+          "assists": 7
+        },
+        {
+          "player_slot": 1,
+          "hero_id": 111,
+          "kills": 1,
+          "deaths": 8,
+          "assists": 11
+        },
+        {
+          "player_slot": 2,
+          "hero_id": 43,
+          "kills": 5,
+          "deaths": 12,
+          "assists": 1
+        },
+        {
+          "player_slot": 3,
+          "hero_id": 67,
+          "kills": 1,
+          "deaths": 8,
+          "assists": 5
+        },
+        {
+          "player_slot": 4,
+          "hero_id": 81,
+          "kills": 2,
+          "deaths": 5,
+          "assists": 5
+        },
+        {
+          "player_slot": 128,
+          "hero_id": 7,
+          "kills": 6,
+          "deaths": 2,
+          "assists": 25
+        },
+        {
+          "player_slot": 129,
+          "hero_id": 35,
+          "kills": 19,
+          "deaths": 3,
+          "assists": 16
+        },
+        {
+          "player_slot": 130,
+          "hero_id": 9,
+          "kills": 6,
+          "deaths": 1,
+          "assists": 21
+        },
+        {
+          "player_slot": 131,
+          "hero_id": 23,
+          "kills": 11,
+          "deaths": 1,
+          "assists": 26
+        },
+        {
+          "player_slot": 132,
+          "hero_id": 85,
+          "kills": 3,
+          "deaths": 3,
+          "assists": 26
+        }
+      ]
+    }
+  },
+  "matchups": [
+    {
+      "hero_id": 7,
+      "status": "ok",
+      "rows": [
+        {
+          "hero_id": 7,
+          "opponent_id": 9,
+          "games_played": 24,
+          "wins": 9,
+          "source_ref": "https://api.opendota.com/api/heroes/7/matchups",
+          "fetched_at": "2026-10-22T17:12:28.656647Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 7,
+          "opponent_id": 23,
+          "games_played": 15,
+          "wins": 4,
+          "source_ref": "https://api.opendota.com/api/heroes/7/matchups",
+          "fetched_at": "2026-10-22T17:12:28.656647Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 7,
+          "opponent_id": 35,
+          "games_played": 32,
+          "wins": 16,
+          "source_ref": "https://api.opendota.com/api/heroes/7/matchups",
+          "fetched_at": "2026-10-22T17:12:28.656647Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 7,
+          "opponent_id": 43,
+          "games_played": 14,
+          "wins": 7,
+          "source_ref": "https://api.opendota.com/api/heroes/7/matchups",
+          "fetched_at": "2026-10-22T17:12:28.656647Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 7,
+          "opponent_id": 67,
+          "games_played": 10,
+          "wins": 7,
+          "source_ref": "https://api.opendota.com/api/heroes/7/matchups",
+          "fetched_at": "2026-10-22T17:12:28.656647Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 7,
+          "opponent_id": 81,
+          "games_played": 24,
+          "wins": 9,
+          "source_ref": "https://api.opendota.com/api/heroes/7/matchups",
+          "fetched_at": "2026-10-22T17:12:28.656647Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 7,
+          "opponent_id": 85,
+          "games_played": 26,
+          "wins": 14,
+          "source_ref": "https://api.opendota.com/api/heroes/7/matchups",
+          "fetched_at": "2026-10-22T17:12:28.656647Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 7,
+          "opponent_id": 111,
+          "games_played": 12,
+          "wins": 7,
+          "source_ref": "https://api.opendota.com/api/heroes/7/matchups",
+          "fetched_at": "2026-10-22T17:12:28.656647Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 7,
+          "opponent_id": 123,
+          "games_played": 69,
+          "wins": 34,
+          "source_ref": "https://api.opendota.com/api/heroes/7/matchups",
+          "fetched_at": "2026-10-22T17:12:28.656647Z",
+          "patch_scope": "aggregate_unknown"
+        }
+      ],
+      "retry_after_seconds": null
+    },
+    {
+      "hero_id": 9,
+      "status": "ok",
+      "rows": [
+        {
+          "hero_id": 9,
+          "opponent_id": 7,
+          "games_played": 24,
+          "wins": 15,
+          "source_ref": "https://api.opendota.com/api/heroes/9/matchups",
+          "fetched_at": "2026-10-22T17:12:29.986035Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 9,
+          "opponent_id": 23,
+          "games_played": 13,
+          "wins": 5,
+          "source_ref": "https://api.opendota.com/api/heroes/9/matchups",
+          "fetched_at": "2026-10-22T17:12:29.986035Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 9,
+          "opponent_id": 35,
+          "games_played": 33,
+          "wins": 13,
+          "source_ref": "https://api.opendota.com/api/heroes/9/matchups",
+          "fetched_at": "2026-10-22T17:12:29.986035Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 9,
+          "opponent_id": 43,
+          "games_played": 13,
+          "wins": 9,
+          "source_ref": "https://api.opendota.com/api/heroes/9/matchups",
+          "fetched_at": "2026-10-22T17:12:29.986035Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 9,
+          "opponent_id": 67,
+          "games_played": 13,
+          "wins": 10,
+          "source_ref": "https://api.opendota.com/api/heroes/9/matchups",
+          "fetched_at": "2026-10-22T17:12:29.986035Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 9,
+          "opponent_id": 81,
+          "games_played": 29,
+          "wins": 15,
+          "source_ref": "https://api.opendota.com/api/heroes/9/matchups",
+          "fetched_at": "2026-10-22T17:12:29.986035Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 9,
+          "opponent_id": 85,
+          "games_played": 85,
+          "wins": 51,
+          "source_ref": "https://api.opendota.com/api/heroes/9/matchups",
+          "fetched_at": "2026-10-22T17:12:29.986035Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 9,
+          "opponent_id": 111,
+          "games_played": 12,
+          "wins": 9,
+          "source_ref": "https://api.opendota.com/api/heroes/9/matchups",
+          "fetched_at": "2026-10-22T17:12:29.986035Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 9,
+          "opponent_id": 123,
+          "games_played": 188,
+          "wins": 105,
+          "source_ref": "https://api.opendota.com/api/heroes/9/matchups",
+          "fetched_at": "2026-10-22T17:12:29.986035Z",
+          "patch_scope": "aggregate_unknown"
+        }
+      ],
+      "retry_after_seconds": null
+    },
+    {
+      "hero_id": 23,
+      "status": "ok",
+      "rows": [
+        {
+          "hero_id": 23,
+          "opponent_id": 7,
+          "games_played": 15,
+          "wins": 11,
+          "source_ref": "https://api.opendota.com/api/heroes/23/matchups",
+          "fetched_at": "2026-10-22T17:12:31.424394Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 23,
+          "opponent_id": 9,
+          "games_played": 13,
+          "wins": 8,
+          "source_ref": "https://api.opendota.com/api/heroes/23/matchups",
+          "fetched_at": "2026-10-22T17:12:31.424394Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 23,
+          "opponent_id": 35,
+          "games_played": 44,
+          "wins": 25,
+          "source_ref": "https://api.opendota.com/api/heroes/23/matchups",
+          "fetched_at": "2026-10-22T17:12:31.424394Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 23,
+          "opponent_id": 43,
+          "games_played": 16,
+          "wins": 10,
+          "source_ref": "https://api.opendota.com/api/heroes/23/matchups",
+          "fetched_at": "2026-10-22T17:12:31.424394Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 23,
+          "opponent_id": 67,
+          "games_played": 4,
+          "wins": 4,
+          "source_ref": "https://api.opendota.com/api/heroes/23/matchups",
+          "fetched_at": "2026-10-22T17:12:31.424394Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 23,
+          "opponent_id": 81,
+          "games_played": 13,
+          "wins": 7,
+          "source_ref": "https://api.opendota.com/api/heroes/23/matchups",
+          "fetched_at": "2026-10-22T17:12:31.424394Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 23,
+          "opponent_id": 85,
+          "games_played": 12,
+          "wins": 8,
+          "source_ref": "https://api.opendota.com/api/heroes/23/matchups",
+          "fetched_at": "2026-10-22T17:12:31.424394Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 23,
+          "opponent_id": 111,
+          "games_played": 7,
+          "wins": 5,
+          "source_ref": "https://api.opendota.com/api/heroes/23/matchups",
+          "fetched_at": "2026-10-22T17:12:31.424394Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 23,
+          "opponent_id": 123,
+          "games_played": 70,
+          "wins": 39,
+          "source_ref": "https://api.opendota.com/api/heroes/23/matchups",
+          "fetched_at": "2026-10-22T17:12:31.424394Z",
+          "patch_scope": "aggregate_unknown"
+        }
+      ],
+      "retry_after_seconds": null
+    },
+    {
+      "hero_id": 35,
+      "status": "ok",
+      "rows": [
+        {
+          "hero_id": 35,
+          "opponent_id": 7,
+          "games_played": 32,
+          "wins": 16,
+          "source_ref": "https://api.opendota.com/api/heroes/35/matchups",
+          "fetched_at": "2026-10-22T17:12:32.958587Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 35,
+          "opponent_id": 9,
+          "games_played": 33,
+          "wins": 20,
+          "source_ref": "https://api.opendota.com/api/heroes/35/matchups",
+          "fetched_at": "2026-10-22T17:12:32.958587Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 35,
+          "opponent_id": 23,
+          "games_played": 44,
+          "wins": 19,
+          "source_ref": "https://api.opendota.com/api/heroes/35/matchups",
+          "fetched_at": "2026-10-22T17:12:32.958587Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 35,
+          "opponent_id": 43,
+          "games_played": 45,
+          "wins": 36,
+          "source_ref": "https://api.opendota.com/api/heroes/35/matchups",
+          "fetched_at": "2026-10-22T17:12:32.958587Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 35,
+          "opponent_id": 67,
+          "games_played": 18,
+          "wins": 8,
+          "source_ref": "https://api.opendota.com/api/heroes/35/matchups",
+          "fetched_at": "2026-10-22T17:12:32.958587Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 35,
+          "opponent_id": 81,
+          "games_played": 65,
+          "wins": 39,
+          "source_ref": "https://api.opendota.com/api/heroes/35/matchups",
+          "fetched_at": "2026-10-22T17:12:32.958587Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 35,
+          "opponent_id": 85,
+          "games_played": 42,
+          "wins": 20,
+          "source_ref": "https://api.opendota.com/api/heroes/35/matchups",
+          "fetched_at": "2026-10-22T17:12:32.958587Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 35,
+          "opponent_id": 111,
+          "games_played": 22,
+          "wins": 11,
+          "source_ref": "https://api.opendota.com/api/heroes/35/matchups",
+          "fetched_at": "2026-10-22T17:12:32.958587Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 35,
+          "opponent_id": 123,
+          "games_played": 76,
+          "wins": 37,
+          "source_ref": "https://api.opendota.com/api/heroes/35/matchups",
+          "fetched_at": "2026-10-22T17:12:32.958587Z",
+          "patch_scope": "aggregate_unknown"
+        }
+      ],
+      "retry_after_seconds": null
+    },
+    {
+      "hero_id": 43,
+      "status": "ok",
+      "rows": [
+        {
+          "hero_id": 43,
+          "opponent_id": 7,
+          "games_played": 14,
+          "wins": 7,
+          "source_ref": "https://api.opendota.com/api/heroes/43/matchups",
+          "fetched_at": "2026-10-22T17:12:34.392090Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 43,
+          "opponent_id": 9,
+          "games_played": 13,
+          "wins": 4,
+          "source_ref": "https://api.opendota.com/api/heroes/43/matchups",
+          "fetched_at": "2026-10-22T17:12:34.392090Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 43,
+          "opponent_id": 23,
+          "games_played": 16,
+          "wins": 6,
+          "source_ref": "https://api.opendota.com/api/heroes/43/matchups",
+          "fetched_at": "2026-10-22T17:12:34.392090Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 43,
+          "opponent_id": 35,
+          "games_played": 45,
+          "wins": 9,
+          "source_ref": "https://api.opendota.com/api/heroes/43/matchups",
+          "fetched_at": "2026-10-22T17:12:34.392090Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 43,
+          "opponent_id": 67,
+          "games_played": 9,
+          "wins": 4,
+          "source_ref": "https://api.opendota.com/api/heroes/43/matchups",
+          "fetched_at": "2026-10-22T17:12:34.392090Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 43,
+          "opponent_id": 81,
+          "games_played": 27,
+          "wins": 14,
+          "source_ref": "https://api.opendota.com/api/heroes/43/matchups",
+          "fetched_at": "2026-10-22T17:12:34.392090Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 43,
+          "opponent_id": 85,
+          "games_played": 17,
+          "wins": 6,
+          "source_ref": "https://api.opendota.com/api/heroes/43/matchups",
+          "fetched_at": "2026-10-22T17:12:34.392090Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 43,
+          "opponent_id": 111,
+          "games_played": 8,
+          "wins": 3,
+          "source_ref": "https://api.opendota.com/api/heroes/43/matchups",
+          "fetched_at": "2026-10-22T17:12:34.392090Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 43,
+          "opponent_id": 123,
+          "games_played": 58,
+          "wins": 22,
+          "source_ref": "https://api.opendota.com/api/heroes/43/matchups",
+          "fetched_at": "2026-10-22T17:12:34.392090Z",
+          "patch_scope": "aggregate_unknown"
+        }
+      ],
+      "retry_after_seconds": null
+    },
+    {
+      "hero_id": 67,
+      "status": "ok",
+      "rows": [
+        {
+          "hero_id": 67,
+          "opponent_id": 7,
+          "games_played": 10,
+          "wins": 3,
+          "source_ref": "https://api.opendota.com/api/heroes/67/matchups",
+          "fetched_at": "2026-10-22T17:12:35.729729Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 67,
+          "opponent_id": 9,
+          "games_played": 13,
+          "wins": 3,
+          "source_ref": "https://api.opendota.com/api/heroes/67/matchups",
+          "fetched_at": "2026-10-22T17:12:35.729729Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 67,
+          "opponent_id": 23,
+          "games_played": 4,
+          "wins": 0,
+          "source_ref": "https://api.opendota.com/api/heroes/67/matchups",
+          "fetched_at": "2026-10-22T17:12:35.729729Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 67,
+          "opponent_id": 35,
+          "games_played": 18,
+          "wins": 10,
+          "source_ref": "https://api.opendota.com/api/heroes/67/matchups",
+          "fetched_at": "2026-10-22T17:12:35.729729Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 67,
+          "opponent_id": 43,
+          "games_played": 9,
+          "wins": 5,
+          "source_ref": "https://api.opendota.com/api/heroes/67/matchups",
+          "fetched_at": "2026-10-22T17:12:35.729729Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 67,
+          "opponent_id": 81,
+          "games_played": 2,
+          "wins": 1,
+          "source_ref": "https://api.opendota.com/api/heroes/67/matchups",
+          "fetched_at": "2026-10-22T17:12:35.729729Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 67,
+          "opponent_id": 85,
+          "games_played": 17,
+          "wins": 6,
+          "source_ref": "https://api.opendota.com/api/heroes/67/matchups",
+          "fetched_at": "2026-10-22T17:12:35.729729Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 67,
+          "opponent_id": 111,
+          "games_played": 3,
+          "wins": 1,
+          "source_ref": "https://api.opendota.com/api/heroes/67/matchups",
+          "fetched_at": "2026-10-22T17:12:35.729729Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 67,
+          "opponent_id": 123,
+          "games_played": 21,
+          "wins": 10,
+          "source_ref": "https://api.opendota.com/api/heroes/67/matchups",
+          "fetched_at": "2026-10-22T17:12:35.729729Z",
+          "patch_scope": "aggregate_unknown"
+        }
+      ],
+      "retry_after_seconds": null
+    },
+    {
+      "hero_id": 81,
+      "status": "ok",
+      "rows": [
+        {
+          "hero_id": 81,
+          "opponent_id": 7,
+          "games_played": 24,
+          "wins": 15,
+          "source_ref": "https://api.opendota.com/api/heroes/81/matchups",
+          "fetched_at": "2026-10-22T17:12:37.157760Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 81,
+          "opponent_id": 9,
+          "games_played": 29,
+          "wins": 14,
+          "source_ref": "https://api.opendota.com/api/heroes/81/matchups",
+          "fetched_at": "2026-10-22T17:12:37.157760Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 81,
+          "opponent_id": 23,
+          "games_played": 13,
+          "wins": 6,
+          "source_ref": "https://api.opendota.com/api/heroes/81/matchups",
+          "fetched_at": "2026-10-22T17:12:37.157760Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 81,
+          "opponent_id": 35,
+          "games_played": 65,
+          "wins": 26,
+          "source_ref": "https://api.opendota.com/api/heroes/81/matchups",
+          "fetched_at": "2026-10-22T17:12:37.157760Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 81,
+          "opponent_id": 43,
+          "games_played": 27,
+          "wins": 13,
+          "source_ref": "https://api.opendota.com/api/heroes/81/matchups",
+          "fetched_at": "2026-10-22T17:12:37.157760Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 81,
+          "opponent_id": 67,
+          "games_played": 2,
+          "wins": 1,
+          "source_ref": "https://api.opendota.com/api/heroes/81/matchups",
+          "fetched_at": "2026-10-22T17:12:37.157760Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 81,
+          "opponent_id": 85,
+          "games_played": 18,
+          "wins": 7,
+          "source_ref": "https://api.opendota.com/api/heroes/81/matchups",
+          "fetched_at": "2026-10-22T17:12:37.157760Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 81,
+          "opponent_id": 111,
+          "games_played": 7,
+          "wins": 3,
+          "source_ref": "https://api.opendota.com/api/heroes/81/matchups",
+          "fetched_at": "2026-10-22T17:12:37.157760Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 81,
+          "opponent_id": 123,
+          "games_played": 42,
+          "wins": 18,
+          "source_ref": "https://api.opendota.com/api/heroes/81/matchups",
+          "fetched_at": "2026-10-22T17:12:37.157760Z",
+          "patch_scope": "aggregate_unknown"
+        }
+      ],
+      "retry_after_seconds": null
+    },
+    {
+      "hero_id": 85,
+      "status": "ok",
+      "rows": [
+        {
+          "hero_id": 85,
+          "opponent_id": 7,
+          "games_played": 26,
+          "wins": 12,
+          "source_ref": "https://api.opendota.com/api/heroes/85/matchups",
+          "fetched_at": "2026-10-22T17:12:38.546606Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 85,
+          "opponent_id": 9,
+          "games_played": 85,
+          "wins": 34,
+          "source_ref": "https://api.opendota.com/api/heroes/85/matchups",
+          "fetched_at": "2026-10-22T17:12:38.546606Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 85,
+          "opponent_id": 23,
+          "games_played": 12,
+          "wins": 4,
+          "source_ref": "https://api.opendota.com/api/heroes/85/matchups",
+          "fetched_at": "2026-10-22T17:12:38.546606Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 85,
+          "opponent_id": 35,
+          "games_played": 42,
+          "wins": 22,
+          "source_ref": "https://api.opendota.com/api/heroes/85/matchups",
+          "fetched_at": "2026-10-22T17:12:38.546606Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 85,
+          "opponent_id": 43,
+          "games_played": 17,
+          "wins": 11,
+          "source_ref": "https://api.opendota.com/api/heroes/85/matchups",
+          "fetched_at": "2026-10-22T17:12:38.546606Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 85,
+          "opponent_id": 67,
+          "games_played": 17,
+          "wins": 11,
+          "source_ref": "https://api.opendota.com/api/heroes/85/matchups",
+          "fetched_at": "2026-10-22T17:12:38.546606Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 85,
+          "opponent_id": 81,
+          "games_played": 18,
+          "wins": 11,
+          "source_ref": "https://api.opendota.com/api/heroes/85/matchups",
+          "fetched_at": "2026-10-22T17:12:38.546606Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 85,
+          "opponent_id": 111,
+          "games_played": 10,
+          "wins": 3,
+          "source_ref": "https://api.opendota.com/api/heroes/85/matchups",
+          "fetched_at": "2026-10-22T17:12:38.546606Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 85,
+          "opponent_id": 123,
+          "games_played": 164,
+          "wins": 86,
+          "source_ref": "https://api.opendota.com/api/heroes/85/matchups",
+          "fetched_at": "2026-10-22T17:12:38.546606Z",
+          "patch_scope": "aggregate_unknown"
+        }
+      ],
+      "retry_after_seconds": null
+    },
+    {
+      "hero_id": 111,
+      "status": "ok",
+      "rows": [
+        {
+          "hero_id": 111,
+          "opponent_id": 7,
+          "games_played": 12,
+          "wins": 5,
+          "source_ref": "https://api.opendota.com/api/heroes/111/matchups",
+          "fetched_at": "2026-10-22T17:12:39.923657Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 111,
+          "opponent_id": 9,
+          "games_played": 12,
+          "wins": 3,
+          "source_ref": "https://api.opendota.com/api/heroes/111/matchups",
+          "fetched_at": "2026-10-22T17:12:39.923657Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 111,
+          "opponent_id": 23,
+          "games_played": 7,
+          "wins": 2,
+          "source_ref": "https://api.opendota.com/api/heroes/111/matchups",
+          "fetched_at": "2026-10-22T17:12:39.923657Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 111,
+          "opponent_id": 35,
+          "games_played": 22,
+          "wins": 11,
+          "source_ref": "https://api.opendota.com/api/heroes/111/matchups",
+          "fetched_at": "2026-10-22T17:12:39.923657Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 111,
+          "opponent_id": 43,
+          "games_played": 8,
+          "wins": 5,
+          "source_ref": "https://api.opendota.com/api/heroes/111/matchups",
+          "fetched_at": "2026-10-22T17:12:39.923657Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 111,
+          "opponent_id": 67,
+          "games_played": 3,
+          "wins": 2,
+          "source_ref": "https://api.opendota.com/api/heroes/111/matchups",
+          "fetched_at": "2026-10-22T17:12:39.923657Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 111,
+          "opponent_id": 81,
+          "games_played": 7,
+          "wins": 4,
+          "source_ref": "https://api.opendota.com/api/heroes/111/matchups",
+          "fetched_at": "2026-10-22T17:12:39.923657Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 111,
+          "opponent_id": 85,
+          "games_played": 10,
+          "wins": 7,
+          "source_ref": "https://api.opendota.com/api/heroes/111/matchups",
+          "fetched_at": "2026-10-22T17:12:39.923657Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 111,
+          "opponent_id": 123,
+          "games_played": 40,
+          "wins": 14,
+          "source_ref": "https://api.opendota.com/api/heroes/111/matchups",
+          "fetched_at": "2026-10-22T17:12:39.923657Z",
+          "patch_scope": "aggregate_unknown"
+        }
+      ],
+      "retry_after_seconds": null
+    },
+    {
+      "hero_id": 123,
+      "status": "ok",
+      "rows": [
+        {
+          "hero_id": 123,
+          "opponent_id": 7,
+          "games_played": 69,
+          "wins": 35,
+          "source_ref": "https://api.opendota.com/api/heroes/123/matchups",
+          "fetched_at": "2026-10-22T17:12:41.355726Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 123,
+          "opponent_id": 9,
+          "games_played": 188,
+          "wins": 83,
+          "source_ref": "https://api.opendota.com/api/heroes/123/matchups",
+          "fetched_at": "2026-10-22T17:12:41.355726Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 123,
+          "opponent_id": 23,
+          "games_played": 70,
+          "wins": 31,
+          "source_ref": "https://api.opendota.com/api/heroes/123/matchups",
+          "fetched_at": "2026-10-22T17:12:41.355726Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 123,
+          "opponent_id": 35,
+          "games_played": 76,
+          "wins": 39,
+          "source_ref": "https://api.opendota.com/api/heroes/123/matchups",
+          "fetched_at": "2026-10-22T17:12:41.355726Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 123,
+          "opponent_id": 43,
+          "games_played": 58,
+          "wins": 36,
+          "source_ref": "https://api.opendota.com/api/heroes/123/matchups",
+          "fetched_at": "2026-10-22T17:12:41.355726Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 123,
+          "opponent_id": 67,
+          "games_played": 21,
+          "wins": 11,
+          "source_ref": "https://api.opendota.com/api/heroes/123/matchups",
+          "fetched_at": "2026-10-22T17:12:41.355726Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 123,
+          "opponent_id": 81,
+          "games_played": 42,
+          "wins": 24,
+          "source_ref": "https://api.opendota.com/api/heroes/123/matchups",
+          "fetched_at": "2026-10-22T17:12:41.355726Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 123,
+          "opponent_id": 85,
+          "games_played": 164,
+          "wins": 78,
+          "source_ref": "https://api.opendota.com/api/heroes/123/matchups",
+          "fetched_at": "2026-10-22T17:12:41.355726Z",
+          "patch_scope": "aggregate_unknown"
+        },
+        {
+          "hero_id": 123,
+          "opponent_id": 111,
+          "games_played": 40,
+          "wins": 26,
+          "source_ref": "https://api.opendota.com/api/heroes/123/matchups",
+          "fetched_at": "2026-10-22T17:12:41.355726Z",
+          "patch_scope": "aggregate_unknown"
+        }
+      ],
+      "retry_after_seconds": null
+    }
+  ]
+}

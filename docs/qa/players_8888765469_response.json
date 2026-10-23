@@ -1,0 +1,1294 @@
+{
+  "schema_version": 1,
+  "match_id": "8888765469",
+  "status": "ready",
+  "available_sections": [
+    "overview",
+    "players",
+    "draft",
+    "ruiner",
+    "timeline"
+  ],
+  "data": {
+    "match_id": "8888765469",
+    "players": [
+      {
+        "player_slot": 0,
+        "team": "radiant",
+        "team_player_number": 1,
+        "display_name": "Конченый Пушнила",
+        "hero_id": 93,
+        "hero_name": "Slark",
+        "kills": 9,
+        "deaths": 15,
+        "assists": 13,
+        "last_hits": 249,
+        "denies": 19,
+        "gpm": 496,
+        "xpm": 648,
+        "hero_damage": 18767,
+        "tower_damage": 867,
+        "hero_healing": 0,
+        "net_worth": 16914,
+        "obs_placed": null,
+        "sen_placed": null,
+        "items": [
+          108,
+          36,
+          249,
+          63,
+          174,
+          1575
+        ],
+        "neutral_item": 574,
+        "position": {
+          "position": "unknown",
+          "evidence": "unknown",
+          "confidence": null,
+          "source_field": null
+        },
+        "name_source": "opendota",
+        "is_anonymous": false,
+        "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/slark.png",
+        "item_details": [
+          {
+            "item_id": 108,
+            "name": "Aghanim's Scepter",
+            "image_key": "ultimate_scepter",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png",
+            "status": "known"
+          },
+          {
+            "item_id": 36,
+            "name": "Magic Wand",
+            "image_key": "magic_wand",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/magic_wand.png",
+            "status": "known"
+          },
+          {
+            "item_id": 249,
+            "name": "Silver Edge",
+            "image_key": "silver_edge",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/silver_edge.png",
+            "status": "known"
+          },
+          {
+            "item_id": 63,
+            "name": "Power Treads",
+            "image_key": "power_treads",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png",
+            "status": "known"
+          },
+          {
+            "item_id": 174,
+            "name": "Diffusal Blade",
+            "image_key": "diffusal_blade",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/diffusal_blade.png",
+            "status": "known"
+          },
+          {
+            "item_id": 1575,
+            "name": "Orb of Frost",
+            "image_key": "orb_of_frost",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/orb_of_frost.png",
+            "status": "known"
+          }
+        ],
+        "neutral_item_details": {
+          "item_id": 574,
+          "name": "Cloak of Flames",
+          "image_key": "cloak_of_flames",
+          "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/cloak_of_flames.png",
+          "status": "known"
+        },
+        "backpack_items": [
+          4204,
+          0,
+          0
+        ],
+        "backpack_item_details": [
+          {
+            "item_id": 4204,
+            "name": "Healing Lotus",
+            "image_key": "famango",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/famango.png",
+            "status": "known"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          }
+        ],
+        "level": 22,
+        "stun_duration_seconds": null,
+        "buyback_count": null,
+        "performance_position": {
+          "position": null,
+          "evidence": "unknown",
+          "source_field": null
+        }
+      },
+      {
+        "player_slot": 1,
+        "team": "radiant",
+        "team_player_number": 2,
+        "display_name": "Чай без саxара",
+        "hero_id": 9,
+        "hero_name": "Mirana",
+        "kills": 3,
+        "deaths": 5,
+        "assists": 17,
+        "last_hits": 43,
+        "denies": 4,
+        "gpm": 288,
+        "xpm": 361,
+        "hero_damage": 10616,
+        "tower_damage": 205,
+        "hero_healing": 125,
+        "net_worth": 11863,
+        "obs_placed": null,
+        "sen_placed": null,
+        "items": [
+          180,
+          90,
+          206,
+          40,
+          60,
+          21
+        ],
+        "neutral_item": 1638,
+        "position": {
+          "position": "unknown",
+          "evidence": "unknown",
+          "confidence": null,
+          "source_field": null
+        },
+        "name_source": "opendota",
+        "is_anonymous": false,
+        "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/mirana.png",
+        "item_details": [
+          {
+            "item_id": 180,
+            "name": "Arcane Boots",
+            "image_key": "arcane_boots",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/arcane_boots.png",
+            "status": "known"
+          },
+          {
+            "item_id": 90,
+            "name": "Pipe of Insight",
+            "image_key": "pipe",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/pipe.png",
+            "status": "known"
+          },
+          {
+            "item_id": 206,
+            "name": "Rod of Atos",
+            "image_key": "rod_of_atos",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/rod_of_atos.png",
+            "status": "known"
+          },
+          {
+            "item_id": 40,
+            "name": "Dust of Appearance",
+            "image_key": "dust",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/dust.png",
+            "status": "known"
+          },
+          {
+            "item_id": 60,
+            "name": "Point Booster",
+            "image_key": "point_booster",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/point_booster.png",
+            "status": "known"
+          },
+          {
+            "item_id": 21,
+            "name": "Ogre Axe",
+            "image_key": "ogre_axe",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ogre_axe.png",
+            "status": "known"
+          }
+        ],
+        "neutral_item_details": {
+          "item_id": 1638,
+          "name": "Dormant Curio",
+          "image_key": "dormant_curio",
+          "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/dormant_curio.png",
+          "status": "known"
+        },
+        "backpack_items": [
+          23,
+          0,
+          0
+        ],
+        "backpack_item_details": [
+          {
+            "item_id": 23,
+            "name": "Staff of Wizardry",
+            "image_key": "staff_of_wizardry",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/staff_of_wizardry.png",
+            "status": "known"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          }
+        ],
+        "level": 17,
+        "stun_duration_seconds": null,
+        "buyback_count": null,
+        "performance_position": {
+          "position": null,
+          "evidence": "unknown",
+          "source_field": null
+        }
+      },
+      {
+        "player_slot": 2,
+        "team": "radiant",
+        "team_player_number": 3,
+        "display_name": "Менструэль",
+        "hero_id": 78,
+        "hero_name": "Brewmaster",
+        "kills": 4,
+        "deaths": 9,
+        "assists": 16,
+        "last_hits": 213,
+        "denies": 11,
+        "gpm": 466,
+        "xpm": 608,
+        "hero_damage": 24385,
+        "tower_damage": 828,
+        "hero_healing": 0,
+        "net_worth": 16298,
+        "obs_placed": null,
+        "sen_placed": null,
+        "items": [
+          65,
+          73,
+          1,
+          48,
+          36,
+          137
+        ],
+        "neutral_item": 1864,
+        "position": {
+          "position": "unknown",
+          "evidence": "unknown",
+          "confidence": null,
+          "source_field": null
+        },
+        "name_source": "opendota",
+        "is_anonymous": false,
+        "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/brewmaster.png",
+        "item_details": [
+          {
+            "item_id": 65,
+            "name": "Hand of Midas",
+            "image_key": "hand_of_midas",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/hand_of_midas.png",
+            "status": "known"
+          },
+          {
+            "item_id": 73,
+            "name": "Bracer",
+            "image_key": "bracer",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bracer.png",
+            "status": "known"
+          },
+          {
+            "item_id": 1,
+            "name": "Blink Dagger",
+            "image_key": "blink",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blink.png",
+            "status": "known"
+          },
+          {
+            "item_id": 48,
+            "name": "Boots of Travel",
+            "image_key": "travel_boots",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/travel_boots.png",
+            "status": "known"
+          },
+          {
+            "item_id": 36,
+            "name": "Magic Wand",
+            "image_key": "magic_wand",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/magic_wand.png",
+            "status": "known"
+          },
+          {
+            "item_id": 137,
+            "name": "Radiance",
+            "image_key": "radiance",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/radiance.png",
+            "status": "known"
+          }
+        ],
+        "neutral_item_details": {
+          "item_id": 1864,
+          "name": "Conjurer's Catalyst",
+          "image_key": "conjurers_catalyst",
+          "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/conjurers_catalyst.png",
+          "status": "known"
+        },
+        "backpack_items": [
+          0,
+          0,
+          0
+        ],
+        "backpack_item_details": [
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          }
+        ],
+        "level": 22,
+        "stun_duration_seconds": null,
+        "buyback_count": null,
+        "performance_position": {
+          "position": null,
+          "evidence": "unknown",
+          "source_field": null
+        }
+      },
+      {
+        "player_slot": 3,
+        "team": "radiant",
+        "team_player_number": 4,
+        "display_name": "Перрин",
+        "hero_id": 26,
+        "hero_name": "Lion",
+        "kills": 5,
+        "deaths": 12,
+        "assists": 10,
+        "last_hits": 41,
+        "denies": 3,
+        "gpm": 260,
+        "xpm": 407,
+        "hero_damage": 10107,
+        "tower_damage": 0,
+        "hero_healing": 0,
+        "net_worth": 8159,
+        "obs_placed": null,
+        "sen_placed": null,
+        "items": [
+          43,
+          1,
+          108,
+          188,
+          0,
+          214
+        ],
+        "neutral_item": 1864,
+        "position": {
+          "position": "unknown",
+          "evidence": "unknown",
+          "confidence": null,
+          "source_field": null
+        },
+        "name_source": "opendota",
+        "is_anonymous": false,
+        "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lion.png",
+        "item_details": [
+          {
+            "item_id": 43,
+            "name": "Sentry Ward",
+            "image_key": "ward_sentry",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ward_sentry.png",
+            "status": "known"
+          },
+          {
+            "item_id": 1,
+            "name": "Blink Dagger",
+            "image_key": "blink",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blink.png",
+            "status": "known"
+          },
+          {
+            "item_id": 108,
+            "name": "Aghanim's Scepter",
+            "image_key": "ultimate_scepter",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png",
+            "status": "known"
+          },
+          {
+            "item_id": 188,
+            "name": "Smoke of Deceit",
+            "image_key": "smoke_of_deceit",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/smoke_of_deceit.png",
+            "status": "known"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 214,
+            "name": "Tranquil Boots",
+            "image_key": "tranquil_boots",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tranquil_boots.png",
+            "status": "known"
+          }
+        ],
+        "neutral_item_details": {
+          "item_id": 1864,
+          "name": "Conjurer's Catalyst",
+          "image_key": "conjurers_catalyst",
+          "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/conjurers_catalyst.png",
+          "status": "known"
+        },
+        "backpack_items": [
+          0,
+          0,
+          0
+        ],
+        "backpack_item_details": [
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          }
+        ],
+        "level": 18,
+        "stun_duration_seconds": null,
+        "buyback_count": null,
+        "performance_position": {
+          "position": null,
+          "evidence": "unknown",
+          "source_field": null
+        }
+      },
+      {
+        "player_slot": 4,
+        "team": "radiant",
+        "team_player_number": 5,
+        "display_name": "Сахарное печенье",
+        "hero_id": 120,
+        "hero_name": "Pangolier",
+        "kills": 7,
+        "deaths": 8,
+        "assists": 10,
+        "last_hits": 343,
+        "denies": 4,
+        "gpm": 540,
+        "xpm": 761,
+        "hero_damage": 33926,
+        "tower_damage": 271,
+        "hero_healing": 0,
+        "net_worth": 20875,
+        "obs_placed": null,
+        "sen_placed": null,
+        "items": [
+          598,
+          1,
+          1097,
+          29,
+          108,
+          149
+        ],
+        "neutral_item": 574,
+        "position": {
+          "position": "unknown",
+          "evidence": "unknown",
+          "confidence": null,
+          "source_field": null
+        },
+        "name_source": "opendota",
+        "is_anonymous": false,
+        "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pangolier.png",
+        "item_details": [
+          {
+            "item_id": 598,
+            "name": "Mage Slayer",
+            "image_key": "mage_slayer",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/mage_slayer.png",
+            "status": "known"
+          },
+          {
+            "item_id": 1,
+            "name": "Blink Dagger",
+            "image_key": "blink",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blink.png",
+            "status": "known"
+          },
+          {
+            "item_id": 1097,
+            "name": "Disperser",
+            "image_key": "disperser",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/disperser.png",
+            "status": "known"
+          },
+          {
+            "item_id": 29,
+            "name": "Boots of Speed",
+            "image_key": "boots",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/boots.png",
+            "status": "known"
+          },
+          {
+            "item_id": 108,
+            "name": "Aghanim's Scepter",
+            "image_key": "ultimate_scepter",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png",
+            "status": "known"
+          },
+          {
+            "item_id": 149,
+            "name": "Crystalys",
+            "image_key": "lesser_crit",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/lesser_crit.png",
+            "status": "known"
+          }
+        ],
+        "neutral_item_details": {
+          "item_id": 574,
+          "name": "Cloak of Flames",
+          "image_key": "cloak_of_flames",
+          "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/cloak_of_flames.png",
+          "status": "known"
+        },
+        "backpack_items": [
+          0,
+          0,
+          0
+        ],
+        "backpack_item_details": [
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          }
+        ],
+        "level": 24,
+        "stun_duration_seconds": null,
+        "buyback_count": null,
+        "performance_position": {
+          "position": null,
+          "evidence": "unknown",
+          "source_field": null
+        }
+      },
+      {
+        "player_slot": 128,
+        "team": "dire",
+        "team_player_number": 1,
+        "display_name": "потужномет",
+        "hero_id": 2,
+        "hero_name": "Axe",
+        "kills": 9,
+        "deaths": 8,
+        "assists": 11,
+        "last_hits": 138,
+        "denies": 6,
+        "gpm": 409,
+        "xpm": 558,
+        "hero_damage": 20620,
+        "tower_damage": 1942,
+        "hero_healing": 0,
+        "net_worth": 16870,
+        "obs_placed": null,
+        "sen_placed": null,
+        "items": [
+          50,
+          127,
+          116,
+          108,
+          1,
+          73
+        ],
+        "neutral_item": 574,
+        "position": {
+          "position": "unknown",
+          "evidence": "unknown",
+          "confidence": null,
+          "source_field": null
+        },
+        "name_source": "opendota",
+        "is_anonymous": false,
+        "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/axe.png",
+        "item_details": [
+          {
+            "item_id": 50,
+            "name": "Phase Boots",
+            "image_key": "phase_boots",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/phase_boots.png",
+            "status": "known"
+          },
+          {
+            "item_id": 127,
+            "name": "Blade Mail",
+            "image_key": "blade_mail",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blade_mail.png",
+            "status": "known"
+          },
+          {
+            "item_id": 116,
+            "name": "Black King Bar",
+            "image_key": "black_king_bar",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/black_king_bar.png",
+            "status": "known"
+          },
+          {
+            "item_id": 108,
+            "name": "Aghanim's Scepter",
+            "image_key": "ultimate_scepter",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png",
+            "status": "known"
+          },
+          {
+            "item_id": 1,
+            "name": "Blink Dagger",
+            "image_key": "blink",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/blink.png",
+            "status": "known"
+          },
+          {
+            "item_id": 73,
+            "name": "Bracer",
+            "image_key": "bracer",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bracer.png",
+            "status": "known"
+          }
+        ],
+        "neutral_item_details": {
+          "item_id": 574,
+          "name": "Cloak of Flames",
+          "image_key": "cloak_of_flames",
+          "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/cloak_of_flames.png",
+          "status": "known"
+        },
+        "backpack_items": [
+          0,
+          0,
+          0
+        ],
+        "backpack_item_details": [
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          }
+        ],
+        "level": 21,
+        "stun_duration_seconds": null,
+        "buyback_count": null,
+        "performance_position": {
+          "position": null,
+          "evidence": "unknown",
+          "source_field": null
+        }
+      },
+      {
+        "player_slot": 129,
+        "team": "dire",
+        "team_player_number": 2,
+        "display_name": "ефрейтор",
+        "hero_id": 12,
+        "hero_name": "Phantom Lancer",
+        "kills": 14,
+        "deaths": 4,
+        "assists": 12,
+        "last_hits": 437,
+        "denies": 18,
+        "gpm": 742,
+        "xpm": 953,
+        "hero_damage": 40959,
+        "tower_damage": 14739,
+        "hero_healing": 0,
+        "net_worth": 30127,
+        "obs_placed": null,
+        "sen_placed": null,
+        "items": [
+          147,
+          114,
+          160,
+          63,
+          108,
+          250
+        ],
+        "neutral_item": 1603,
+        "position": {
+          "position": "unknown",
+          "evidence": "unknown",
+          "confidence": null,
+          "source_field": null
+        },
+        "name_source": "opendota",
+        "is_anonymous": false,
+        "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/phantom_lancer.png",
+        "item_details": [
+          {
+            "item_id": 147,
+            "name": "Manta Style",
+            "image_key": "manta",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/manta.png",
+            "status": "known"
+          },
+          {
+            "item_id": 114,
+            "name": "Heart of Tarrasque",
+            "image_key": "heart",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/heart.png",
+            "status": "known"
+          },
+          {
+            "item_id": 160,
+            "name": "Eye of Skadi",
+            "image_key": "skadi",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/skadi.png",
+            "status": "known"
+          },
+          {
+            "item_id": 63,
+            "name": "Power Treads",
+            "image_key": "power_treads",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/power_treads.png",
+            "status": "known"
+          },
+          {
+            "item_id": 108,
+            "name": "Aghanim's Scepter",
+            "image_key": "ultimate_scepter",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ultimate_scepter.png",
+            "status": "known"
+          },
+          {
+            "item_id": 250,
+            "name": "Bloodthorn",
+            "image_key": "bloodthorn",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/bloodthorn.png",
+            "status": "known"
+          }
+        ],
+        "neutral_item_details": {
+          "item_id": 1603,
+          "name": "Gunpowder Gauntlet",
+          "image_key": "gunpowder_gauntlets",
+          "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gunpowder_gauntlets.png",
+          "status": "known"
+        },
+        "backpack_items": [
+          0,
+          0,
+          0
+        ],
+        "backpack_item_details": [
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          }
+        ],
+        "level": 26,
+        "stun_duration_seconds": null,
+        "buyback_count": null,
+        "performance_position": {
+          "position": null,
+          "evidence": "unknown",
+          "source_field": null
+        }
+      },
+      {
+        "player_slot": 130,
+        "team": "dire",
+        "team_player_number": 3,
+        "display_name": "SKALE",
+        "hero_id": 36,
+        "hero_name": "Necrophos",
+        "kills": 13,
+        "deaths": 5,
+        "assists": 20,
+        "last_hits": 317,
+        "denies": 6,
+        "gpm": 616,
+        "xpm": 1069,
+        "hero_damage": 42073,
+        "tower_damage": 3831,
+        "hero_healing": 31515,
+        "net_worth": 25915,
+        "obs_placed": null,
+        "sen_placed": null,
+        "items": [
+          119,
+          60,
+          114,
+          137,
+          273,
+          48
+        ],
+        "neutral_item": 1864,
+        "position": {
+          "position": "unknown",
+          "evidence": "unknown",
+          "confidence": null,
+          "source_field": null
+        },
+        "name_source": "opendota",
+        "is_anonymous": false,
+        "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/necrolyte.png",
+        "item_details": [
+          {
+            "item_id": 119,
+            "name": "Shiva's Guard",
+            "image_key": "shivas_guard",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/shivas_guard.png",
+            "status": "known"
+          },
+          {
+            "item_id": 60,
+            "name": "Point Booster",
+            "image_key": "point_booster",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/point_booster.png",
+            "status": "known"
+          },
+          {
+            "item_id": 114,
+            "name": "Heart of Tarrasque",
+            "image_key": "heart",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/heart.png",
+            "status": "known"
+          },
+          {
+            "item_id": 137,
+            "name": "Radiance",
+            "image_key": "radiance",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/radiance.png",
+            "status": "known"
+          },
+          {
+            "item_id": 273,
+            "name": "Kaya and Sange",
+            "image_key": "kaya_and_sange",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/kaya_and_sange.png",
+            "status": "known"
+          },
+          {
+            "item_id": 48,
+            "name": "Boots of Travel",
+            "image_key": "travel_boots",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/travel_boots.png",
+            "status": "known"
+          }
+        ],
+        "neutral_item_details": {
+          "item_id": 1864,
+          "name": "Conjurer's Catalyst",
+          "image_key": "conjurers_catalyst",
+          "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/conjurers_catalyst.png",
+          "status": "known"
+        },
+        "backpack_items": [
+          0,
+          0,
+          0
+        ],
+        "backpack_item_details": [
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          }
+        ],
+        "level": 27,
+        "stun_duration_seconds": null,
+        "buyback_count": null,
+        "performance_position": {
+          "position": null,
+          "evidence": "unknown",
+          "source_field": null
+        }
+      },
+      {
+        "player_slot": 131,
+        "team": "dire",
+        "team_player_number": 4,
+        "display_name": "sorry for my bad",
+        "hero_id": 105,
+        "hero_name": "Techies",
+        "kills": 9,
+        "deaths": 5,
+        "assists": 10,
+        "last_hits": 94,
+        "denies": 10,
+        "gpm": 418,
+        "xpm": 393,
+        "hero_damage": 31226,
+        "tower_damage": 1153,
+        "hero_healing": 125,
+        "net_worth": 19025,
+        "obs_placed": null,
+        "sen_placed": null,
+        "items": [
+          178,
+          277,
+          214,
+          133,
+          133,
+          0
+        ],
+        "neutral_item": 1873,
+        "position": {
+          "position": "unknown",
+          "evidence": "unknown",
+          "confidence": null,
+          "source_field": null
+        },
+        "name_source": "opendota",
+        "is_anonymous": false,
+        "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/techies.png",
+        "item_details": [
+          {
+            "item_id": 178,
+            "name": "Soul Ring",
+            "image_key": "soul_ring",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/soul_ring.png",
+            "status": "known"
+          },
+          {
+            "item_id": 277,
+            "name": "Yasha and Kaya",
+            "image_key": "yasha_and_kaya",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/yasha_and_kaya.png",
+            "status": "known"
+          },
+          {
+            "item_id": 214,
+            "name": "Tranquil Boots",
+            "image_key": "tranquil_boots",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/tranquil_boots.png",
+            "status": "known"
+          },
+          {
+            "item_id": 133,
+            "name": "Divine Rapier",
+            "image_key": "rapier",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/rapier.png",
+            "status": "known"
+          },
+          {
+            "item_id": 133,
+            "name": "Divine Rapier",
+            "image_key": "rapier",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/rapier.png",
+            "status": "known"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          }
+        ],
+        "neutral_item_details": {
+          "item_id": 1873,
+          "name": "Partisan's Brand",
+          "image_key": "partisans_brand",
+          "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/partisans_brand.png",
+          "status": "known"
+        },
+        "backpack_items": [
+          0,
+          0,
+          0
+        ],
+        "backpack_item_details": [
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          }
+        ],
+        "level": 17,
+        "stun_duration_seconds": null,
+        "buyback_count": null,
+        "performance_position": {
+          "position": null,
+          "evidence": "unknown",
+          "source_field": null
+        }
+      },
+      {
+        "player_slot": 132,
+        "team": "dire",
+        "team_player_number": 5,
+        "display_name": "fanat.loren ‹𝟹",
+        "hero_id": 47,
+        "hero_name": "Viper",
+        "kills": 4,
+        "deaths": 8,
+        "assists": 26,
+        "last_hits": 89,
+        "denies": 7,
+        "gpm": 378,
+        "xpm": 652,
+        "hero_damage": 16395,
+        "tower_damage": 2832,
+        "hero_healing": 120,
+        "net_worth": 14617,
+        "obs_placed": null,
+        "sen_placed": null,
+        "items": [
+          206,
+          43,
+          226,
+          236,
+          180,
+          75
+        ],
+        "neutral_item": 1603,
+        "position": {
+          "position": "unknown",
+          "evidence": "unknown",
+          "confidence": null,
+          "source_field": null
+        },
+        "name_source": "opendota",
+        "is_anonymous": false,
+        "hero_image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/viper.png",
+        "item_details": [
+          {
+            "item_id": 206,
+            "name": "Rod of Atos",
+            "image_key": "rod_of_atos",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/rod_of_atos.png",
+            "status": "known"
+          },
+          {
+            "item_id": 43,
+            "name": "Sentry Ward",
+            "image_key": "ward_sentry",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/ward_sentry.png",
+            "status": "known"
+          },
+          {
+            "item_id": 226,
+            "name": "Lotus Orb",
+            "image_key": "lotus_orb",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/lotus_orb.png",
+            "status": "known"
+          },
+          {
+            "item_id": 236,
+            "name": "Dragon Lance",
+            "image_key": "dragon_lance",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/dragon_lance.png",
+            "status": "known"
+          },
+          {
+            "item_id": 180,
+            "name": "Arcane Boots",
+            "image_key": "arcane_boots",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/arcane_boots.png",
+            "status": "known"
+          },
+          {
+            "item_id": 75,
+            "name": "Wraith Band",
+            "image_key": "wraith_band",
+            "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/wraith_band.png",
+            "status": "known"
+          }
+        ],
+        "neutral_item_details": {
+          "item_id": 1603,
+          "name": "Gunpowder Gauntlet",
+          "image_key": "gunpowder_gauntlets",
+          "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/items/gunpowder_gauntlets.png",
+          "status": "known"
+        },
+        "backpack_items": [
+          0,
+          0,
+          0
+        ],
+        "backpack_item_details": [
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          },
+          {
+            "item_id": 0,
+            "name": null,
+            "image_key": null,
+            "image_url": null,
+            "status": "empty"
+          }
+        ],
+        "level": 22,
+        "stun_duration_seconds": null,
+        "buyback_count": null,
+        "performance_position": {
+          "position": null,
+          "evidence": "unknown",
+          "source_field": null
+        }
+      }
+    ],
+    "completeness_scope": "core_player_stats",
+    "hero_catalog_revision": "5c0242df9057848fa2036ca3fafe9f2bd4508163",
+    "item_catalog_revision": "5c0242df9057848fa2036ca3fafe9f2bd4508163",
+    "limitations": [
+      "Линии всех игроков не подтверждены данными матча.",
+      "Часть расширенной статистики недоступна без данных парсинга."
+    ]
+  },
+  "error": null,
+  "limitations": [
+    "Линии всех игроков не подтверждены данными матча.",
+    "Часть расширенной статистики недоступна без данных парсинга."
+  ],
+  "model_version": "players_v1",
+  "config_version": "fb75ab06979cc19a47aec8dc478a38db1901c250ff0028c7909e3eb31814d6d8",
+  "analyzed_at": "2026-10-23T12:12:53.492305Z",
+  "completeness": "full",
+  "retry_after_seconds": null
+}

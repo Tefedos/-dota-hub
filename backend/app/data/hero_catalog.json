@@ -1,0 +1,1514 @@
+{
+  "source_ref": "https://raw.githubusercontent.com/odota/dotaconstants/5c0242df9057848fa2036ca3fafe9f2bd4508163/build/heroes.json",
+  "revision": "5c0242df9057848fa2036ca3fafe9f2bd4508163",
+  "patch_scope": "snapshot_unverified",
+  "heroes": [
+    {
+      "hero_id": 1,
+      "name": "Anti-Mage",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png"
+    },
+    {
+      "hero_id": 2,
+      "name": "Axe",
+      "roles": [
+        "Initiator",
+        "Durable",
+        "Disabler",
+        "Carry"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/axe.png"
+    },
+    {
+      "hero_id": 3,
+      "name": "Bane",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Nuker",
+        "Durable"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bane.png"
+    },
+    {
+      "hero_id": 4,
+      "name": "Bloodseeker",
+      "roles": [
+        "Carry",
+        "Disabler",
+        "Nuker",
+        "Initiator"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bloodseeker.png"
+    },
+    {
+      "hero_id": 5,
+      "name": "Crystal Maiden",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Nuker"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crystal_maiden.png"
+    },
+    {
+      "hero_id": 6,
+      "name": "Drow Ranger",
+      "roles": [
+        "Carry",
+        "Disabler",
+        "Pusher"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/drow_ranger.png"
+    },
+    {
+      "hero_id": 7,
+      "name": "Earthshaker",
+      "roles": [
+        "Support",
+        "Initiator",
+        "Disabler",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/earthshaker.png"
+    },
+    {
+      "hero_id": 8,
+      "name": "Juggernaut",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/juggernaut.png"
+    },
+    {
+      "hero_id": 9,
+      "name": "Mirana",
+      "roles": [
+        "Carry",
+        "Support",
+        "Escape",
+        "Nuker",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/mirana.png"
+    },
+    {
+      "hero_id": 10,
+      "name": "Morphling",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Durable",
+        "Nuker",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/morphling.png"
+    },
+    {
+      "hero_id": 11,
+      "name": "Shadow Fiend",
+      "roles": [
+        "Carry",
+        "Nuker"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/nevermore.png"
+    },
+    {
+      "hero_id": 12,
+      "name": "Phantom Lancer",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Pusher",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/phantom_lancer.png"
+    },
+    {
+      "hero_id": 13,
+      "name": "Puck",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Escape",
+        "Nuker"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/puck.png"
+    },
+    {
+      "hero_id": 14,
+      "name": "Pudge",
+      "roles": [
+        "Disabler",
+        "Initiator",
+        "Durable",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pudge.png"
+    },
+    {
+      "hero_id": 15,
+      "name": "Razor",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Nuker",
+        "Pusher"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/razor.png"
+    },
+    {
+      "hero_id": 16,
+      "name": "Sand King",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Support",
+        "Nuker",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sand_king.png"
+    },
+    {
+      "hero_id": 17,
+      "name": "Storm Spirit",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Nuker",
+        "Initiator",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/storm_spirit.png"
+    },
+    {
+      "hero_id": 18,
+      "name": "Sven",
+      "roles": [
+        "Carry",
+        "Disabler",
+        "Initiator",
+        "Durable",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sven.png"
+    },
+    {
+      "hero_id": 19,
+      "name": "Tiny",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Pusher",
+        "Initiator",
+        "Durable",
+        "Disabler"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tiny.png"
+    },
+    {
+      "hero_id": 20,
+      "name": "Vengeful Spirit",
+      "roles": [
+        "Support",
+        "Initiator",
+        "Disabler",
+        "Nuker",
+        "Escape"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/vengefulspirit.png"
+    },
+    {
+      "hero_id": 21,
+      "name": "Windranger",
+      "roles": [
+        "Carry",
+        "Support",
+        "Disabler",
+        "Escape",
+        "Nuker"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/windrunner.png"
+    },
+    {
+      "hero_id": 22,
+      "name": "Zeus",
+      "roles": [
+        "Nuker",
+        "Carry"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/zuus.png"
+    },
+    {
+      "hero_id": 23,
+      "name": "Kunkka",
+      "roles": [
+        "Carry",
+        "Support",
+        "Disabler",
+        "Initiator",
+        "Durable",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/kunkka.png"
+    },
+    {
+      "hero_id": 25,
+      "name": "Lina",
+      "roles": [
+        "Support",
+        "Carry",
+        "Nuker",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lina.png"
+    },
+    {
+      "hero_id": 26,
+      "name": "Lion",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Nuker",
+        "Initiator"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lion.png"
+    },
+    {
+      "hero_id": 27,
+      "name": "Shadow Shaman",
+      "roles": [
+        "Support",
+        "Pusher",
+        "Disabler",
+        "Nuker",
+        "Initiator"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/shadow_shaman.png"
+    },
+    {
+      "hero_id": 28,
+      "name": "Slardar",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Initiator",
+        "Disabler",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/slardar.png"
+    },
+    {
+      "hero_id": 29,
+      "name": "Tidehunter",
+      "roles": [
+        "Initiator",
+        "Durable",
+        "Disabler",
+        "Nuker",
+        "Carry"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tidehunter.png"
+    },
+    {
+      "hero_id": 30,
+      "name": "Witch Doctor",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/witch_doctor.png"
+    },
+    {
+      "hero_id": 31,
+      "name": "Lich",
+      "roles": [
+        "Support",
+        "Nuker"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lich.png"
+    },
+    {
+      "hero_id": 32,
+      "name": "Riki",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Disabler"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/riki.png"
+    },
+    {
+      "hero_id": 33,
+      "name": "Enigma",
+      "roles": [
+        "Disabler",
+        "Initiator",
+        "Pusher"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/enigma.png"
+    },
+    {
+      "hero_id": 34,
+      "name": "Tinker",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Pusher"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tinker.png"
+    },
+    {
+      "hero_id": 35,
+      "name": "Sniper",
+      "roles": [
+        "Carry",
+        "Nuker"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/sniper.png"
+    },
+    {
+      "hero_id": 36,
+      "name": "Necrophos",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Durable",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/necrolyte.png"
+    },
+    {
+      "hero_id": 37,
+      "name": "Warlock",
+      "roles": [
+        "Support",
+        "Initiator",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/warlock.png"
+    },
+    {
+      "hero_id": 38,
+      "name": "Beastmaster",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Durable",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/beastmaster.png"
+    },
+    {
+      "hero_id": 39,
+      "name": "Queen of Pain",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Escape"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/queenofpain.png"
+    },
+    {
+      "hero_id": 40,
+      "name": "Venomancer",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Initiator",
+        "Pusher",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/venomancer.png"
+    },
+    {
+      "hero_id": 41,
+      "name": "Faceless Void",
+      "roles": [
+        "Carry",
+        "Initiator",
+        "Disabler",
+        "Escape",
+        "Durable"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/faceless_void.png"
+    },
+    {
+      "hero_id": 42,
+      "name": "Wraith King",
+      "roles": [
+        "Carry",
+        "Support",
+        "Durable",
+        "Disabler",
+        "Initiator"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/skeleton_king.png"
+    },
+    {
+      "hero_id": 43,
+      "name": "Death Prophet",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Nuker",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/death_prophet.png"
+    },
+    {
+      "hero_id": 44,
+      "name": "Phantom Assassin",
+      "roles": [
+        "Carry",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/phantom_assassin.png"
+    },
+    {
+      "hero_id": 45,
+      "name": "Pugna",
+      "roles": [
+        "Nuker",
+        "Pusher"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pugna.png"
+    },
+    {
+      "hero_id": 46,
+      "name": "Templar Assassin",
+      "roles": [
+        "Carry",
+        "Escape"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/templar_assassin.png"
+    },
+    {
+      "hero_id": 47,
+      "name": "Viper",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Initiator",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/viper.png"
+    },
+    {
+      "hero_id": 48,
+      "name": "Luna",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Pusher"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/luna.png"
+    },
+    {
+      "hero_id": 49,
+      "name": "Dragon Knight",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Durable",
+        "Disabler",
+        "Initiator",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dragon_knight.png"
+    },
+    {
+      "hero_id": 50,
+      "name": "Dazzle",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dazzle.png"
+    },
+    {
+      "hero_id": 51,
+      "name": "Clockwerk",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Durable",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/rattletrap.png"
+    },
+    {
+      "hero_id": 52,
+      "name": "Leshrac",
+      "roles": [
+        "Carry",
+        "Support",
+        "Nuker",
+        "Pusher",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/leshrac.png"
+    },
+    {
+      "hero_id": 53,
+      "name": "Nature's Prophet",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Escape",
+        "Nuker"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/furion.png"
+    },
+    {
+      "hero_id": 54,
+      "name": "Lifestealer",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Escape",
+        "Disabler"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/life_stealer.png"
+    },
+    {
+      "hero_id": 55,
+      "name": "Dark Seer",
+      "roles": [
+        "Initiator",
+        "Escape",
+        "Disabler"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dark_seer.png"
+    },
+    {
+      "hero_id": 56,
+      "name": "Clinkz",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Pusher"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/clinkz.png"
+    },
+    {
+      "hero_id": 57,
+      "name": "Omniknight",
+      "roles": [
+        "Support",
+        "Durable",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/omniknight.png"
+    },
+    {
+      "hero_id": 58,
+      "name": "Enchantress",
+      "roles": [
+        "Support",
+        "Pusher",
+        "Durable",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/enchantress.png"
+    },
+    {
+      "hero_id": 59,
+      "name": "Huskar",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Initiator"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/huskar.png"
+    },
+    {
+      "hero_id": 60,
+      "name": "Night Stalker",
+      "roles": [
+        "Carry",
+        "Initiator",
+        "Durable",
+        "Disabler",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/night_stalker.png"
+    },
+    {
+      "hero_id": 61,
+      "name": "Broodmother",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Escape",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/broodmother.png"
+    },
+    {
+      "hero_id": 62,
+      "name": "Bounty Hunter",
+      "roles": [
+        "Escape",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bounty_hunter.png"
+    },
+    {
+      "hero_id": 63,
+      "name": "Weaver",
+      "roles": [
+        "Carry",
+        "Escape"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/weaver.png"
+    },
+    {
+      "hero_id": 64,
+      "name": "Jakiro",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Pusher",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/jakiro.png"
+    },
+    {
+      "hero_id": 65,
+      "name": "Batrider",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Escape"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/batrider.png"
+    },
+    {
+      "hero_id": 66,
+      "name": "Chen",
+      "roles": [
+        "Support",
+        "Pusher"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/chen.png"
+    },
+    {
+      "hero_id": 67,
+      "name": "Spectre",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/spectre.png"
+    },
+    {
+      "hero_id": 68,
+      "name": "Ancient Apparition",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Nuker"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ancient_apparition.png"
+    },
+    {
+      "hero_id": 69,
+      "name": "Doom",
+      "roles": [
+        "Carry",
+        "Disabler",
+        "Initiator",
+        "Durable",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/doom_bringer.png"
+    },
+    {
+      "hero_id": 70,
+      "name": "Ursa",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Disabler"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ursa.png"
+    },
+    {
+      "hero_id": 71,
+      "name": "Spirit Breaker",
+      "roles": [
+        "Carry",
+        "Initiator",
+        "Disabler",
+        "Durable",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/spirit_breaker.png"
+    },
+    {
+      "hero_id": 72,
+      "name": "Gyrocopter",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/gyrocopter.png"
+    },
+    {
+      "hero_id": 73,
+      "name": "Alchemist",
+      "roles": [
+        "Carry",
+        "Support",
+        "Durable",
+        "Disabler",
+        "Initiator",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/alchemist.png"
+    },
+    {
+      "hero_id": 74,
+      "name": "Invoker",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Disabler",
+        "Escape",
+        "Pusher"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/invoker.png"
+    },
+    {
+      "hero_id": 75,
+      "name": "Silencer",
+      "roles": [
+        "Carry",
+        "Support",
+        "Disabler",
+        "Initiator",
+        "Nuker"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/silencer.png"
+    },
+    {
+      "hero_id": 76,
+      "name": "Outworld Devourer",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/obsidian_destroyer.png"
+    },
+    {
+      "hero_id": 77,
+      "name": "Lycan",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Durable",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lycan.png"
+    },
+    {
+      "hero_id": 78,
+      "name": "Brewmaster",
+      "roles": [
+        "Carry",
+        "Initiator",
+        "Durable",
+        "Disabler",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/brewmaster.png"
+    },
+    {
+      "hero_id": 79,
+      "name": "Shadow Demon",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Initiator",
+        "Nuker"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/shadow_demon.png"
+    },
+    {
+      "hero_id": 80,
+      "name": "Lone Druid",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Durable"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lone_druid.png"
+    },
+    {
+      "hero_id": 81,
+      "name": "Chaos Knight",
+      "roles": [
+        "Carry",
+        "Disabler",
+        "Durable",
+        "Pusher",
+        "Initiator"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/chaos_knight.png"
+    },
+    {
+      "hero_id": 82,
+      "name": "Meepo",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Nuker",
+        "Disabler",
+        "Initiator",
+        "Pusher"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/meepo.png"
+    },
+    {
+      "hero_id": 83,
+      "name": "Treant Protector",
+      "roles": [
+        "Support",
+        "Initiator",
+        "Durable",
+        "Disabler",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/treant.png"
+    },
+    {
+      "hero_id": 84,
+      "name": "Ogre Magi",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler",
+        "Durable",
+        "Initiator"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ogre_magi.png"
+    },
+    {
+      "hero_id": 85,
+      "name": "Undying",
+      "roles": [
+        "Support",
+        "Durable",
+        "Disabler",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/undying.png"
+    },
+    {
+      "hero_id": 86,
+      "name": "Rubick",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Nuker"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/rubick.png"
+    },
+    {
+      "hero_id": 87,
+      "name": "Disruptor",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Nuker",
+        "Initiator"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/disruptor.png"
+    },
+    {
+      "hero_id": 88,
+      "name": "Nyx Assassin",
+      "roles": [
+        "Disabler",
+        "Nuker",
+        "Initiator",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/nyx_assassin.png"
+    },
+    {
+      "hero_id": 89,
+      "name": "Naga Siren",
+      "roles": [
+        "Carry",
+        "Support",
+        "Pusher",
+        "Disabler",
+        "Initiator",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/naga_siren.png"
+    },
+    {
+      "hero_id": 90,
+      "name": "Keeper of the Light",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/keeper_of_the_light.png"
+    },
+    {
+      "hero_id": 91,
+      "name": "Io",
+      "roles": [
+        "Support",
+        "Escape",
+        "Nuker"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/wisp.png"
+    },
+    {
+      "hero_id": 92,
+      "name": "Visage",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Durable",
+        "Disabler",
+        "Pusher"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/visage.png"
+    },
+    {
+      "hero_id": 93,
+      "name": "Slark",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Disabler",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/slark.png"
+    },
+    {
+      "hero_id": 94,
+      "name": "Medusa",
+      "roles": [
+        "Carry",
+        "Disabler",
+        "Durable"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/medusa.png"
+    },
+    {
+      "hero_id": 95,
+      "name": "Troll Warlord",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Disabler",
+        "Durable"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/troll_warlord.png"
+    },
+    {
+      "hero_id": 96,
+      "name": "Centaur Warrunner",
+      "roles": [
+        "Durable",
+        "Initiator",
+        "Disabler",
+        "Nuker",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/centaur.png"
+    },
+    {
+      "hero_id": 97,
+      "name": "Magnus",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Nuker",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/magnataur.png"
+    },
+    {
+      "hero_id": 98,
+      "name": "Timbersaw",
+      "roles": [
+        "Nuker",
+        "Durable",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/shredder.png"
+    },
+    {
+      "hero_id": 99,
+      "name": "Bristleback",
+      "roles": [
+        "Carry",
+        "Durable",
+        "Initiator",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/bristleback.png"
+    },
+    {
+      "hero_id": 100,
+      "name": "Tusk",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/tusk.png"
+    },
+    {
+      "hero_id": 101,
+      "name": "Skywrath Mage",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/skywrath_mage.png"
+    },
+    {
+      "hero_id": 102,
+      "name": "Abaddon",
+      "roles": [
+        "Support",
+        "Carry",
+        "Durable"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/abaddon.png"
+    },
+    {
+      "hero_id": 103,
+      "name": "Elder Titan",
+      "roles": [
+        "Initiator",
+        "Disabler",
+        "Nuker",
+        "Durable"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/elder_titan.png"
+    },
+    {
+      "hero_id": 104,
+      "name": "Legion Commander",
+      "roles": [
+        "Carry",
+        "Disabler",
+        "Initiator",
+        "Durable",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/legion_commander.png"
+    },
+    {
+      "hero_id": 105,
+      "name": "Techies",
+      "roles": [
+        "Nuker",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/techies.png"
+    },
+    {
+      "hero_id": 106,
+      "name": "Ember Spirit",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Nuker",
+        "Disabler",
+        "Initiator"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ember_spirit.png"
+    },
+    {
+      "hero_id": 107,
+      "name": "Earth Spirit",
+      "roles": [
+        "Nuker",
+        "Escape",
+        "Disabler",
+        "Initiator",
+        "Durable"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/earth_spirit.png"
+    },
+    {
+      "hero_id": 108,
+      "name": "Underlord",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler",
+        "Durable",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/abyssal_underlord.png"
+    },
+    {
+      "hero_id": 109,
+      "name": "Terrorblade",
+      "roles": [
+        "Carry",
+        "Pusher",
+        "Nuker"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/terrorblade.png"
+    },
+    {
+      "hero_id": 110,
+      "name": "Phoenix",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Initiator",
+        "Escape",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/phoenix.png"
+    },
+    {
+      "hero_id": 111,
+      "name": "Oracle",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler",
+        "Escape"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/oracle.png"
+    },
+    {
+      "hero_id": 112,
+      "name": "Winter Wyvern",
+      "roles": [
+        "Support",
+        "Disabler",
+        "Nuker"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/winter_wyvern.png"
+    },
+    {
+      "hero_id": 113,
+      "name": "Arc Warden",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Nuker"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/arc_warden.png"
+    },
+    {
+      "hero_id": 114,
+      "name": "Monkey King",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Disabler",
+        "Initiator"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/monkey_king.png"
+    },
+    {
+      "hero_id": 119,
+      "name": "Dark Willow",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler",
+        "Escape"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dark_willow.png"
+    },
+    {
+      "hero_id": 120,
+      "name": "Pangolier",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Disabler",
+        "Durable",
+        "Escape",
+        "Initiator"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pangolier.png"
+    },
+    {
+      "hero_id": 121,
+      "name": "Grimstroke",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler",
+        "Escape"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/grimstroke.png"
+    },
+    {
+      "hero_id": 123,
+      "name": "Hoodwink",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Escape",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/hoodwink.png"
+    },
+    {
+      "hero_id": 126,
+      "name": "Void Spirit",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Nuker",
+        "Disabler"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/void_spirit.png"
+    },
+    {
+      "hero_id": 128,
+      "name": "Snapfire",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Disabler",
+        "Escape"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/snapfire.png"
+    },
+    {
+      "hero_id": 129,
+      "name": "Mars",
+      "roles": [
+        "Carry",
+        "Initiator",
+        "Disabler",
+        "Durable"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/mars.png"
+    },
+    {
+      "hero_id": 131,
+      "name": "Ring Master",
+      "roles": [
+        "Support",
+        "Nuker",
+        "Escape",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/ringmaster.png"
+    },
+    {
+      "hero_id": 135,
+      "name": "Dawnbreaker",
+      "roles": [
+        "Carry",
+        "Durable"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dawnbreaker.png"
+    },
+    {
+      "hero_id": 136,
+      "name": "Marci",
+      "roles": [
+        "Support",
+        "Carry",
+        "Initiator",
+        "Disabler",
+        "Escape"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/marci.png"
+    },
+    {
+      "hero_id": 137,
+      "name": "Primal Beast",
+      "roles": [
+        "Initiator",
+        "Durable",
+        "Disabler"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/primal_beast.png"
+    },
+    {
+      "hero_id": 138,
+      "name": "Muerta",
+      "roles": [
+        "Carry",
+        "Nuker",
+        "Disabler"
+      ],
+      "attack_type": "Ranged",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/muerta.png"
+    },
+    {
+      "hero_id": 145,
+      "name": "Kez",
+      "roles": [
+        "Carry",
+        "Escape",
+        "Disabler"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/kez.png"
+    },
+    {
+      "hero_id": 155,
+      "name": "Largo",
+      "roles": [
+        "Durable",
+        "Disabler",
+        "Support"
+      ],
+      "attack_type": "Melee",
+      "image_url": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/largo.png"
+    }
+  ]
+}
