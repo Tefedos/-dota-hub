@@ -1,0 +1,8 @@
+{
+  "rows": 13750,
+  "columns": 17,
+  "cell_roundtrip": "PASS",
+  "format": "CSV UTF-8, quoted fields, CRLF",
+  "render": "NOT_APPLICABLE: CSV has no visual formatting",
+  "formula_count": 0
+}

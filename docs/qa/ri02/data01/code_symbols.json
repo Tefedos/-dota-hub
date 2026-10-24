@@ -1,0 +1,1598 @@
+[
+  {
+    "file": "backend/app/api/v1/auth.py",
+    "symbol": "get_settings",
+    "line": 27,
+    "end": 28
+  },
+  {
+    "file": "backend/app/api/v1/auth.py",
+    "symbol": "verified_login",
+    "line": 31,
+    "end": 39
+  },
+  {
+    "file": "backend/app/api/v1/auth.py",
+    "symbol": "session_user_id",
+    "line": 42,
+    "end": 49
+  },
+  {
+    "file": "backend/app/api/v1/auth.py",
+    "symbol": "login_database",
+    "line": 52,
+    "end": 58
+  },
+  {
+    "file": "backend/app/api/v1/auth.py",
+    "symbol": "session_database",
+    "line": 61,
+    "end": 66
+  },
+  {
+    "file": "backend/app/api/v1/auth.py",
+    "symbol": "current_user",
+    "line": 69,
+    "end": 78
+  },
+  {
+    "file": "backend/app/api/v1/auth.py",
+    "symbol": "profile",
+    "line": 81,
+    "end": 85
+  },
+  {
+    "file": "backend/app/api/v1/auth.py",
+    "symbol": "telegram_login",
+    "line": 89,
+    "end": 104
+  },
+  {
+    "file": "backend/app/api/v1/auth.py",
+    "symbol": "me",
+    "line": 108,
+    "end": 110
+  },
+  {
+    "file": "backend/app/api/v1/health.py",
+    "symbol": "health",
+    "line": 17,
+    "end": 19
+  },
+  {
+    "file": "backend/app/api/v1/health.py",
+    "symbol": "database_health",
+    "line": 23,
+    "end": 35
+  },
+  {
+    "file": "backend/app/api/v1/local_alpha.py",
+    "symbol": "loopback_only",
+    "line": 25,
+    "end": 32
+  },
+  {
+    "file": "backend/app/api/v1/local_alpha.py",
+    "symbol": "analyze",
+    "line": 40,
+    "end": 47
+  },
+  {
+    "file": "backend/app/api/v1/local_alpha.py",
+    "symbol": "section",
+    "line": 51,
+    "end": 52
+  },
+  {
+    "file": "backend/app/api/v1/matches.py",
+    "symbol": "match_id_value",
+    "line": 43,
+    "end": 47
+  },
+  {
+    "file": "backend/app/api/v1/matches.py",
+    "symbol": "response",
+    "line": 50,
+    "end": 54
+  },
+  {
+    "file": "backend/app/api/v1/matches.py",
+    "symbol": "stored",
+    "line": 57,
+    "end": 113
+  },
+  {
+    "file": "backend/app/api/v1/matches.py",
+    "symbol": "overview",
+    "line": 117,
+    "end": 118
+  },
+  {
+    "file": "backend/app/api/v1/matches.py",
+    "symbol": "players",
+    "line": 122,
+    "end": 123
+  },
+  {
+    "file": "backend/app/api/v1/matches.py",
+    "symbol": "draft",
+    "line": 127,
+    "end": 128
+  },
+  {
+    "file": "backend/app/api/v1/matches.py",
+    "symbol": "ruiner",
+    "line": 132,
+    "end": 133
+  },
+  {
+    "file": "backend/app/api/v1/matches.py",
+    "symbol": "timeline",
+    "line": 137,
+    "end": 141
+  },
+  {
+    "file": "backend/app/api/v1/matches.py",
+    "symbol": "analysis_status",
+    "line": 145,
+    "end": 146
+  },
+  {
+    "file": "backend/app/bot/handlers.py",
+    "symbol": "create_router",
+    "line": 25,
+    "end": 68
+  },
+  {
+    "file": "backend/app/bot/handlers.py",
+    "symbol": "help_command",
+    "line": 30,
+    "end": 31
+  },
+  {
+    "file": "backend/app/bot/handlers.py",
+    "symbol": "match_command",
+    "line": 34,
+    "end": 66
+  },
+  {
+    "file": "backend/app/bot/handlers.py",
+    "symbol": "notify",
+    "line": 57,
+    "end": 64
+  },
+  {
+    "file": "backend/app/bot/main.py",
+    "symbol": "MissingBotToken",
+    "line": 17,
+    "end": 18
+  },
+  {
+    "file": "backend/app/bot/main.py",
+    "symbol": "MissingDatabaseUrl",
+    "line": 21,
+    "end": 22
+  },
+  {
+    "file": "backend/app/bot/main.py",
+    "symbol": "run_polling",
+    "line": 25,
+    "end": 74
+  },
+  {
+    "file": "backend/app/bot/main.py",
+    "symbol": "main",
+    "line": 77,
+    "end": 88
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "Ingestion",
+    "line": 18,
+    "end": 19
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "AnalysisProcessor",
+    "line": 22,
+    "end": 23
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "InvalidMatchId",
+    "line": 28,
+    "end": 29
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "parse_match_id",
+    "line": 32,
+    "end": 39
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "mini_app_deep_link",
+    "line": 42,
+    "end": 50
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "RequestStatus",
+    "line": 53,
+    "end": 55
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "MatchRequestResult",
+    "line": 59,
+    "end": 62
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "JobService",
+    "line": 65,
+    "end": 149
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "result_message",
+    "line": 152,
+    "end": 165
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "ingest_match",
+    "line": 19,
+    "end": 19
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "process",
+    "line": 23,
+    "end": 23
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "__init__",
+    "line": 68,
+    "end": 79
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "reserve_request",
+    "line": 81,
+    "end": 101
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "start_request",
+    "line": 103,
+    "end": 106
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "_run",
+    "line": 108,
+    "end": 139
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "wait_pending",
+    "line": 141,
+    "end": 143
+  },
+  {
+    "file": "backend/app/bot/services.py",
+    "symbol": "close",
+    "line": 145,
+    "end": 149
+  },
+  {
+    "file": "backend/app/core/config.py",
+    "symbol": "Settings",
+    "line": 9,
+    "end": 96
+  },
+  {
+    "file": "backend/app/core/config.py",
+    "symbol": "validate_local_alpha",
+    "line": 42,
+    "end": 48
+  },
+  {
+    "file": "backend/app/core/config.py",
+    "symbol": "validate_bot_username",
+    "line": 52,
+    "end": 58
+  },
+  {
+    "file": "backend/app/core/config.py",
+    "symbol": "validate_allowed_chat_ids",
+    "line": 62,
+    "end": 65
+  },
+  {
+    "file": "backend/app/core/config.py",
+    "symbol": "validate_cors_origins",
+    "line": 69,
+    "end": 82
+  },
+  {
+    "file": "backend/app/core/config.py",
+    "symbol": "validate_database_url",
+    "line": 86,
+    "end": 96
+  },
+  {
+    "file": "backend/app/core/errors.py",
+    "symbol": "PublicError",
+    "line": 10,
+    "end": 16
+  },
+  {
+    "file": "backend/app/core/errors.py",
+    "symbol": "error_handler",
+    "line": 19,
+    "end": 54
+  },
+  {
+    "file": "backend/app/core/errors.py",
+    "symbol": "__init__",
+    "line": 13,
+    "end": 16
+  },
+  {
+    "file": "backend/app/db/base.py",
+    "symbol": "Base",
+    "line": 5,
+    "end": 12
+  },
+  {
+    "file": "backend/app/db/models.py",
+    "symbol": "Timestamps",
+    "line": 18,
+    "end": 22
+  },
+  {
+    "file": "backend/app/db/models.py",
+    "symbol": "TelegramUser",
+    "line": 25,
+    "end": 31
+  },
+  {
+    "file": "backend/app/db/models.py",
+    "symbol": "Match",
+    "line": 34,
+    "end": 44
+  },
+  {
+    "file": "backend/app/db/models.py",
+    "symbol": "MatchAnalysis",
+    "line": 47,
+    "end": 64
+  },
+  {
+    "file": "backend/app/db/models.py",
+    "symbol": "UserMatchHistory",
+    "line": 67,
+    "end": 79
+  },
+  {
+    "file": "backend/app/db/repositories.py",
+    "symbol": "_utc",
+    "line": 11,
+    "end": 16
+  },
+  {
+    "file": "backend/app/db/repositories.py",
+    "symbol": "VerifiedTelegramUser",
+    "line": 20,
+    "end": 28
+  },
+  {
+    "file": "backend/app/db/repositories.py",
+    "symbol": "get_telegram_user",
+    "line": 31,
+    "end": 32
+  },
+  {
+    "file": "backend/app/db/repositories.py",
+    "symbol": "upsert_verified_user",
+    "line": 35,
+    "end": 43
+  },
+  {
+    "file": "backend/app/db/repositories.py",
+    "symbol": "upsert_match",
+    "line": 46,
+    "end": 59
+  },
+  {
+    "file": "backend/app/db/repositories.py",
+    "symbol": "get_match",
+    "line": 62,
+    "end": 63
+  },
+  {
+    "file": "backend/app/db/repositories.py",
+    "symbol": "save_analysis",
+    "line": 66,
+    "end": 80
+  },
+  {
+    "file": "backend/app/db/repositories.py",
+    "symbol": "record_view",
+    "line": 83,
+    "end": 94
+  },
+  {
+    "file": "backend/app/db/repositories.py",
+    "symbol": "recent_matches",
+    "line": 97,
+    "end": 105
+  },
+  {
+    "file": "backend/app/db/session.py",
+    "symbol": "Database",
+    "line": 8,
+    "end": 20
+  },
+  {
+    "file": "backend/app/db/session.py",
+    "symbol": "get_db_session",
+    "line": 23,
+    "end": 30
+  },
+  {
+    "file": "backend/app/db/session.py",
+    "symbol": "__init__",
+    "line": 11,
+    "end": 17
+  },
+  {
+    "file": "backend/app/db/session.py",
+    "symbol": "close",
+    "line": 19,
+    "end": 20
+  },
+  {
+    "file": "backend/app/integrations/opendota.py",
+    "symbol": "OpenDotaStatus",
+    "line": 12,
+    "end": 18
+  },
+  {
+    "file": "backend/app/integrations/opendota.py",
+    "symbol": "OpenDotaResult",
+    "line": 22,
+    "end": 27
+  },
+  {
+    "file": "backend/app/integrations/opendota.py",
+    "symbol": "_is_int",
+    "line": 42,
+    "end": 43
+  },
+  {
+    "file": "backend/app/integrations/opendota.py",
+    "symbol": "_presence",
+    "line": 46,
+    "end": 55
+  },
+  {
+    "file": "backend/app/integrations/opendota.py",
+    "symbol": "_sanitize",
+    "line": 58,
+    "end": 75
+  },
+  {
+    "file": "backend/app/integrations/opendota.py",
+    "symbol": "parse_match_response",
+    "line": 78,
+    "end": 115
+  },
+  {
+    "file": "backend/app/integrations/opendota.py",
+    "symbol": "parse_retry_after",
+    "line": 118,
+    "end": 121
+  },
+  {
+    "file": "backend/app/integrations/opendota.py",
+    "symbol": "OpenDotaClient",
+    "line": 124,
+    "end": 174
+  },
+  {
+    "file": "backend/app/integrations/opendota.py",
+    "symbol": "__init__",
+    "line": 125,
+    "end": 138
+  },
+  {
+    "file": "backend/app/integrations/opendota.py",
+    "symbol": "close",
+    "line": 140,
+    "end": 141
+  },
+  {
+    "file": "backend/app/integrations/opendota.py",
+    "symbol": "get_json",
+    "line": 143,
+    "end": 164
+  },
+  {
+    "file": "backend/app/integrations/opendota.py",
+    "symbol": "fetch_match",
+    "line": 166,
+    "end": 174
+  },
+  {
+    "file": "backend/app/integrations/opendota_matchups.py",
+    "symbol": "MatchupStat",
+    "line": 13,
+    "end": 29
+  },
+  {
+    "file": "backend/app/integrations/opendota_matchups.py",
+    "symbol": "MatchupBatch",
+    "line": 32,
+    "end": 36
+  },
+  {
+    "file": "backend/app/integrations/opendota_matchups.py",
+    "symbol": "OpenDotaMatchups",
+    "line": 39,
+    "end": 82
+  },
+  {
+    "file": "backend/app/integrations/opendota_matchups.py",
+    "symbol": "parse_matchups",
+    "line": 85,
+    "end": 102
+  },
+  {
+    "file": "backend/app/integrations/opendota_matchups.py",
+    "symbol": "check_counts",
+    "line": 24,
+    "end": 29
+  },
+  {
+    "file": "backend/app/integrations/opendota_matchups.py",
+    "symbol": "__init__",
+    "line": 41,
+    "end": 50
+  },
+  {
+    "file": "backend/app/integrations/opendota_matchups.py",
+    "symbol": "fetch",
+    "line": 52,
+    "end": 82
+  },
+  {
+    "file": "backend/app/main.py",
+    "symbol": "create_app",
+    "line": 22,
+    "end": 75
+  },
+  {
+    "file": "backend/app/main.py",
+    "symbol": "lifespan",
+    "line": 26,
+    "end": 52
+  },
+  {
+    "file": "backend/app/models/auth.py",
+    "symbol": "TelegramLoginRequest",
+    "line": 7,
+    "end": 9
+  },
+  {
+    "file": "backend/app/models/auth.py",
+    "symbol": "UserResponse",
+    "line": 12,
+    "end": 19
+  },
+  {
+    "file": "backend/app/models/auth.py",
+    "symbol": "TelegramLoginResponse",
+    "line": 22,
+    "end": 26
+  },
+  {
+    "file": "backend/app/models/draft.py",
+    "symbol": "Reason",
+    "line": 10,
+    "end": 20
+  },
+  {
+    "file": "backend/app/models/draft.py",
+    "symbol": "Evaluation",
+    "line": 23,
+    "end": 29
+  },
+  {
+    "file": "backend/app/models/draft.py",
+    "symbol": "PickVisibility",
+    "line": 32,
+    "end": 39
+  },
+  {
+    "file": "backend/app/models/draft.py",
+    "symbol": "LaterInfluence",
+    "line": 42,
+    "end": 46
+  },
+  {
+    "file": "backend/app/models/draft.py",
+    "symbol": "PickEvaluation",
+    "line": 49,
+    "end": 68
+  },
+  {
+    "file": "backend/app/models/draft.py",
+    "symbol": "TeamDraftScore",
+    "line": 71,
+    "end": 76
+  },
+  {
+    "file": "backend/app/models/draft.py",
+    "symbol": "DraftReport",
+    "line": 79,
+    "end": 94
+  },
+  {
+    "file": "backend/app/models/error.py",
+    "symbol": "ErrorDetail",
+    "line": 4,
+    "end": 6
+  },
+  {
+    "file": "backend/app/models/error.py",
+    "symbol": "ApiError",
+    "line": 9,
+    "end": 12
+  },
+  {
+    "file": "backend/app/models/error.py",
+    "symbol": "ErrorResponse",
+    "line": 15,
+    "end": 16
+  },
+  {
+    "file": "backend/app/models/health.py",
+    "symbol": "HealthResponse",
+    "line": 6,
+    "end": 10
+  },
+  {
+    "file": "backend/app/models/health.py",
+    "symbol": "DatabaseHealthResponse",
+    "line": 13,
+    "end": 15
+  },
+  {
+    "file": "backend/app/models/match_api.py",
+    "symbol": "MatchError",
+    "line": 21,
+    "end": 24
+  },
+  {
+    "file": "backend/app/models/match_api.py",
+    "symbol": "AnalysisState",
+    "line": 27,
+    "end": 30
+  },
+  {
+    "file": "backend/app/models/match_api.py",
+    "symbol": "OverviewPlayer",
+    "line": 33,
+    "end": 38
+  },
+  {
+    "file": "backend/app/models/match_api.py",
+    "symbol": "OverviewTeam",
+    "line": 41,
+    "end": 42
+  },
+  {
+    "file": "backend/app/models/match_api.py",
+    "symbol": "OverviewTeamStats",
+    "line": 45,
+    "end": 48
+  },
+  {
+    "file": "backend/app/models/match_api.py",
+    "symbol": "OverviewTeamStatsBySide",
+    "line": 51,
+    "end": 53
+  },
+  {
+    "file": "backend/app/models/match_api.py",
+    "symbol": "OverviewReport",
+    "line": 56,
+    "end": 70
+  },
+  {
+    "file": "backend/app/models/match_api.py",
+    "symbol": "PublicItem",
+    "line": 73,
+    "end": 78
+  },
+  {
+    "file": "backend/app/models/match_api.py",
+    "symbol": "PublicPlayer",
+    "line": 81,
+    "end": 114
+  },
+  {
+    "file": "backend/app/models/match_api.py",
+    "symbol": "PlayersReport",
+    "line": 117,
+    "end": 123
+  },
+  {
+    "file": "backend/app/models/match_api.py",
+    "symbol": "MatchEnvelope",
+    "line": 129,
+    "end": 141
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "StrictDTO",
+    "line": 8,
+    "end": 9
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "Team",
+    "line": 12,
+    "end": 14
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "QualityStatus",
+    "line": 17,
+    "end": 20
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "EvidenceStatus",
+    "line": 23,
+    "end": 26
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "Position",
+    "line": 29,
+    "end": 34
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "MetricStatus",
+    "line": 37,
+    "end": 40
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "PlayerField",
+    "line": 43,
+    "end": 70
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "SummaryField",
+    "line": 73,
+    "end": 85
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "DataQuality",
+    "line": 88,
+    "end": 93
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "PositionEvidence",
+    "line": 96,
+    "end": 109
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "FarmPositionEvidence",
+    "line": 112,
+    "end": 124
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "PlayerStat",
+    "line": 127,
+    "end": 162
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "HeroRosterEntry",
+    "line": 165,
+    "end": 169
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "TeamSummary",
+    "line": 172,
+    "end": 176
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "MatchSummary",
+    "line": 179,
+    "end": 192
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "DraftAction",
+    "line": 195,
+    "end": 201
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "DraftRawData",
+    "line": 204,
+    "end": 211
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "PlayerEventLogs",
+    "line": 214,
+    "end": 218
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "MatchEventRawData",
+    "line": 221,
+    "end": 230
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "NormalizedRawData",
+    "line": 233,
+    "end": 235
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "DerivedMetric",
+    "line": 238,
+    "end": 250
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "PlayerDerivedStats",
+    "line": 253,
+    "end": 258
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "NormalizedMatch",
+    "line": 261,
+    "end": 269
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "validate_evidence",
+    "line": 103,
+    "end": 109
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "consistent",
+    "line": 118,
+    "end": 124
+  },
+  {
+    "file": "backend/app/models/matches.py",
+    "symbol": "validate_metric",
+    "line": 244,
+    "end": 250
+  },
+  {
+    "file": "backend/app/models/performance.py",
+    "symbol": "PerformanceSignal",
+    "line": 7,
+    "end": 15
+  },
+  {
+    "file": "backend/app/models/performance.py",
+    "symbol": "PlayerPerformance",
+    "line": 18,
+    "end": 35
+  },
+  {
+    "file": "backend/app/models/performance.py",
+    "symbol": "PerformanceSelection",
+    "line": 38,
+    "end": 42
+  },
+  {
+    "file": "backend/app/models/performance.py",
+    "symbol": "PreliminarySelection",
+    "line": 54,
+    "end": 84
+  },
+  {
+    "file": "backend/app/models/performance.py",
+    "symbol": "TeamPerformanceReport",
+    "line": 87,
+    "end": 95
+  },
+  {
+    "file": "backend/app/models/performance.py",
+    "symbol": "RuinerReport",
+    "line": 98,
+    "end": 106
+  },
+  {
+    "file": "backend/app/models/performance.py",
+    "symbol": "coherent_result",
+    "line": 66,
+    "end": 84
+  },
+  {
+    "file": "backend/app/models/timeline.py",
+    "symbol": "TimelineActor",
+    "line": 8,
+    "end": 12
+  },
+  {
+    "file": "backend/app/models/timeline.py",
+    "symbol": "TimelineEvent",
+    "line": 15,
+    "end": 34
+  },
+  {
+    "file": "backend/app/models/timeline.py",
+    "symbol": "AdvantagePoint",
+    "line": 37,
+    "end": 41
+  },
+  {
+    "file": "backend/app/models/timeline.py",
+    "symbol": "TurningPoint",
+    "line": 44,
+    "end": 54
+  },
+  {
+    "file": "backend/app/models/timeline.py",
+    "symbol": "TimelineReport",
+    "line": 57,
+    "end": 70
+  },
+  {
+    "file": "backend/app/services/draft/analyzer.py",
+    "symbol": "_digest",
+    "line": 13,
+    "end": 14
+  },
+  {
+    "file": "backend/app/services/draft/analyzer.py",
+    "symbol": "analyze_draft",
+    "line": 17,
+    "end": 139
+  },
+  {
+    "file": "backend/app/services/draft/analyzer.py",
+    "symbol": "analyze_with_matchups",
+    "line": 142,
+    "end": 154
+  },
+  {
+    "file": "backend/app/services/draft/config.py",
+    "symbol": "VisibilityPolicy",
+    "line": 18,
+    "end": 23
+  },
+  {
+    "file": "backend/app/services/draft/config.py",
+    "symbol": "HeroProfile",
+    "line": 26,
+    "end": 33
+  },
+  {
+    "file": "backend/app/services/draft/config.py",
+    "symbol": "HeroDescriptor",
+    "line": 36,
+    "end": 43
+  },
+  {
+    "file": "backend/app/services/draft/config.py",
+    "symbol": "InteractionRule",
+    "line": 46,
+    "end": 56
+  },
+  {
+    "file": "backend/app/services/draft/config.py",
+    "symbol": "default_weights",
+    "line": 59,
+    "end": 60
+  },
+  {
+    "file": "backend/app/services/draft/config.py",
+    "symbol": "DraftConfig",
+    "line": 63,
+    "end": 100
+  },
+  {
+    "file": "backend/app/services/draft/config.py",
+    "symbol": "default_config",
+    "line": 103,
+    "end": 145
+  },
+  {
+    "file": "backend/app/services/draft/config.py",
+    "symbol": "validate_config",
+    "line": 81,
+    "end": 100
+  },
+  {
+    "file": "backend/app/services/draft/scoring.py",
+    "symbol": "ContextScore",
+    "line": 13,
+    "end": 17
+  },
+  {
+    "file": "backend/app/services/draft/scoring.py",
+    "symbol": "insufficient",
+    "line": 20,
+    "end": 21
+  },
+  {
+    "file": "backend/app/services/draft/scoring.py",
+    "symbol": "aggregate",
+    "line": 24,
+    "end": 38
+  },
+  {
+    "file": "backend/app/services/draft/scoring.py",
+    "symbol": "applicable_profiles",
+    "line": 41,
+    "end": 42
+  },
+  {
+    "file": "backend/app/services/draft/scoring.py",
+    "symbol": "composition",
+    "line": 45,
+    "end": 93
+  },
+  {
+    "file": "backend/app/services/draft/scoring.py",
+    "symbol": "matchup",
+    "line": 96,
+    "end": 130
+  },
+  {
+    "file": "backend/app/services/draft/scoring.py",
+    "symbol": "score_context",
+    "line": 133,
+    "end": 218
+  },
+  {
+    "file": "backend/app/services/draft/scoring.py",
+    "symbol": "avg",
+    "line": 195,
+    "end": 197
+  },
+  {
+    "file": "backend/app/services/draft/visibility.py",
+    "symbol": "Sequence",
+    "line": 10,
+    "end": 18
+  },
+  {
+    "file": "backend/app/services/draft/visibility.py",
+    "symbol": "resolve_sequence",
+    "line": 21,
+    "end": 89
+  },
+  {
+    "file": "backend/app/services/draft/visibility.py",
+    "symbol": "sequential",
+    "line": 17,
+    "end": 18
+  },
+  {
+    "file": "backend/app/services/match_analysis.py",
+    "symbol": "Ingestion",
+    "line": 52,
+    "end": 53
+  },
+  {
+    "file": "backend/app/services/match_analysis.py",
+    "symbol": "digest",
+    "line": 56,
+    "end": 57
+  },
+  {
+    "file": "backend/app/services/match_analysis.py",
+    "symbol": "public_base",
+    "line": 60,
+    "end": 126
+  },
+  {
+    "file": "backend/app/services/match_analysis.py",
+    "symbol": "get_analysis",
+    "line": 129,
+    "end": 131
+  },
+  {
+    "file": "backend/app/services/match_analysis.py",
+    "symbol": "MatchAnalysisService",
+    "line": 134,
+    "end": 269
+  },
+  {
+    "file": "backend/app/services/match_analysis.py",
+    "symbol": "format_group_summary",
+    "line": 272,
+    "end": 299
+  },
+  {
+    "file": "backend/app/services/match_analysis.py",
+    "symbol": "ingest_match",
+    "line": 53,
+    "end": 53
+  },
+  {
+    "file": "backend/app/services/match_analysis.py",
+    "symbol": "__init__",
+    "line": 136,
+    "end": 147
+  },
+  {
+    "file": "backend/app/services/match_analysis.py",
+    "symbol": "_state",
+    "line": 149,
+    "end": 154
+  },
+  {
+    "file": "backend/app/services/match_analysis.py",
+    "symbol": "recover_interrupted",
+    "line": 156,
+    "end": 167
+  },
+  {
+    "file": "backend/app/services/match_analysis.py",
+    "symbol": "process",
+    "line": 169,
+    "end": 179
+  },
+  {
+    "file": "backend/app/services/match_analysis.py",
+    "symbol": "_process",
+    "line": 181,
+    "end": 269
+  },
+  {
+    "file": "backend/app/services/match_ingestion.py",
+    "symbol": "MatchProvider",
+    "line": 13,
+    "end": 14
+  },
+  {
+    "file": "backend/app/services/match_ingestion.py",
+    "symbol": "MatchIngestionService",
+    "line": 17,
+    "end": 105
+  },
+  {
+    "file": "backend/app/services/match_ingestion.py",
+    "symbol": "fetch_match",
+    "line": 14,
+    "end": 14
+  },
+  {
+    "file": "backend/app/services/match_ingestion.py",
+    "symbol": "__init__",
+    "line": 20,
+    "end": 31
+  },
+  {
+    "file": "backend/app/services/match_ingestion.py",
+    "symbol": "ingest_match",
+    "line": 33,
+    "end": 42
+  },
+  {
+    "file": "backend/app/services/match_ingestion.py",
+    "symbol": "_read_cache",
+    "line": 44,
+    "end": 70
+  },
+  {
+    "file": "backend/app/services/match_ingestion.py",
+    "symbol": "_mark_pending",
+    "line": 72,
+    "end": 76
+  },
+  {
+    "file": "backend/app/services/match_ingestion.py",
+    "symbol": "_ttl",
+    "line": 78,
+    "end": 85
+  },
+  {
+    "file": "backend/app/services/match_ingestion.py",
+    "symbol": "_save_result",
+    "line": 87,
+    "end": 105
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "MatchNormalizationError",
+    "line": 50,
+    "end": 51
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_is_int",
+    "line": 54,
+    "end": 55
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_int",
+    "line": 58,
+    "end": 59
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_float",
+    "line": 62,
+    "end": 65
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_id",
+    "line": 68,
+    "end": 74
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_quality",
+    "line": 77,
+    "end": 80
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_position",
+    "line": 83,
+    "end": 90
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_item_timings",
+    "line": 93,
+    "end": 107
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_player",
+    "line": 110,
+    "end": 191
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_players",
+    "line": 194,
+    "end": 224
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_draft",
+    "line": 227,
+    "end": 270
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_json_list",
+    "line": 273,
+    "end": 274
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_number_list",
+    "line": 277,
+    "end": 283
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_events",
+    "line": 286,
+    "end": 311
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_metric",
+    "line": 314,
+    "end": 319
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "kill_participation_counter_ratio",
+    "line": 322,
+    "end": 331
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_participation_counter_metric",
+    "line": 334,
+    "end": 340
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_derived",
+    "line": 343,
+    "end": 355
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "_team_value",
+    "line": 358,
+    "end": 362
+  },
+  {
+    "file": "backend/app/services/match_normalization.py",
+    "symbol": "normalize_match_snapshot",
+    "line": 365,
+    "end": 466
+  },
+  {
+    "file": "backend/app/services/performance.py",
+    "symbol": "role_group",
+    "line": 28,
+    "end": 29
+  },
+  {
+    "file": "backend/app/services/performance.py",
+    "symbol": "participation_assessment",
+    "line": 32,
+    "end": 58
+  },
+  {
+    "file": "backend/app/services/performance.py",
+    "symbol": "observed",
+    "line": 61,
+    "end": 78
+  },
+  {
+    "file": "backend/app/services/performance.py",
+    "symbol": "select_team",
+    "line": 81,
+    "end": 95
+  },
+  {
+    "file": "backend/app/services/performance.py",
+    "symbol": "RoleAwarePerformanceEvaluator",
+    "line": 98,
+    "end": 251
+  },
+  {
+    "file": "backend/app/services/performance.py",
+    "symbol": "analyze_performance",
+    "line": 254,
+    "end": 257
+  },
+  {
+    "file": "backend/app/services/performance.py",
+    "symbol": "format_performance_summary",
+    "line": 260,
+    "end": 269
+  },
+  {
+    "file": "backend/app/services/performance.py",
+    "symbol": "rate",
+    "line": 64,
+    "end": 65
+  },
+  {
+    "file": "backend/app/services/performance.py",
+    "symbol": "__init__",
+    "line": 99,
+    "end": 100
+  },
+  {
+    "file": "backend/app/services/performance.py",
+    "symbol": "evaluate",
+    "line": 102,
+    "end": 251
+  },
+  {
+    "file": "backend/app/services/performance.py",
+    "symbol": "compare",
+    "line": 161,
+    "end": 199
+  },
+  {
+    "file": "backend/app/services/performance_config.py",
+    "symbol": "PerformanceConfig",
+    "line": 5,
+    "end": 33
+  },
+  {
+    "file": "backend/app/services/performance_config.py",
+    "symbol": "weights_valid",
+    "line": 26,
+    "end": 33
+  },
+  {
+    "file": "backend/app/services/performance_preliminary.py",
+    "symbol": "select_preliminary",
+    "line": 15,
+    "end": 75
+  },
+  {
+    "file": "backend/app/services/performance_preliminary.py",
+    "symbol": "project_preliminary",
+    "line": 78,
+    "end": 109
+  },
+  {
+    "file": "backend/app/services/performance_preliminary.py",
+    "symbol": "refuse",
+    "line": 35,
+    "end": 36
+  },
+  {
+    "file": "backend/app/services/performance_preliminary.py",
+    "symbol": "rank_key",
+    "line": 54,
+    "end": 56
+  },
+  {
+    "file": "backend/app/services/player_catalog.py",
+    "symbol": "hero_catalog",
+    "line": 11,
+    "end": 13
+  },
+  {
+    "file": "backend/app/services/player_catalog.py",
+    "symbol": "item_catalog",
+    "line": 17,
+    "end": 19
+  },
+  {
+    "file": "backend/app/services/player_catalog.py",
+    "symbol": "match_metadata_catalog",
+    "line": 23,
+    "end": 27
+  },
+  {
+    "file": "backend/app/services/player_catalog.py",
+    "symbol": "resolve_item",
+    "line": 30,
+    "end": 43
+  },
+  {
+    "file": "backend/app/services/sessions.py",
+    "symbol": "auth_secrets",
+    "line": 14,
+    "end": 19
+  },
+  {
+    "file": "backend/app/services/sessions.py",
+    "symbol": "create_session",
+    "line": 22,
+    "end": 27
+  },
+  {
+    "file": "backend/app/services/sessions.py",
+    "symbol": "read_session",
+    "line": 30,
+    "end": 49
+  },
+  {
+    "file": "backend/app/services/telegram_auth.py",
+    "symbol": "InvalidInitData",
+    "line": 12,
+    "end": 14
+  },
+  {
+    "file": "backend/app/services/telegram_auth.py",
+    "symbol": "TelegramUserData",
+    "line": 17,
+    "end": 22
+  },
+  {
+    "file": "backend/app/services/telegram_auth.py",
+    "symbol": "_unique_object",
+    "line": 25,
+    "end": 31
+  },
+  {
+    "file": "backend/app/services/telegram_auth.py",
+    "symbol": "_invalid_constant",
+    "line": 34,
+    "end": 35
+  },
+  {
+    "file": "backend/app/services/telegram_auth.py",
+    "symbol": "validate_init_data",
+    "line": 38,
+    "end": 79
+  },
+  {
+    "file": "backend/app/services/telegram_auth.py",
+    "symbol": "__init__",
+    "line": 13,
+    "end": 14
+  },
+  {
+    "file": "backend/app/services/timeline.py",
+    "symbol": "_int",
+    "line": 17,
+    "end": 18
+  },
+  {
+    "file": "backend/app/services/timeline.py",
+    "symbol": "_time",
+    "line": 21,
+    "end": 23
+  },
+  {
+    "file": "backend/app/services/timeline.py",
+    "symbol": "_clock",
+    "line": 26,
+    "end": 28
+  },
+  {
+    "file": "backend/app/services/timeline.py",
+    "symbol": "_actor",
+    "line": 31,
+    "end": 38
+  },
+  {
+    "file": "backend/app/services/timeline.py",
+    "symbol": "_side",
+    "line": 41,
+    "end": 46
+  },
+  {
+    "file": "backend/app/services/timeline.py",
+    "symbol": "_objective",
+    "line": 49,
+    "end": 64
+  },
+  {
+    "file": "backend/app/services/timeline.py",
+    "symbol": "_event",
+    "line": 67,
+    "end": 79
+  },
+  {
+    "file": "backend/app/services/timeline.py",
+    "symbol": "_curve",
+    "line": 82,
+    "end": 94
+  },
+  {
+    "file": "backend/app/services/timeline.py",
+    "symbol": "_turning",
+    "line": 97,
+    "end": 127
+  },
+  {
+    "file": "backend/app/services/timeline.py",
+    "symbol": "analyze_timeline",
+    "line": 130,
+    "end": 261
+  },
+  {
+    "file": "backend/app/services/timeline.py",
+    "symbol": "filter_timeline_events",
+    "line": 264,
+    "end": 267
+  },
+  {
+    "file": "backend/app/services/timeline.py",
+    "symbol": "add",
+    "line": 136,
+    "end": 139
+  }
+]

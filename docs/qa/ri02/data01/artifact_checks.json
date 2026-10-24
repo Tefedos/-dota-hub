@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "reparse_status": 12,
+    "sanitized_raw_reparse_unchanged": 12,
+    "deterministic_replay": 12,
+    "scalar_raw_equals_normalized": 1860,
+    "side_equals_slot": 120,
+    "rate_from_source": 480,
+    "observed_scalar_exact": 720,
+    "normalized_counter_ratio": 120,
+    "normalized_kda": 120,
+    "observed_kda": 120,
+    "independent_axis": 252,
+    "csv_exact_roundtrip": 1,
+    "csv_required_columns": 1,
+    "existing_suite_clean": 1,
+    "code_link_line_exists": 33
+  },
+  "failures": [],
+  "total_checks": 3864,
+  "links": 33
+}

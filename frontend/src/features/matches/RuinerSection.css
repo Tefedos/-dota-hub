@@ -1,0 +1,32 @@
+.ri-section { min-width: 0; }
+.ri-team-switch { display: flex; gap: .5rem; margin: 1rem 0; }
+.ri-team-switch button, .ri-limitations summary { min-height: 44px; }
+.ri-result { margin-bottom: 1rem; }
+.ri-result h3 { margin-top: 0; }
+.ri-players { display: grid; gap: .75rem; }
+.ri-section .ri-player { padding: 0; min-width: 0; }
+.ri-section .ri-player-selected { border-color: var(--accent); box-shadow: inset 3px 0 var(--accent); }
+.ri-player-heading { display: flex; align-items: center; gap: 1rem; padding: 1rem; cursor: pointer; list-style: none; }
+.ri-player-heading::-webkit-details-marker { display: none; }
+.ri-identity { flex: 1; min-width: 0; }
+.ri-identity > *, .ri-player-score > * { display: block; }
+.ri-identity > span, .ri-player-score > span, .ri-player-score small, .ri-details-label { font-size: .85rem; color: var(--muted); }
+.ri-identity small { color: var(--accent); margin-top: .25rem; }
+.ri-player-score strong { font-size: 1.2rem; }
+.ri-player-details { padding: 0 1rem 1rem; border-top: 1px solid #39364d; }
+.ri-player-details h4 { margin-bottom: .5rem; }
+.ri-signals { padding-left: 1.25rem; }
+.ri-signals p { margin: .35rem 0; }
+.ri-signals li + li { margin-top: 1rem; }
+.ri-section p, .ri-section li, .ri-identity, .ri-player-score { overflow-wrap: anywhere; }
+.ri-limitations { margin-top: 1rem; }
+.ri-limitations summary { cursor: pointer; display: flex; align-items: center; }
+.ri-section summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.ri-team-switch button[aria-pressed="true"] { background: #302844; border-color: var(--accent); }
+@media (max-width: 600px) {
+  .ri-player-heading { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: .65rem; padding: .8rem; }
+  .ri-player-heading .player-portrait { width: 64px; height: 36px; }
+  .ri-player-score { grid-column: 1 / -1; }
+  .ri-details-label { grid-column: 1 / -1; }
+  .ri-player-details { padding: 0 .8rem .8rem; }
+}

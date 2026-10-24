@@ -126,3 +126,19 @@ it('shows the players loading, success and missing-match states without a techni
   expect(await screen.findByText('Матч не найден в OpenDota.')).toBeTruthy();
   expect(document.body.textContent).not.toContain('internal');
 });
+
+it('shows RI loading, empty, error and retry through the existing page', async () => {
+  let complete!: (value: Response) => void;
+  vi.mocked(fetch).mockImplementation(path => String(path).endsWith('/ruiner')
+    ? new Promise<Response>(resolve => { complete = resolve; }) : Promise.resolve(json(envelope)));
+  render(<MemoryRouter initialEntries={['/matches/8888765469']}><Routes><Route path="/matches/:matchId" element={<MatchReportPage session={session} />} /></Routes></MemoryRouter>);
+  await screen.findByRole('heading', { name: 'Обзор матча' });
+  fireEvent.click(screen.getByRole('button', { name: 'Индекс ошибок / Вывод' }));
+  expect(screen.getByText('Загружаем анализ…')).toBeTruthy();
+  complete(json({ ...envelope, data: { match_id: envelope.match_id, quality: 'insufficient', players: [], teams: {}, limitations: [] } }));
+  expect(await screen.findByText('Данные игроков этой команды недоступны.')).toBeTruthy();
+  vi.mocked(fetch).mockRejectedValue(new TypeError('network'));
+  fireEvent.click(screen.getByRole('button', { name: 'Обновить' }));
+  expect(await screen.findByText('Нет связи с сервером. Проверьте подключение и повторите попытку.')).toBeTruthy();
+  expect(screen.queryByRole('heading', { name: 'Предварительный лидер не определён' })).toBeNull();
+});

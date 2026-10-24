@@ -1,0 +1,150 @@
+[
+  {
+    "hero_id": 67,
+    "role": "core",
+    "endpoint": "https://api.opendota.com/api/benchmarks?hero_id=67&role=core",
+    "http_status": 200,
+    "sha256": "d1647c62586e5d5d9d1875b5d0befe32704f31cb35c7c96a917f4258d3f54a11",
+    "raw_path": "docs/qa/ri02/cal01/raw/benchmark_67_core.json",
+    "metrics": {
+      "gold_per_min": {
+        "percentile_points": 11,
+        "p50": 614,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "xp_per_min": {
+        "percentile_points": 11,
+        "p50": 895,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "kills_per_min": {
+        "percentile_points": 11,
+        "p50": 0.2610759493670886,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "deaths_per_min": {
+        "percentile_points": 11,
+        "p50": 0.15424164524421594,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "assists_per_min": {
+        "percentile_points": 11,
+        "p50": 0.3851963746223565,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "last_hits_per_min": {
+        "percentile_points": 11,
+        "p50": 7.224489795918368,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "denies_per_min": {
+        "percentile_points": 11,
+        "p50": 0.1989225031081641,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "hero_damage_per_min": {
+        "percentile_points": 11,
+        "p50": 953.3613445378152,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "hero_healing_per_min": {
+        "percentile_points": 11,
+        "p50": 0,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "tower_damage": {
+        "percentile_points": 11,
+        "p50": 3853,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      }
+    },
+    "sample_size": null,
+    "patch_filter": null,
+    "position_1_to_5_filter": null,
+    "http_date": "Sat, 24 Oct 2026 00:28:57 GMT"
+  },
+  {
+    "hero_id": 111,
+    "role": "support",
+    "endpoint": "https://api.opendota.com/api/benchmarks?hero_id=111&role=support",
+    "http_status": 200,
+    "sha256": "037ff45df502b8c00d6abb4bd7200bd5eec2305b4656ac881e1cc8dec87fe367",
+    "raw_path": "docs/qa/ri02/cal01/raw/benchmark_111_support.json",
+    "metrics": {
+      "gold_per_min": {
+        "percentile_points": 11,
+        "p50": 318,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "xp_per_min": {
+        "percentile_points": 11,
+        "p50": 507,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "kills_per_min": {
+        "percentile_points": 11,
+        "p50": 0.10172365074879909,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "deaths_per_min": {
+        "percentile_points": 11,
+        "p50": 0.21413276231263384,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "assists_per_min": {
+        "percentile_points": 11,
+        "p50": 0.5016077170418006,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "last_hits_per_min": {
+        "percentile_points": 11,
+        "p50": 1.0047095761381477,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "denies_per_min": {
+        "percentile_points": 11,
+        "p50": 0.04557538928978352,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "hero_damage_per_min": {
+        "percentile_points": 11,
+        "p50": 249.22813036020585,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "hero_healing_per_min": {
+        "percentile_points": 11,
+        "p50": 323.21665089877007,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      },
+      "tower_damage": {
+        "percentile_points": 11,
+        "p50": 173,
+        "minimum_returned_percentile": 0.1,
+        "maximum_returned_percentile": 0.99
+      }
+    },
+    "sample_size": null,
+    "patch_filter": null,
+    "position_1_to_5_filter": null,
+    "http_date": "Sat, 24 Oct 2026 00:29:03 GMT"
+  }
+]

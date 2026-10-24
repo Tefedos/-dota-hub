@@ -1,0 +1,820 @@
+[
+  {
+    "id": "missing_match_id",
+    "synthetic": true,
+    "parser_status": "MALFORMED_RESPONSE",
+    "normalizer": "MatchNormalizationError"
+  },
+  {
+    "id": "zero_duration",
+    "synthetic": true,
+    "parser_status": "MALFORMED_RESPONSE",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": null,
+      "axes": {
+        "survival": null,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": null,
+        "kill_participation": 0.8,
+        "kda": 0.6666666666666666,
+        "gpm": 211.0,
+        "xpm": 329.0,
+        "hero_damage_per_min": null,
+        "tower_damage_per_min": null,
+        "healing_per_min": null,
+        "obs_placed": 3.0,
+        "sen_placed": 5.0,
+        "observer_kills": 1.0,
+        "sentry_kills": 0.0
+      },
+      "evidence_coverage": 0.0,
+      "reason_codes": [
+        "position_estimated",
+        "economy_not_penalized",
+        "short_or_unknown_duration",
+        "kda_descriptive_only",
+        "insufficient_data"
+      ]
+    },
+    "quality": "insufficient"
+  },
+  {
+    "id": "negative_stats",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": null,
+      "axes": {
+        "survival": null,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": null,
+        "kill_participation": null,
+        "kda": null,
+        "gpm": null,
+        "xpm": 329.0,
+        "hero_damage_per_min": 244.4386963269529,
+        "tower_damage_per_min": 7.108122090015519,
+        "healing_per_min": 3.8799793067770305,
+        "obs_placed": 3.0,
+        "sen_placed": 5.0,
+        "observer_kills": 1.0,
+        "sentry_kills": 0.0
+      },
+      "evidence_coverage": 0.0,
+      "reason_codes": [
+        "position_estimated",
+        "economy_not_penalized",
+        "kill_participation_kills_missing",
+        "comparison_unavailable:kill_participation",
+        "team_deaths_missing_or_small",
+        "zero_comparison_reference:tower_damage_per_min",
+        "insufficient_data",
+        "positive:hero_damage_per_min",
+        "observed_contribution:tower_damage_per_min"
+      ]
+    },
+    "quality": "partial"
+  },
+  {
+    "id": "duplicate_slot",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "MatchNormalizationError"
+  },
+  {
+    "id": "incomplete_roster",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": null,
+      "axes": {
+        "survival": 0.4999999999999999,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.3724780134505949,
+        "kill_participation": 0.8,
+        "kda": 0.6666666666666666,
+        "gpm": 211.0,
+        "xpm": 329.0,
+        "hero_damage_per_min": 244.4386963269529,
+        "tower_damage_per_min": 7.108122090015519,
+        "healing_per_min": 3.8799793067770305,
+        "obs_placed": 3.0,
+        "sen_placed": 5.0,
+        "observer_kills": 1.0,
+        "sentry_kills": 0.0
+      },
+      "evidence_coverage": 0.5,
+      "reason_codes": [
+        "position_estimated",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:kill_participation",
+        "zero_comparison_reference:tower_damage_per_min",
+        "insufficient_data",
+        "positive:hero_damage_per_min",
+        "observed_contribution:tower_damage_per_min",
+        "relative_high:deaths_per_min"
+      ]
+    },
+    "quality": "partial"
+  },
+  {
+    "id": "missing_hero",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": null,
+      "axes": {
+        "survival": null,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.3724780134505949,
+        "kill_participation": 0.8,
+        "kda": 0.6666666666666666,
+        "gpm": 211.0,
+        "xpm": 329.0,
+        "hero_damage_per_min": 244.4386963269529,
+        "tower_damage_per_min": 7.108122090015519,
+        "healing_per_min": 3.8799793067770305,
+        "obs_placed": 3.0,
+        "sen_placed": 5.0,
+        "observer_kills": 1.0,
+        "sentry_kills": 0.0
+      },
+      "evidence_coverage": 0.0,
+      "reason_codes": [
+        "position_estimated",
+        "economy_not_penalized",
+        "incomplete_team",
+        "kda_descriptive_only",
+        "insufficient_data"
+      ]
+    },
+    "quality": "partial"
+  },
+  {
+    "id": "missing_kda",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": null,
+      "axes": {
+        "survival": null,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": null,
+        "kill_participation": null,
+        "kda": null,
+        "gpm": 211.0,
+        "xpm": 329.0,
+        "hero_damage_per_min": 244.4386963269529,
+        "tower_damage_per_min": 7.108122090015519,
+        "healing_per_min": 3.8799793067770305,
+        "obs_placed": 3.0,
+        "sen_placed": 5.0,
+        "observer_kills": 1.0,
+        "sentry_kills": 0.0
+      },
+      "evidence_coverage": 0.0,
+      "reason_codes": [
+        "position_estimated",
+        "economy_not_penalized",
+        "kill_participation_kills_missing",
+        "comparison_unavailable:kill_participation",
+        "team_deaths_missing_or_small",
+        "zero_comparison_reference:tower_damage_per_min",
+        "insufficient_data",
+        "positive:hero_damage_per_min",
+        "observed_contribution:tower_damage_per_min"
+      ]
+    },
+    "quality": "partial"
+  },
+  {
+    "id": "zero_score",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": null,
+      "axes": {
+        "survival": 0.4999999999999999,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.3724780134505949,
+        "kill_participation": null,
+        "kda": 0.6666666666666666,
+        "gpm": 211.0,
+        "xpm": 329.0,
+        "hero_damage_per_min": 244.4386963269529,
+        "tower_damage_per_min": 7.108122090015519,
+        "healing_per_min": 3.8799793067770305,
+        "obs_placed": 3.0,
+        "sen_placed": 5.0,
+        "observer_kills": 1.0,
+        "sentry_kills": 0.0
+      },
+      "evidence_coverage": 0.5,
+      "reason_codes": [
+        "position_estimated",
+        "economy_not_penalized",
+        "kill_participation_team_score_zero",
+        "kda_descriptive_only",
+        "comparison_unavailable:kill_participation",
+        "zero_comparison_reference:tower_damage_per_min",
+        "insufficient_data",
+        "positive:hero_damage_per_min",
+        "observed_contribution:tower_damage_per_min",
+        "relative_high:deaths_per_min"
+      ]
+    },
+    "quality": "partial"
+  },
+  {
+    "id": "small_score",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": null,
+      "axes": {
+        "survival": 0.4999999999999999,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.3724780134505949,
+        "kill_participation": null,
+        "kda": 0.6666666666666666,
+        "kill_participation_counter_ratio": 0.8888888888888888,
+        "gpm": 211.0,
+        "xpm": 329.0,
+        "hero_damage_per_min": 244.4386963269529,
+        "tower_damage_per_min": 7.108122090015519,
+        "healing_per_min": 3.8799793067770305,
+        "obs_placed": 3.0,
+        "sen_placed": 5.0,
+        "observer_kills": 1.0,
+        "sentry_kills": 0.0
+      },
+      "evidence_coverage": 0.5,
+      "reason_codes": [
+        "position_estimated",
+        "economy_not_penalized",
+        "kill_participation_team_score_small",
+        "kda_descriptive_only",
+        "comparison_unavailable:kill_participation",
+        "zero_comparison_reference:tower_damage_per_min",
+        "insufficient_data",
+        "positive:hero_damage_per_min",
+        "observed_contribution:tower_damage_per_min",
+        "relative_high:deaths_per_min"
+      ]
+    },
+    "quality": "partial"
+  },
+  {
+    "id": "kp_boundary_equal",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": null,
+      "axes": {
+        "survival": 0.4999999999999999,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.3724780134505949,
+        "kill_participation": 1.0,
+        "kda": 0.8333333333333334,
+        "gpm": 211.0,
+        "xpm": 329.0,
+        "hero_damage_per_min": 244.4386963269529,
+        "tower_damage_per_min": 7.108122090015519,
+        "healing_per_min": 3.8799793067770305,
+        "obs_placed": 3.0,
+        "sen_placed": 5.0,
+        "observer_kills": 1.0,
+        "sentry_kills": 0.0
+      },
+      "evidence_coverage": 0.5,
+      "reason_codes": [
+        "position_estimated",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:kill_participation",
+        "zero_comparison_reference:tower_damage_per_min",
+        "insufficient_data",
+        "positive:hero_damage_per_min",
+        "observed_contribution:tower_damage_per_min",
+        "relative_high:deaths_per_min"
+      ]
+    },
+    "quality": "partial"
+  },
+  {
+    "id": "kp_over_score",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": null,
+      "axes": {
+        "survival": 0.4999999999999999,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.3724780134505949,
+        "kill_participation": null,
+        "kda": 1.0,
+        "kill_participation_counter_ratio": 1.2,
+        "gpm": 211.0,
+        "xpm": 329.0,
+        "hero_damage_per_min": 244.4386963269529,
+        "tower_damage_per_min": 7.108122090015519,
+        "healing_per_min": 3.8799793067770305,
+        "obs_placed": 3.0,
+        "sen_placed": 5.0,
+        "observer_kills": 1.0,
+        "sentry_kills": 0.0
+      },
+      "evidence_coverage": 0.5,
+      "reason_codes": [
+        "position_estimated",
+        "economy_not_penalized",
+        "kill_participation_over_team_score_unverified",
+        "kda_descriptive_only",
+        "comparison_unavailable:kill_participation",
+        "zero_comparison_reference:tower_damage_per_min",
+        "insufficient_data",
+        "positive:hero_damage_per_min",
+        "observed_contribution:tower_damage_per_min",
+        "relative_high:deaths_per_min"
+      ]
+    },
+    "quality": "partial"
+  },
+  {
+    "id": "missing_damage_wards",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": null,
+      "axes": {
+        "survival": 0.4999999999999999,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.3724780134505949,
+        "kill_participation": 0.8,
+        "kda": 0.6666666666666666,
+        "gpm": 211.0,
+        "xpm": 329.0,
+        "hero_damage_per_min": null,
+        "tower_damage_per_min": null,
+        "healing_per_min": null,
+        "obs_placed": null,
+        "sen_placed": null,
+        "observer_kills": null,
+        "sentry_kills": null
+      },
+      "evidence_coverage": 0.5,
+      "reason_codes": [
+        "position_estimated",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:kill_participation",
+        "comparison_unavailable:hero_damage_per_min",
+        "comparison_unavailable:tower_damage_per_min",
+        "comparison_unavailable:healing_per_min",
+        "comparison_unavailable:obs_placed",
+        "comparison_unavailable:sen_placed",
+        "comparison_unavailable:observer_kills",
+        "comparison_unavailable:sentry_kills",
+        "insufficient_data",
+        "relative_high:deaths_per_min"
+      ]
+    },
+    "quality": "partial"
+  },
+  {
+    "id": "unknown_position",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": 10,
+      "axes": {
+        "survival": 0.4999999999999999,
+        "participation": 0.0
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.3724780134505949,
+        "kill_participation": 0.8,
+        "kda": 0.6666666666666666,
+        "gpm": 211.0,
+        "xpm": 329.0,
+        "hero_damage_per_min": 244.4386963269529,
+        "tower_damage_per_min": 7.108122090015519,
+        "healing_per_min": 3.8799793067770305,
+        "obs_placed": 3.0,
+        "sen_placed": 5.0,
+        "observer_kills": 1.0,
+        "sentry_kills": 0.0
+      },
+      "evidence_coverage": 1.0,
+      "reason_codes": [
+        "position_unknown",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "zero_comparison_reference:healing_per_min",
+        "zero_comparison_reference:sentry_kills",
+        "positive:kill_participation",
+        "positive:tower_damage_per_min",
+        "observed_contribution:healing_per_min",
+        "positive:obs_placed",
+        "positive:sen_placed",
+        "positive:observer_kills",
+        "relative_high:deaths_per_min"
+      ]
+    },
+    "quality": "partial"
+  },
+  {
+    "id": "leaver_status_2",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": null,
+      "axes": {
+        "survival": 0.4999999999999999,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.3724780134505949,
+        "kill_participation": 0.8,
+        "kda": 0.6666666666666666,
+        "gpm": 211.0,
+        "xpm": 329.0,
+        "hero_damage_per_min": 244.4386963269529,
+        "tower_damage_per_min": 7.108122090015519,
+        "healing_per_min": 3.8799793067770305,
+        "obs_placed": 3.0,
+        "sen_placed": 5.0,
+        "observer_kills": 1.0,
+        "sentry_kills": 0.0
+      },
+      "evidence_coverage": 0.5,
+      "reason_codes": [
+        "position_estimated",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:kill_participation",
+        "zero_comparison_reference:tower_damage_per_min",
+        "insufficient_data",
+        "positive:hero_damage_per_min",
+        "observed_contribution:tower_damage_per_min",
+        "relative_high:deaths_per_min"
+      ]
+    },
+    "quality": "partial"
+  },
+  {
+    "id": "float_gpm",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": null,
+      "axes": {
+        "survival": 0.4999999999999999,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.3724780134505949,
+        "kill_participation": 0.8,
+        "kda": 0.6666666666666666,
+        "gpm": null,
+        "xpm": 329.0,
+        "hero_damage_per_min": 244.4386963269529,
+        "tower_damage_per_min": 7.108122090015519,
+        "healing_per_min": 3.8799793067770305,
+        "obs_placed": 3.0,
+        "sen_placed": 5.0,
+        "observer_kills": 1.0,
+        "sentry_kills": 0.0
+      },
+      "evidence_coverage": 0.5,
+      "reason_codes": [
+        "position_estimated",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:kill_participation",
+        "zero_comparison_reference:tower_damage_per_min",
+        "insufficient_data",
+        "positive:hero_damage_per_min",
+        "observed_contribution:tower_damage_per_min",
+        "relative_high:deaths_per_min"
+      ]
+    },
+    "quality": "partial"
+  },
+  {
+    "id": "numeric_string_gpm",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": null,
+      "axes": {
+        "survival": 0.4999999999999999,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.3724780134505949,
+        "kill_participation": 0.8,
+        "kda": 0.6666666666666666,
+        "gpm": null,
+        "xpm": 329.0,
+        "hero_damage_per_min": 244.4386963269529,
+        "tower_damage_per_min": 7.108122090015519,
+        "healing_per_min": 3.8799793067770305,
+        "obs_placed": 3.0,
+        "sen_placed": 5.0,
+        "observer_kills": 1.0,
+        "sentry_kills": 0.0
+      },
+      "evidence_coverage": 0.5,
+      "reason_codes": [
+        "position_estimated",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:kill_participation",
+        "zero_comparison_reference:tower_damage_per_min",
+        "insufficient_data",
+        "positive:hero_damage_per_min",
+        "observed_contribution:tower_damage_per_min",
+        "relative_high:deaths_per_min"
+      ]
+    },
+    "quality": "partial"
+  },
+  {
+    "id": "empty_arrays",
+    "synthetic": true,
+    "parser_status": "FOUND_FULL",
+    "normalizer": "accepted",
+    "p0": {
+      "error_index": null,
+      "axes": {
+        "survival": 0.4999999999999999,
+        "participation": null
+      },
+      "observed_metrics": {
+        "deaths_per_min": 0.3724780134505949,
+        "kill_participation": 0.8,
+        "kda": 0.6666666666666666,
+        "gpm": 211.0,
+        "xpm": 329.0,
+        "hero_damage_per_min": 244.4386963269529,
+        "tower_damage_per_min": 7.108122090015519,
+        "healing_per_min": 3.8799793067770305,
+        "obs_placed": 3.0,
+        "sen_placed": 5.0,
+        "observer_kills": 1.0,
+        "sentry_kills": 0.0
+      },
+      "evidence_coverage": 0.5,
+      "reason_codes": [
+        "position_estimated",
+        "economy_not_penalized",
+        "kda_descriptive_only",
+        "comparison_unavailable:kill_participation",
+        "zero_comparison_reference:tower_damage_per_min",
+        "insufficient_data",
+        "positive:hero_damage_per_min",
+        "observed_contribution:tower_damage_per_min",
+        "relative_high:deaths_per_min"
+      ]
+    },
+    "quality": "partial"
+  },
+  {
+    "id": "leaver_end_to_end",
+    "synthetic": true,
+    "unchanged_report": true
+  },
+  {
+    "id": "stored_baseline",
+    "synthetic": true,
+    "http": 200,
+    "model_version": "ruiner_v1",
+    "data_model": "ruiner_v1",
+    "config_version": "31147c647698fe40a5109d8520227d2e62f5d203aa5299a5585e3c1f5c6779a8",
+    "dire_projection": {
+      "projection_version": "ri_preliminary_v1",
+      "minimum_margin": 15,
+      "status": "single",
+      "player_slots": [
+        132
+      ],
+      "leader_slot": 132,
+      "highest_index": 35,
+      "margin": 20,
+      "confidence": "low",
+      "reason_codes": [
+        "highest_relative_index",
+        "roles_unconfirmed",
+        "leaver_context_unknown"
+      ]
+    },
+    "data_unchanged": true
+  },
+  {
+    "id": "stored_stale_raw",
+    "synthetic": true,
+    "http": 200,
+    "model_version": "ruiner_v1",
+    "data_model": "ruiner_v1",
+    "config_version": "31147c647698fe40a5109d8520227d2e62f5d203aa5299a5585e3c1f5c6779a8",
+    "dire_projection": {
+      "projection_version": "ri_preliminary_v1",
+      "minimum_margin": 15,
+      "status": "single",
+      "player_slots": [
+        132
+      ],
+      "leader_slot": 132,
+      "highest_index": 35,
+      "margin": 20,
+      "confidence": "low",
+      "reason_codes": [
+        "highest_relative_index",
+        "roles_unconfirmed",
+        "leaver_context_unknown"
+      ]
+    },
+    "data_unchanged": true
+  },
+  {
+    "id": "stored_model_mismatch",
+    "synthetic": true,
+    "http": 200,
+    "model_version": "different_model",
+    "data_model": "ruiner_v1",
+    "config_version": "31147c647698fe40a5109d8520227d2e62f5d203aa5299a5585e3c1f5c6779a8",
+    "dire_projection": {
+      "projection_version": "ri_preliminary_v1",
+      "minimum_margin": 15,
+      "status": "single",
+      "player_slots": [
+        132
+      ],
+      "leader_slot": 132,
+      "highest_index": 35,
+      "margin": 20,
+      "confidence": "low",
+      "reason_codes": [
+        "highest_relative_index",
+        "roles_unconfirmed",
+        "leaver_context_unknown"
+      ]
+    },
+    "data_unchanged": true
+  },
+  {
+    "id": "stored_config_mismatch",
+    "synthetic": true,
+    "http": 200,
+    "model_version": "ruiner_v1",
+    "data_model": "ruiner_v1",
+    "config_version": "different_config",
+    "dire_projection": {
+      "projection_version": "ri_preliminary_v1",
+      "minimum_margin": 15,
+      "status": "single",
+      "player_slots": [
+        132
+      ],
+      "leader_slot": 132,
+      "highest_index": 35,
+      "margin": 20,
+      "confidence": "low",
+      "reason_codes": [
+        "highest_relative_index",
+        "roles_unconfirmed",
+        "leaver_context_unknown"
+      ]
+    },
+    "data_unchanged": true
+  },
+  {
+    "id": "stored_schema_mismatch",
+    "synthetic": true,
+    "http": 200,
+    "model_version": "ruiner_v1",
+    "data_model": "ruiner_v1",
+    "config_version": "31147c647698fe40a5109d8520227d2e62f5d203aa5299a5585e3c1f5c6779a8",
+    "dire_projection": {
+      "projection_version": "ri_preliminary_v1",
+      "minimum_margin": 15,
+      "status": "single",
+      "player_slots": [
+        132
+      ],
+      "leader_slot": 132,
+      "highest_index": 35,
+      "margin": 20,
+      "confidence": "low",
+      "reason_codes": [
+        "highest_relative_index",
+        "roles_unconfirmed",
+        "leaver_context_unknown"
+      ]
+    },
+    "data_unchanged": true
+  },
+  {
+    "id": "stored_source_digest_mismatch",
+    "synthetic": true,
+    "http": 503,
+    "code": "REPORT_UNAVAILABLE",
+    "data_unchanged": true
+  },
+  {
+    "id": "stored_corrupt_preliminary",
+    "synthetic": true,
+    "http": 200,
+    "model_version": "ruiner_v1",
+    "data_model": "ruiner_v1",
+    "config_version": "31147c647698fe40a5109d8520227d2e62f5d203aa5299a5585e3c1f5c6779a8",
+    "dire_projection": {
+      "projection_version": "ri_preliminary_v1",
+      "minimum_margin": 15,
+      "status": "none",
+      "player_slots": [],
+      "leader_slot": null,
+      "highest_index": null,
+      "margin": null,
+      "confidence": "low",
+      "reason_codes": [
+        "stored_projection_inconsistent",
+        "roles_unconfirmed",
+        "leaver_context_unknown"
+      ]
+    },
+    "data_unchanged": true
+  },
+  {
+    "id": "stored_legacy_preliminary",
+    "synthetic": true,
+    "http": 200,
+    "model_version": "ruiner_v1",
+    "data_model": "ruiner_v1",
+    "config_version": "31147c647698fe40a5109d8520227d2e62f5d203aa5299a5585e3c1f5c6779a8",
+    "dire_projection": {
+      "projection_version": "ri_preliminary_v1",
+      "minimum_margin": 15,
+      "status": "single",
+      "player_slots": [
+        132
+      ],
+      "leader_slot": 132,
+      "highest_index": 35,
+      "margin": 20,
+      "confidence": "low",
+      "reason_codes": [
+        "highest_relative_index",
+        "roles_unconfirmed",
+        "leaver_context_unknown"
+      ]
+    },
+    "data_unchanged": true
+  },
+  {
+    "id": "expired_good_snapshot_then_503",
+    "synthetic": true,
+    "write_states": [
+      "PENDING",
+      "API_UNAVAILABLE"
+    ],
+    "final_has_match": false,
+    "old_raw_retained_in_writes": false
+  }
+]

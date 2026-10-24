@@ -32,6 +32,7 @@ from app.services.match_analysis import (
     get_analysis,
 )
 from app.services.timeline import EVENT_TYPES, filter_timeline_events
+from app.services.performance_preliminary import project_preliminary
 
 router = APIRouter(prefix='/api/v1/matches', tags=['matches'], dependencies=[Depends(current_user)], responses={
     code: {'model': MatchEnvelope[AnalysisState]} for code in (202, 401, 403, 404, 422, 429, 502, 503)
@@ -96,6 +97,8 @@ async def stored(match_id: str, section: Section | None, dto: type[StrictDTO], s
         if not payload or payload.get('source_digest') != state.get('source_digest'):
             raise PublicError(503, 'REPORT_UNAVAILABLE', 'Сохранённый анализ недоступен')
         data = dto.model_validate_json(json.dumps(payload['data']))
+        if isinstance(data, RuinerReport):
+            data = project_preliminary(data)
         if getattr(data, 'match_id', None) != match_id:
             raise PublicError(503, 'REPORT_UNAVAILABLE', 'Сохранённый анализ недоступен')
         if isinstance(data, TimelineReport) and (event_type is not None or side is not None):

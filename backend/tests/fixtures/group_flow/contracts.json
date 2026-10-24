@@ -2262,6 +2262,116 @@
         "title": "PositionEvidence",
         "type": "object"
       },
+      "PreliminarySelection": {
+        "additionalProperties": false,
+        "properties": {
+          "confidence": {
+            "default": "low",
+            "enum": [
+              "low",
+              "medium"
+            ],
+            "title": "Confidence",
+            "type": "string"
+          },
+          "highest_index": {
+            "anyOf": [
+              {
+                "maximum": 100.0,
+                "minimum": 1.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Highest Index"
+          },
+          "leader_slot": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Leader Slot"
+          },
+          "margin": {
+            "anyOf": [
+              {
+                "maximum": 100.0,
+                "minimum": 0.0,
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Margin"
+          },
+          "minimum_margin": {
+            "const": 15,
+            "default": 15,
+            "title": "Minimum Margin",
+            "type": "integer"
+          },
+          "player_slots": {
+            "default": [],
+            "items": {
+              "type": "integer"
+            },
+            "title": "Player Slots",
+            "type": "array"
+          },
+          "projection_version": {
+            "const": "ri_preliminary_v1",
+            "default": "ri_preliminary_v1",
+            "title": "Projection Version",
+            "type": "string"
+          },
+          "reason_codes": {
+            "items": {
+              "enum": [
+                "highest_relative_index",
+                "close_scores",
+                "incomplete_team",
+                "invalid_roster",
+                "incomplete_player_scores",
+                "invalid_player_scores",
+                "all_indices_zero",
+                "leader_signals_missing",
+                "confirmed_leaver",
+                "invalid_leaver_context",
+                "blocking_player_context",
+                "roles_unknown",
+                "roles_unconfirmed",
+                "leaver_context_unknown",
+                "stored_projection_inconsistent"
+              ],
+              "type": "string"
+            },
+            "title": "Reason Codes",
+            "type": "array"
+          },
+          "status": {
+            "default": "none",
+            "enum": [
+              "single",
+              "group",
+              "none"
+            ],
+            "title": "Status",
+            "type": "string"
+          }
+        },
+        "required": [
+          "reason_codes"
+        ],
+        "title": "PreliminarySelection",
+        "type": "object"
+      },
       "PublicItem": {
         "additionalProperties": false,
         "properties": {
@@ -2945,6 +3055,16 @@
             },
             "title": "Player Slots",
             "type": "array"
+          },
+          "preliminary_selection": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/PreliminarySelection"
+              },
+              {
+                "type": "null"
+              }
+            ]
           },
           "scored_players": {
             "title": "Scored Players",

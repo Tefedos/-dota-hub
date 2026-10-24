@@ -251,8 +251,10 @@ class DerivedMetric(StrictDTO):
 
 
 class PlayerDerivedStats(StrictDTO):
+    """Derived arithmetic; availability does not imply suitability for ruiner_v1."""
     player_slot: int = Field(ge=0, le=255)
     kda: DerivedMetric
+    # (kills + assists) / team_score: counter ratio, not unique-kill participation.
     kill_participation: DerivedMetric
 
 

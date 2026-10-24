@@ -319,6 +319,27 @@ def _metric(numerator: int | None, denominator: int | None) -> DerivedMetric:
     return DerivedMetric(value=round(numerator / denominator, 4), status=MetricStatus.AVAILABLE, decimal_places=4)
 
 
+def kill_participation_counter_ratio(kills: int | None, assists: int | None,
+                                     team_score: int | None) -> float | None:
+    """Arithmetic counter ratio, not a verified share of unique team kills.
+
+    Values above one are preserved here; suitability for the performance axis is
+    a separate decision made with the evaluator's match-quality requirements.
+    """
+    if kills is None or assists is None or team_score is None or team_score == 0:
+        return None
+    return (kills + assists) / team_score
+
+
+def _participation_counter_metric(kills: int | None, assists: int | None,
+                                  team_score: int | None) -> DerivedMetric:
+    ratio = kill_participation_counter_ratio(kills, assists, team_score)
+    if ratio is not None:
+        return DerivedMetric(value=round(ratio, 4), status=MetricStatus.AVAILABLE, decimal_places=4)
+    return DerivedMetric(value=None, status=(MetricStatus.DENOMINATOR_ZERO if team_score == 0
+                         and kills is not None and assists is not None else MetricStatus.INPUTS_MISSING))
+
+
 def _derived(players: tuple[PlayerStat, ...], scores: Mapping[Team, int | None]) -> tuple[PlayerDerivedStats, ...]:
     return tuple(
         PlayerDerivedStats(
@@ -328,11 +349,7 @@ def _derived(players: tuple[PlayerStat, ...], scores: Mapping[Team, int | None])
                 if player.kills is not None and player.assists is not None else None,
                 player.deaths,
             ),
-            kill_participation=_metric(
-                player.kills + player.assists
-                if player.kills is not None and player.assists is not None else None,
-                scores[player.team],
-            ),
+            kill_participation=_participation_counter_metric(player.kills, player.assists, scores[player.team]),
         )
         for player in players
     )

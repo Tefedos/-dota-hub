@@ -1,0 +1,26 @@
+[
+  {
+    "repo": "core",
+    "commit": "86e09304d7775540fd5e22e9a94d930034c4da09",
+    "url": "https://github.com/odota/core/blob/86e09304d7775540fd5e22e9a94d930034c4da09/sql/create_tables.sql",
+    "read_at": "2026-10-24T08:21:11.178565+00:00",
+    "sha256": "60d75da61637bec6f6ef05f421e601ae6b51ff8b713ee9d383c663ee793d8894",
+    "http": 200
+  },
+  {
+    "repo": "parser",
+    "commit": "927adf6bbd1fd321b711f544a5d754bfe75d89a7",
+    "url": "https://github.com/odota/parser/blob/927adf6bbd1fd321b711f544a5d754bfe75d89a7/src/main/java/opendota/Parse.java",
+    "read_at": "2026-10-24T08:21:11.892818+00:00",
+    "sha256": "6e59dfff2f2eed48f225a653372f7acdd151179ef8d984777bfcdea60223e61c",
+    "http": 200
+  },
+  {
+    "repo": "dotaconstants",
+    "commit": "5c0242df9057848fa2036ca3fafe9f2bd4508163",
+    "url": "https://github.com/odota/dotaconstants/blob/5c0242df9057848fa2036ca3fafe9f2bd4508163/build/game_mode.json",
+    "read_at": "2026-10-24T08:21:12.743794+00:00",
+    "sha256": "fc54b48fc37c0d8989d0b71c5b438524adcc0eaf7e521690e5152dd37f6f4cf4",
+    "http": 200
+  }
+]

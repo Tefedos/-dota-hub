@@ -1,0 +1,44 @@
+{
+  "matches": 12,
+  "players": 120,
+  "rows": 13750,
+  "p0_rows": 5772,
+  "p0_distinct_fields": 58,
+  "p0_statuses": {
+    "PRESENT_CORRECT": 1947,
+    "NOT_MAPPED": 868,
+    "UNVERIFIED": 120,
+    "MISSING_IN_SOURCE": 2737,
+    "LOST_IN_BACKEND": 100
+  },
+  "p0_enumerated_pct": 100,
+  "p0_verified_pct": 97.92099792099792,
+  "scored": 53,
+  "nonnull_index_empty_negative": [
+    [
+      9051271323,
+      3,
+      6
+    ],
+    [
+      9057722463,
+      132,
+      6
+    ],
+    [
+      9058839900,
+      129,
+      3
+    ],
+    [
+      9058839900,
+      131,
+      7
+    ],
+    [
+      9058842359,
+      4,
+      2
+    ]
+  ]
+}

@@ -1,0 +1,405 @@
+{
+  "captured_at": "2026-10-24T08:16:26.798724+00:00",
+  "transaction": "SET TRANSACTION READ ONLY",
+  "matches": {
+    "9051271323": {
+      "exists": true,
+      "raw_digest": "ec918e5502b49f6fb6868a3ad4a19a428b0480360732974b47b718175d9d4772",
+      "frozen_cal_digest": "ec918e5502b49f6fb6868a3ad4a19a428b0480360732974b47b718175d9d4772",
+      "fetch_status": "ready",
+      "fetched_at": "2026-10-24 00:16:34.961612+00:00",
+      "reports": [
+        {
+          "algorithm_version": "group_flow_v1",
+          "status": "ready",
+          "completeness": null,
+          "computed_at": "2026-10-24 00:16:38.809814+00:00"
+        },
+        {
+          "algorithm_version": "group_flow_v1:draft",
+          "status": "ready",
+          "completeness": "partial",
+          "computed_at": "2026-10-24 00:16:38.809814+00:00"
+        },
+        {
+          "algorithm_version": "group_flow_v1:overview",
+          "status": "ready",
+          "completeness": "full",
+          "computed_at": "2026-10-24 00:16:38.809814+00:00"
+        },
+        {
+          "algorithm_version": "group_flow_v1:players",
+          "status": "ready",
+          "completeness": "full",
+          "computed_at": "2026-10-24 00:16:38.809814+00:00"
+        },
+        {
+          "algorithm_version": "group_flow_v1:ruiner",
+          "status": "ready",
+          "completeness": "partial",
+          "computed_at": "2026-10-24 00:16:38.809814+00:00"
+        },
+        {
+          "algorithm_version": "group_flow_v1:timeline",
+          "status": "ready",
+          "completeness": "full",
+          "computed_at": "2026-10-24 00:16:38.809814+00:00"
+        }
+      ]
+    },
+    "9057722463": {
+      "exists": true,
+      "raw_digest": "754fb98ede603f2e0727676388c7050df687ab4aa67a37baa8b0b5556e8e1d66",
+      "frozen_cal_digest": "754fb98ede603f2e0727676388c7050df687ab4aa67a37baa8b0b5556e8e1d66",
+      "fetch_status": "ready",
+      "fetched_at": "2026-10-23 13:37:42.907254+00:00",
+      "reports": [
+        {
+          "algorithm_version": "group_flow_v1",
+          "status": "ready",
+          "completeness": null,
+          "computed_at": "2026-10-23 13:37:46.742588+00:00"
+        },
+        {
+          "algorithm_version": "group_flow_v1:draft",
+          "status": "ready",
+          "completeness": "partial",
+          "computed_at": "2026-10-23 13:37:46.742588+00:00"
+        },
+        {
+          "algorithm_version": "group_flow_v1:overview",
+          "status": "ready",
+          "completeness": "full",
+          "computed_at": "2026-10-23 13:37:46.742588+00:00"
+        },
+        {
+          "algorithm_version": "group_flow_v1:players",
+          "status": "ready",
+          "completeness": "full",
+          "computed_at": "2026-10-23 13:37:46.742588+00:00"
+        },
+        {
+          "algorithm_version": "group_flow_v1:ruiner",
+          "status": "ready",
+          "completeness": "partial",
+          "computed_at": "2026-10-23 13:37:46.742588+00:00"
+        },
+        {
+          "algorithm_version": "group_flow_v1:timeline",
+          "status": "ready",
+          "completeness": "missing",
+          "computed_at": "2026-10-23 13:37:46.742588+00:00"
+        }
+      ]
+    }
+  },
+  "api": {
+    "local-alpha/matches/9051271323/overview": {
+      "status": 200,
+      "body_digest": "375f2f217c8523052d80cc5d6e213ebe91655a104cc35f941dec8168f2b9c560",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "local-alpha/matches/9051271323/players": {
+      "status": 200,
+      "body_digest": "2c857c641331193a84e899a07e18df0eff8e63541b6f8419f695d714d592f726",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "local-alpha/matches/9051271323/draft": {
+      "status": 200,
+      "body_digest": "91943d1a6e30761eebbea4e32db53ce70ad6d26458563e02299bd5ed0cc9c9f2",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "local-alpha/matches/9051271323/ruiner": {
+      "status": 200,
+      "body_digest": "8dc18faee4f515e8c655f6dc2ff6e6c7e838d84daceb4542b740a3fdd2a87fd3",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "local-alpha/matches/9051271323/timeline": {
+      "status": 200,
+      "body_digest": "5a629b1b177d60f4e7726b9db7798f028ed579e0ed4933c28eff65588c3ba879",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "matches/9051271323/overview": {
+      "status": 401,
+      "body_digest": "c7b67fe4e7720aeb520ffe0c7f8ae5b9b3ef2cae8825819a8e612d6c02eb649a",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "matches/9051271323/players": {
+      "status": 401,
+      "body_digest": "c7b67fe4e7720aeb520ffe0c7f8ae5b9b3ef2cae8825819a8e612d6c02eb649a",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "matches/9051271323/draft": {
+      "status": 401,
+      "body_digest": "c7b67fe4e7720aeb520ffe0c7f8ae5b9b3ef2cae8825819a8e612d6c02eb649a",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "matches/9051271323/ruiner": {
+      "status": 401,
+      "body_digest": "c7b67fe4e7720aeb520ffe0c7f8ae5b9b3ef2cae8825819a8e612d6c02eb649a",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "matches/9051271323/timeline": {
+      "status": 401,
+      "body_digest": "c7b67fe4e7720aeb520ffe0c7f8ae5b9b3ef2cae8825819a8e612d6c02eb649a",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "local-alpha/matches/9057722463/overview": {
+      "status": 200,
+      "body_digest": "69250de1782204eb3426e9b1ac8c4c7731cadb32b8e50717ec10243a1f79ec22",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "local-alpha/matches/9057722463/players": {
+      "status": 200,
+      "body_digest": "6a7b097bd17211b7960b45248d43e5a65a00a9f71d9d3247b092f94c69e4d308",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "local-alpha/matches/9057722463/draft": {
+      "status": 200,
+      "body_digest": "9969d748564555e0d2913fea5fef83419931c64c44ce3396cdbf7ce25d17d195",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "local-alpha/matches/9057722463/ruiner": {
+      "status": 200,
+      "body_digest": "e62e505aca4dce1eaaa58a57e234c1b4a28d8c2738f895ec5469e61c693d9ec3",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "local-alpha/matches/9057722463/timeline": {
+      "status": 200,
+      "body_digest": "9a368bc87547476a00cd20f862599e687f9f9ae426120a9934255f2e431a4a2e",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "matches/9057722463/overview": {
+      "status": 401,
+      "body_digest": "c7b67fe4e7720aeb520ffe0c7f8ae5b9b3ef2cae8825819a8e612d6c02eb649a",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "matches/9057722463/players": {
+      "status": 401,
+      "body_digest": "c7b67fe4e7720aeb520ffe0c7f8ae5b9b3ef2cae8825819a8e612d6c02eb649a",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "matches/9057722463/draft": {
+      "status": 401,
+      "body_digest": "c7b67fe4e7720aeb520ffe0c7f8ae5b9b3ef2cae8825819a8e612d6c02eb649a",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "matches/9057722463/ruiner": {
+      "status": 401,
+      "body_digest": "c7b67fe4e7720aeb520ffe0c7f8ae5b9b3ef2cae8825819a8e612d6c02eb649a",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    },
+    "matches/9057722463/timeline": {
+      "status": 401,
+      "body_digest": "c7b67fe4e7720aeb520ffe0c7f8ae5b9b3ef2cae8825819a8e612d6c02eb649a",
+      "headers": {
+        "cache-control": "no-store",
+        "content-type": "application/json"
+      }
+    }
+  },
+  "schema": [
+    {
+      "table_name": "alembic_version",
+      "column_name": "version_num",
+      "data_type": "character varying",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "match_analyses",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "match_analyses",
+      "column_name": "match_id",
+      "data_type": "bigint",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "match_analyses",
+      "column_name": "algorithm_version",
+      "data_type": "character varying",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "match_analyses",
+      "column_name": "status",
+      "data_type": "character varying",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "match_analyses",
+      "column_name": "report_payload",
+      "data_type": "jsonb",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "match_analyses",
+      "column_name": "completeness",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "match_analyses",
+      "column_name": "computed_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "match_analyses",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "matches",
+      "column_name": "match_id",
+      "data_type": "bigint",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "matches",
+      "column_name": "fetch_status",
+      "data_type": "character varying",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "matches",
+      "column_name": "raw_payload",
+      "data_type": "jsonb",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "matches",
+      "column_name": "fetched_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "matches",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "matches",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "telegram_users",
+      "column_name": "telegram_user_id",
+      "data_type": "bigint",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "telegram_users",
+      "column_name": "username",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "telegram_users",
+      "column_name": "display_name",
+      "data_type": "character varying",
+      "is_nullable": "YES"
+    },
+    {
+      "table_name": "telegram_users",
+      "column_name": "created_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "telegram_users",
+      "column_name": "updated_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "user_match_history",
+      "column_name": "id",
+      "data_type": "uuid",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "user_match_history",
+      "column_name": "telegram_user_id",
+      "data_type": "bigint",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "user_match_history",
+      "column_name": "match_id",
+      "data_type": "bigint",
+      "is_nullable": "NO"
+    },
+    {
+      "table_name": "user_match_history",
+      "column_name": "last_viewed_at",
+      "data_type": "timestamp with time zone",
+      "is_nullable": "NO"
+    }
+  ],
+  "openapi_status": 200
+}

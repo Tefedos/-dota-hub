@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import type { Session } from '../features/auth/api';
 import { validMatchId } from '../features/auth/telegram';
 import { analyzeLocalMatch, getMatchSection, localAlpha } from '../features/matches/api';
-import type { MatchEnvelope, Section } from '../features/matches/api';
+import type { MatchEnvelope, MatchPlayer, Section } from '../features/matches/api';
 import { SectionContent } from '../features/matches/SectionContent';
 
 const sections: [Section, string][] = [['overview', 'Обзор'], ['players', 'Игроки'], ['draft', 'Драфт'], ['timeline', 'Ход матча'], ['ruiner', 'Индекс ошибок / Вывод']];
@@ -16,7 +16,9 @@ export function MatchReportPage({ session }: { session: Session | null }) {
   const [failure, setFailure] = useState<{ matchId: string; section: Section; message: string } | null>(null);
   const [attempt, setAttempt] = useState(0);
   const [busy, setBusy] = useState(false);
-  const [heroNames, setHeroNames] = useState<Record<string, string>>({});
+  const [identities, setIdentities] = useState<{ matchId: string; players: MatchPlayer[] } | null>(null);
+  const playerIdentities = identities?.matchId === matchId ? identities.players : [];
+  const heroNames = Object.fromEntries(playerIdentities.filter(p => p.hero_id != null && p.hero_name).map(p => [String(p.hero_id), p.hero_name as string]));
   const tabsRef = useRef<HTMLElement>(null);
   const result = response?.matchId === matchId && response.section === section ? response.value : null;
   const error = failure?.matchId === matchId && failure.section === section ? failure.message : null;
@@ -44,8 +46,7 @@ export function MatchReportPage({ session }: { session: Session | null }) {
     void getMatchSection(matchId, 'players', session?.access_token ?? null, controller.signal).then(value => {
       const players = value.data?.players;
       if (!controller.signal.aborted && Array.isArray(players)) {
-        setHeroNames(Object.fromEntries(players.filter(player => player && typeof player === 'object' && 'hero_id' in player && typeof player.hero_id === 'number' && 'hero_name' in player && typeof player.hero_name === 'string')
-          .map(player => [String(player.hero_id), String(player.hero_name)])));
+        setIdentities({ matchId, players: players.filter((player): player is MatchPlayer => !!player && typeof player === 'object' && typeof player.player_slot === 'number') });
       }
     }).catch(() => {});
     return () => controller.abort();
@@ -68,8 +69,8 @@ export function MatchReportPage({ session }: { session: Session | null }) {
     {!session && !localAlpha ? <p role="status">Для просмотра анализа войдите через Telegram.</p> : <>
       <nav ref={tabsRef} aria-label="Разделы анализа">{sections.map(([key, title]) => <button key={key} type="button" className="text-button" aria-pressed={section === key} onClick={() => setSection(key)}>{title}</button>)}</nav>
       {statusMessage && <div role="status">{statusMessage}</div>}
-      {result?.data && <SectionContent section={section} data={result.data} heroNames={heroNames} envelope={result} />}
-      {section !== 'overview' && result?.limitations.length ? <div className="card report-card"><h2>Ограничения данных</h2><ul className="report-notes">{result.limitations.map((item, index) => <li key={index}>{item}</li>)}</ul></div> : null}
+      {result?.data && <SectionContent section={section} data={result.data} heroNames={heroNames} playerIdentities={playerIdentities} envelope={result} />}
+      {section !== 'overview' && section !== 'ruiner' && result?.limitations.length ? <div className="card report-card"><h2>Ограничения данных</h2><ul className="report-notes">{result.limitations.map((item, index) => <li key={index}>{item}</li>)}</ul></div> : null}
       {localAlpha && <button className="primary-button" type="button" disabled={busy} onClick={() => void analyze()}>Запросить анализ из OpenDota</button>}
       <button className="text-button" type="button" onClick={() => setAttempt(value => value + 1)}>Обновить</button>
     </>}

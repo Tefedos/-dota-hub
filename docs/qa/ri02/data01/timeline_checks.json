@@ -1,0 +1,217 @@
+{
+  "live_api_event": {
+    "id": "2f8f83be496bcb06",
+    "time_seconds": 1048,
+    "time_start": 1048,
+    "time_end": 1048,
+    "time_precision": "exact",
+    "display_clock": "17:28",
+    "type": "tower",
+    "team": "dire",
+    "side": "dire",
+    "actors": [
+      {
+        "player_slot": 2,
+        "team": "radiant",
+        "hero_id": 43,
+        "hero_name": "Death Prophet"
+      }
+    ],
+    "description": "Разрушена башня",
+    "evidence": {
+      "key": "npc_dota_goodguys_tower1_top",
+      "type": "building_kill",
+      "player_slot": 2
+    },
+    "evidence_quality": "confirmed",
+    "source_field": "objectives",
+    "original_ref": "objectives[4]",
+    "original_refs": [
+      "objectives[4]"
+    ],
+    "dedupe_key": "tower:1048:npc_dota_goodguys_tower1_top:2",
+    "reason_codes": [
+      "SOURCE_TOWER"
+    ],
+    "related_event_ids": []
+  },
+  "real_match_id": 9051271323,
+  "raw_objective": {
+    "key": "npc_dota_goodguys_tower1_top",
+    "player_slot": 2,
+    "slot": 2,
+    "time": 1048,
+    "type": "building_kill",
+    "unit": "npc_dota_hero_death_prophet"
+  },
+  "actual_event": {
+    "id": "2f8f83be496bcb06",
+    "time_seconds": 1048,
+    "time_start": 1048,
+    "time_end": 1048,
+    "time_precision": "exact",
+    "display_clock": "17:28",
+    "type": "tower",
+    "team": "dire",
+    "side": "dire",
+    "actors": [
+      {
+        "player_slot": 2,
+        "team": "radiant",
+        "hero_id": 43,
+        "hero_name": null
+      }
+    ],
+    "description": "Разрушена башня",
+    "evidence": {
+      "type": "building_kill",
+      "key": "npc_dota_goodguys_tower1_top",
+      "player_slot": 2
+    },
+    "evidence_quality": "confirmed",
+    "source_field": "objectives",
+    "original_ref": "objectives[4]",
+    "original_refs": [
+      "objectives[4]"
+    ],
+    "dedupe_key": "tower:1048:npc_dota_goodguys_tower1_top:2",
+    "reason_codes": [
+      "SOURCE_TOWER"
+    ],
+    "related_event_ids": []
+  },
+  "synthetic_roshan": [
+    {
+      "synthetic": true,
+      "raw_team": 0,
+      "events": [
+        {
+          "id": "9ce9baae4a4271fd",
+          "time_seconds": 100,
+          "time_start": 100,
+          "time_end": 100,
+          "time_precision": "exact",
+          "display_clock": "1:40",
+          "type": "roshan",
+          "team": "radiant",
+          "side": "radiant",
+          "actors": [],
+          "description": "Убийство Рошана",
+          "evidence": {
+            "type": "CHAT_MESSAGE_ROSHAN_KILL"
+          },
+          "evidence_quality": "confirmed",
+          "source_field": "objectives",
+          "original_ref": "objectives[0]",
+          "original_refs": [
+            "objectives[0]"
+          ],
+          "dedupe_key": "roshan:100:None:unknown",
+          "reason_codes": [
+            "SOURCE_ROSHAN"
+          ],
+          "related_event_ids": []
+        }
+      ]
+    },
+    {
+      "synthetic": true,
+      "raw_team": 1,
+      "events": [
+        {
+          "id": "9ce9baae4a4271fd",
+          "time_seconds": 100,
+          "time_start": 100,
+          "time_end": 100,
+          "time_precision": "exact",
+          "display_clock": "1:40",
+          "type": "roshan",
+          "team": "dire",
+          "side": "dire",
+          "actors": [],
+          "description": "Убийство Рошана",
+          "evidence": {
+            "type": "CHAT_MESSAGE_ROSHAN_KILL"
+          },
+          "evidence_quality": "confirmed",
+          "source_field": "objectives",
+          "original_ref": "objectives[0]",
+          "original_refs": [
+            "objectives[0]"
+          ],
+          "dedupe_key": "roshan:100:None:unknown",
+          "reason_codes": [
+            "SOURCE_ROSHAN"
+          ],
+          "related_event_ids": []
+        }
+      ]
+    },
+    {
+      "synthetic": true,
+      "raw_team": 2,
+      "events": [
+        {
+          "id": "9ce9baae4a4271fd",
+          "time_seconds": 100,
+          "time_start": 100,
+          "time_end": 100,
+          "time_precision": "exact",
+          "display_clock": "1:40",
+          "type": "roshan",
+          "team": null,
+          "side": null,
+          "actors": [],
+          "description": "Убийство Рошана",
+          "evidence": {
+            "type": "CHAT_MESSAGE_ROSHAN_KILL"
+          },
+          "evidence_quality": "partial",
+          "source_field": "objectives",
+          "original_ref": "objectives[0]",
+          "original_refs": [
+            "objectives[0]"
+          ],
+          "dedupe_key": "roshan:100:None:unknown",
+          "reason_codes": [
+            "SOURCE_ROSHAN"
+          ],
+          "related_event_ids": []
+        }
+      ]
+    },
+    {
+      "synthetic": true,
+      "raw_team": 3,
+      "events": [
+        {
+          "id": "9ce9baae4a4271fd",
+          "time_seconds": 100,
+          "time_start": 100,
+          "time_end": 100,
+          "time_precision": "exact",
+          "display_clock": "1:40",
+          "type": "roshan",
+          "team": null,
+          "side": null,
+          "actors": [],
+          "description": "Убийство Рошана",
+          "evidence": {
+            "type": "CHAT_MESSAGE_ROSHAN_KILL"
+          },
+          "evidence_quality": "partial",
+          "source_field": "objectives",
+          "original_ref": "objectives[0]",
+          "original_refs": [
+            "objectives[0]"
+          ],
+          "dedupe_key": "roshan:100:None:unknown",
+          "reason_codes": [
+            "SOURCE_ROSHAN"
+          ],
+          "related_event_ids": []
+        }
+      ]
+    }
+  ]
+}

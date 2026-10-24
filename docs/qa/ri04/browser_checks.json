@@ -1,0 +1,197 @@
+{
+  "results": [
+    {
+      "id": "9057722463",
+      "side": "radiant",
+      "width": 320,
+      "scroll": 320,
+      "players": 5,
+      "selected": [
+        0,
+        4
+      ],
+      "heading": "Игроки с близкими индексами",
+      "portraits": 5,
+      "minButtonHeight": 44
+    },
+    {
+      "id": "9057722463",
+      "side": "dire",
+      "width": 320,
+      "scroll": 320,
+      "players": 5,
+      "selected": [
+        131
+      ],
+      "heading": "Предварительный лидер по индексу — Pudge",
+      "portraits": 5,
+      "minButtonHeight": 44
+    },
+    {
+      "scenario": "long nickname in DOM only",
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "id": "9057722463",
+      "side": "radiant",
+      "width": 360,
+      "scroll": 360,
+      "players": 5,
+      "selected": [
+        0,
+        4
+      ],
+      "heading": "Игроки с близкими индексами",
+      "portraits": 5,
+      "minButtonHeight": 44
+    },
+    {
+      "id": "9057722463",
+      "side": "dire",
+      "width": 360,
+      "scroll": 360,
+      "players": 5,
+      "selected": [
+        131
+      ],
+      "heading": "Предварительный лидер по индексу — Pudge",
+      "portraits": 5,
+      "minButtonHeight": 44
+    },
+    {
+      "id": "9057722463",
+      "side": "radiant",
+      "width": 375,
+      "scroll": 375,
+      "players": 5,
+      "selected": [
+        0,
+        4
+      ],
+      "heading": "Игроки с близкими индексами",
+      "portraits": 5,
+      "minButtonHeight": 44
+    },
+    {
+      "id": "9057722463",
+      "side": "dire",
+      "width": 375,
+      "scroll": 375,
+      "players": 5,
+      "selected": [
+        131
+      ],
+      "heading": "Предварительный лидер по индексу — Pudge",
+      "portraits": 5,
+      "minButtonHeight": 44
+    },
+    {
+      "id": "9057722463",
+      "side": "radiant",
+      "width": 390,
+      "scroll": 390,
+      "players": 5,
+      "selected": [
+        0,
+        4
+      ],
+      "heading": "Игроки с близкими индексами",
+      "portraits": 5,
+      "minButtonHeight": 44
+    },
+    {
+      "id": "9057722463",
+      "side": "dire",
+      "width": 390,
+      "scroll": 390,
+      "players": 5,
+      "selected": [
+        131
+      ],
+      "heading": "Предварительный лидер по индексу — Pudge",
+      "portraits": 5,
+      "minButtonHeight": 44
+    },
+    {
+      "id": "9057722463",
+      "side": "radiant",
+      "width": 1280,
+      "scroll": 1280,
+      "players": 5,
+      "selected": [
+        0,
+        4
+      ],
+      "heading": "Игроки с близкими индексами",
+      "portraits": 5,
+      "minButtonHeight": 44
+    },
+    {
+      "id": "9057722463",
+      "side": "dire",
+      "width": 1280,
+      "scroll": 1280,
+      "players": 5,
+      "selected": [
+        131
+      ],
+      "heading": "Предварительный лидер по индексу — Pudge",
+      "portraits": 5,
+      "minButtonHeight": 44
+    },
+    {
+      "id": "9051271323",
+      "side": "radiant",
+      "width": 390,
+      "scroll": 390,
+      "players": 5,
+      "selected": [],
+      "heading": "Предварительный лидер не определён",
+      "portraits": 5,
+      "minButtonHeight": 44
+    },
+    {
+      "id": "9051271323",
+      "side": "dire",
+      "width": 390,
+      "scroll": 390,
+      "players": 5,
+      "selected": [
+        132
+      ],
+      "heading": "Предварительный лидер по индексу — Undying",
+      "portraits": 5,
+      "minButtonHeight": 44
+    },
+    {
+      "id": "8888765469",
+      "side": "radiant",
+      "width": 390,
+      "scroll": 390,
+      "players": 5,
+      "selected": [
+        0,
+        3
+      ],
+      "heading": "Игроки с близкими индексами",
+      "portraits": 5,
+      "minButtonHeight": 44
+    },
+    {
+      "id": "8888765469",
+      "side": "dire",
+      "width": 390,
+      "scroll": 390,
+      "players": 5,
+      "selected": [
+        128
+      ],
+      "heading": "Предварительный лидер по индексу — Axe",
+      "portraits": 5,
+      "minButtonHeight": 44
+    }
+  ],
+  "exceptions": [],
+  "telegram": "NOT RUN — local browser only"
+}

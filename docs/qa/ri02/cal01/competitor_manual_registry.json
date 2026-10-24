@@ -1,0 +1,81 @@
+{
+  "service": "Who Ruined?",
+  "public_site": "https://china8sd.github.io/who-ruined/",
+  "source_repository": "https://github.com/china8sd/who-ruined",
+  "checked_at_utc": "2026-10-24T00:34:39.940533+00:00",
+  "result_acquisition": "Public page is client-side and deep link ?match=ID exists, but automated rendering/access to a completed report was unavailable in this environment; no competitor result is claimed.",
+  "matches": [
+    {
+      "match_id": 9058843327,
+      "manual_url": "https://china8sd.github.io/who-ruined/?match=9058843327",
+      "competitor_result": null,
+      "reason": "manual_browser_verification_required"
+    },
+    {
+      "match_id": 9058842359,
+      "manual_url": "https://china8sd.github.io/who-ruined/?match=9058842359",
+      "competitor_result": null,
+      "reason": "manual_browser_verification_required"
+    },
+    {
+      "match_id": 9058842039,
+      "manual_url": "https://china8sd.github.io/who-ruined/?match=9058842039",
+      "competitor_result": null,
+      "reason": "manual_browser_verification_required"
+    },
+    {
+      "match_id": 9058841898,
+      "manual_url": "https://china8sd.github.io/who-ruined/?match=9058841898",
+      "competitor_result": null,
+      "reason": "manual_browser_verification_required"
+    },
+    {
+      "match_id": 9058841784,
+      "manual_url": "https://china8sd.github.io/who-ruined/?match=9058841784",
+      "competitor_result": null,
+      "reason": "manual_browser_verification_required"
+    },
+    {
+      "match_id": 9058841363,
+      "manual_url": "https://china8sd.github.io/who-ruined/?match=9058841363",
+      "competitor_result": null,
+      "reason": "manual_browser_verification_required"
+    },
+    {
+      "match_id": 9058840901,
+      "manual_url": "https://china8sd.github.io/who-ruined/?match=9058840901",
+      "competitor_result": null,
+      "reason": "manual_browser_verification_required"
+    },
+    {
+      "match_id": 9058840429,
+      "manual_url": "https://china8sd.github.io/who-ruined/?match=9058840429",
+      "competitor_result": null,
+      "reason": "manual_browser_verification_required"
+    },
+    {
+      "match_id": 9058840226,
+      "manual_url": "https://china8sd.github.io/who-ruined/?match=9058840226",
+      "competitor_result": null,
+      "reason": "manual_browser_verification_required"
+    },
+    {
+      "match_id": 9058839900,
+      "manual_url": "https://china8sd.github.io/who-ruined/?match=9058839900",
+      "competitor_result": null,
+      "reason": "manual_browser_verification_required"
+    },
+    {
+      "match_id": 9051271323,
+      "manual_url": "https://china8sd.github.io/who-ruined/?match=9051271323",
+      "competitor_result": null,
+      "reason": "manual_browser_verification_required"
+    },
+    {
+      "match_id": 9057722463,
+      "manual_url": "https://china8sd.github.io/who-ruined/?match=9057722463",
+      "competitor_result": null,
+      "reason": "manual_browser_verification_required"
+    }
+  ]
+}

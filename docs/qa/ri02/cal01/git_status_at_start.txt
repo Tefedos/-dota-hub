@@ -1,0 +1,26 @@
+ M backend/app/api/v1/matches.py
+ M backend/app/models/matches.py
+ M backend/app/models/performance.py
+ M backend/app/services/match_normalization.py
+ M backend/app/services/performance.py
+ M backend/tests/fixtures/group_flow/contracts.json
+ M frontend/src/features/matches/SectionContent.tsx
+ M frontend/src/features/matches/contract.test.tsx
+ M frontend/src/pages/MatchReportPage.tsx
+?? backend/app/services/performance_preliminary.py
+?? backend/tests/fixtures/performance/
+?? backend/tests/test_performance_participation_contract.py
+?? backend/tests/test_performance_preliminary.py
+?? backend/tests/test_performance_preliminary_api.py
+?? backend/tests/test_performance_preliminary_qa.py
+?? docs/RI_01_AUDIT_REPORT.md
+?? docs/RI_02_DIAG_01.md
+?? docs/RI_02_FIX_01_REPORT.md
+?? docs/RI_04_BACKEND_QA_REPORT.md
+?? docs/RI_04_FIX_01_REPORT.md
+?? docs/RI_04_REPORT.md
+?? docs/qa/ri04/
+?? frontend/src/features/matches/RuinerSection.css
+?? frontend/src/features/matches/RuinerSection.test.tsx
+?? frontend/src/features/matches/RuinerSection.tsx
+?? frontend/src/features/matches/ruiner.ts

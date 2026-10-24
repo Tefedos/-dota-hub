@@ -1,0 +1,326 @@
+[
+  {
+    "match_id": 9051271323,
+    "source_fetched_at": "2026-10-24T00:16:34.943391+00:00",
+    "snapshot_digest": "ec918e5502b49f6fb6868a3ad4a19a428b0480360732974b47b718175d9d4772",
+    "status": "FOUND_FULL",
+    "players": 10,
+    "scored": 8,
+    "quality": "partial",
+    "p0_counts": {
+      "PRESENT_CORRECT": 239,
+      "NOT_MAPPED": 202,
+      "UNVERIFIED": 10,
+      "LOST_IN_BACKEND": 10,
+      "MISSING_IN_SOURCE": 20
+    },
+    "event_sections": {
+      "picks_bans": 16,
+      "draft_timings": 0,
+      "objectives": 22,
+      "teamfights": 7,
+      "radiant_gold_adv": 33,
+      "radiant_xp_adv": 33,
+      "kills_log": null,
+      "buyback_log": null,
+      "purchase_log": null
+    }
+  },
+  {
+    "match_id": 9057722463,
+    "source_fetched_at": "2026-10-23T13:37:42.905460+00:00",
+    "snapshot_digest": "754fb98ede603f2e0727676388c7050df687ab4aa67a37baa8b0b5556e8e1d66",
+    "status": "FOUND_PARTIAL",
+    "players": 10,
+    "scored": 10,
+    "quality": "partial",
+    "p0_counts": {
+      "PRESENT_CORRECT": 159,
+      "NOT_MAPPED": 61,
+      "UNVERIFIED": 10,
+      "LOST_IN_BACKEND": 10,
+      "MISSING_IN_SOURCE": 241
+    },
+    "event_sections": {
+      "picks_bans": 16,
+      "draft_timings": null,
+      "objectives": null,
+      "teamfights": null,
+      "radiant_gold_adv": null,
+      "radiant_xp_adv": null,
+      "kills_log": null,
+      "buyback_log": null,
+      "purchase_log": null
+    }
+  },
+  {
+    "match_id": 9058839900,
+    "source_fetched_at": "2026-10-24T00:29:46.155611+00:00",
+    "snapshot_digest": "b84c54e71b16599d8adecd282719a274e5dff518441cf597b637c18f0338dd37",
+    "status": "FOUND_PARTIAL",
+    "players": 10,
+    "scored": 10,
+    "quality": "partial",
+    "p0_counts": {
+      "PRESENT_CORRECT": 159,
+      "NOT_MAPPED": 61,
+      "UNVERIFIED": 10,
+      "LOST_IN_BACKEND": 10,
+      "MISSING_IN_SOURCE": 241
+    },
+    "event_sections": {
+      "picks_bans": 19,
+      "draft_timings": null,
+      "objectives": null,
+      "teamfights": null,
+      "radiant_gold_adv": null,
+      "radiant_xp_adv": null,
+      "kills_log": null,
+      "buyback_log": null,
+      "purchase_log": null
+    }
+  },
+  {
+    "match_id": 9058840226,
+    "source_fetched_at": "2026-10-24T00:29:44.731363+00:00",
+    "snapshot_digest": "35c938918c301b7f36bc23611c516fc5f114d66273a9011a3bdd1cda22ae2c6a",
+    "status": "FOUND_PARTIAL",
+    "players": 10,
+    "scored": 0,
+    "quality": "insufficient",
+    "p0_counts": {
+      "PRESENT_CORRECT": 159,
+      "NOT_MAPPED": 61,
+      "UNVERIFIED": 10,
+      "LOST_IN_BACKEND": 10,
+      "MISSING_IN_SOURCE": 241
+    },
+    "event_sections": {
+      "picks_bans": 19,
+      "draft_timings": null,
+      "objectives": null,
+      "teamfights": null,
+      "radiant_gold_adv": null,
+      "radiant_xp_adv": null,
+      "kills_log": null,
+      "buyback_log": null,
+      "purchase_log": null
+    }
+  },
+  {
+    "match_id": 9058840429,
+    "source_fetched_at": "2026-10-24T00:29:43.276221+00:00",
+    "snapshot_digest": "62bb0677b88255c447fc350cd9de832cb4ba9ffb8aff22f44c896b3941d5054c",
+    "status": "FOUND_PARTIAL",
+    "players": 10,
+    "scored": 0,
+    "quality": "insufficient",
+    "p0_counts": {
+      "PRESENT_CORRECT": 150,
+      "NOT_MAPPED": 60,
+      "UNVERIFIED": 10,
+      "LOST_IN_BACKEND": 4,
+      "MISSING_IN_SOURCE": 257
+    },
+    "event_sections": {
+      "picks_bans": null,
+      "draft_timings": null,
+      "objectives": null,
+      "teamfights": null,
+      "radiant_gold_adv": null,
+      "radiant_xp_adv": null,
+      "kills_log": null,
+      "buyback_log": null,
+      "purchase_log": null
+    }
+  },
+  {
+    "match_id": 9058840901,
+    "source_fetched_at": "2026-10-24T00:29:41.838699+00:00",
+    "snapshot_digest": "51c4e4c27ab259365006803bf0aa5264f56d72ceccb3b048782dc7b3a521fce1",
+    "status": "FOUND_PARTIAL",
+    "players": 10,
+    "scored": 5,
+    "quality": "partial",
+    "p0_counts": {
+      "PRESENT_CORRECT": 159,
+      "NOT_MAPPED": 61,
+      "UNVERIFIED": 10,
+      "LOST_IN_BACKEND": 10,
+      "MISSING_IN_SOURCE": 241
+    },
+    "event_sections": {
+      "picks_bans": 18,
+      "draft_timings": null,
+      "objectives": null,
+      "teamfights": null,
+      "radiant_gold_adv": null,
+      "radiant_xp_adv": null,
+      "kills_log": null,
+      "buyback_log": null,
+      "purchase_log": null
+    }
+  },
+  {
+    "match_id": 9058841363,
+    "source_fetched_at": "2026-10-24T00:29:40.410230+00:00",
+    "snapshot_digest": "10c40b4176e721ebdf59db18926a0a1727e06ffef0752684be3a0c2bdfc7738f",
+    "status": "FOUND_PARTIAL",
+    "players": 10,
+    "scored": 5,
+    "quality": "partial",
+    "p0_counts": {
+      "PRESENT_CORRECT": 150,
+      "NOT_MAPPED": 60,
+      "UNVERIFIED": 10,
+      "LOST_IN_BACKEND": 10,
+      "MISSING_IN_SOURCE": 251
+    },
+    "event_sections": {
+      "picks_bans": 13,
+      "draft_timings": null,
+      "objectives": null,
+      "teamfights": null,
+      "radiant_gold_adv": null,
+      "radiant_xp_adv": null,
+      "kills_log": null,
+      "buyback_log": null,
+      "purchase_log": null
+    }
+  },
+  {
+    "match_id": 9058841784,
+    "source_fetched_at": "2026-10-24T00:29:38.976578+00:00",
+    "snapshot_digest": "93e455aa518bce836291f81c15f114d513403e698d7affc50ac8171947fb02f6",
+    "status": "FOUND_PARTIAL",
+    "players": 10,
+    "scored": 10,
+    "quality": "partial",
+    "p0_counts": {
+      "PRESENT_CORRECT": 152,
+      "NOT_MAPPED": 60,
+      "UNVERIFIED": 10,
+      "LOST_IN_BACKEND": 5,
+      "MISSING_IN_SOURCE": 254
+    },
+    "event_sections": {
+      "picks_bans": null,
+      "draft_timings": null,
+      "objectives": null,
+      "teamfights": null,
+      "radiant_gold_adv": null,
+      "radiant_xp_adv": null,
+      "kills_log": null,
+      "buyback_log": null,
+      "purchase_log": null
+    }
+  },
+  {
+    "match_id": 9058841898,
+    "source_fetched_at": "2026-10-24T00:29:37.536797+00:00",
+    "snapshot_digest": "306f77ff6933c34b1e1bcf39057a00a3df1c09ba6371c761f4275f1e4315d4a2",
+    "status": "FOUND_PARTIAL",
+    "players": 10,
+    "scored": 0,
+    "quality": "insufficient",
+    "p0_counts": {
+      "PRESENT_CORRECT": 159,
+      "NOT_MAPPED": 61,
+      "UNVERIFIED": 10,
+      "LOST_IN_BACKEND": 10,
+      "MISSING_IN_SOURCE": 241
+    },
+    "event_sections": {
+      "picks_bans": 13,
+      "draft_timings": null,
+      "objectives": null,
+      "teamfights": null,
+      "radiant_gold_adv": null,
+      "radiant_xp_adv": null,
+      "kills_log": null,
+      "buyback_log": null,
+      "purchase_log": null
+    }
+  },
+  {
+    "match_id": 9058842039,
+    "source_fetched_at": "2026-10-24T00:29:36.127912+00:00",
+    "snapshot_digest": "d4cc663256ec76a6845362742793b5f71b59f5c75b8befbafb2988823f05a42c",
+    "status": "FOUND_PARTIAL",
+    "players": 10,
+    "scored": 0,
+    "quality": "insufficient",
+    "p0_counts": {
+      "PRESENT_CORRECT": 159,
+      "NOT_MAPPED": 61,
+      "UNVERIFIED": 10,
+      "LOST_IN_BACKEND": 10,
+      "MISSING_IN_SOURCE": 241
+    },
+    "event_sections": {
+      "picks_bans": 19,
+      "draft_timings": null,
+      "objectives": null,
+      "teamfights": null,
+      "radiant_gold_adv": null,
+      "radiant_xp_adv": null,
+      "kills_log": null,
+      "buyback_log": null,
+      "purchase_log": null
+    }
+  },
+  {
+    "match_id": 9058842359,
+    "source_fetched_at": "2026-10-24T00:29:34.730913+00:00",
+    "snapshot_digest": "146922d5f177d9d91540e1d606fee533690f09076f07ccfd1400361d68aa4b81",
+    "status": "FOUND_PARTIAL",
+    "players": 10,
+    "scored": 5,
+    "quality": "partial",
+    "p0_counts": {
+      "PRESENT_CORRECT": 152,
+      "NOT_MAPPED": 60,
+      "UNVERIFIED": 10,
+      "LOST_IN_BACKEND": 10,
+      "MISSING_IN_SOURCE": 249
+    },
+    "event_sections": {
+      "picks_bans": 14,
+      "draft_timings": null,
+      "objectives": null,
+      "teamfights": null,
+      "radiant_gold_adv": null,
+      "radiant_xp_adv": null,
+      "kills_log": null,
+      "buyback_log": null,
+      "purchase_log": null
+    }
+  },
+  {
+    "match_id": 9058843327,
+    "source_fetched_at": "2026-10-24T00:29:33.080992+00:00",
+    "snapshot_digest": "cbd9c6f15030a046d397a851031e264988fbc9408b76e76f094fb8c77adce2ae",
+    "status": "FOUND_PARTIAL",
+    "players": 10,
+    "scored": 0,
+    "quality": "insufficient",
+    "p0_counts": {
+      "PRESENT_CORRECT": 150,
+      "NOT_MAPPED": 60,
+      "UNVERIFIED": 10,
+      "LOST_IN_BACKEND": 1,
+      "MISSING_IN_SOURCE": 260
+    },
+    "event_sections": {
+      "picks_bans": null,
+      "draft_timings": null,
+      "objectives": null,
+      "teamfights": null,
+      "radiant_gold_adv": null,
+      "radiant_xp_adv": null,
+      "kills_log": null,
+      "buyback_log": null,
+      "purchase_log": null
+    }
+  }
+]

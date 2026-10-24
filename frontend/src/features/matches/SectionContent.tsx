@@ -1,6 +1,7 @@
-import type { MatchEnvelope, Section } from './api';
+import type { MatchEnvelope, MatchPlayer, Section } from './api';
 import { OverviewSection } from './OverviewSection';
 import { PlayersSection } from './PlayersSection';
+import { RuinerSection } from './RuinerSection';
 
 type Data = Record<string, unknown>;
 const object = (value: unknown): Data => value && typeof value === 'object' && !Array.isArray(value) ? value as Data : {};
@@ -15,7 +16,7 @@ function Notes({ values }: { values: string[] }) {
   return values.length ? <ul className="report-notes">{values.map((value, index) => <li key={`${index}-${value}`}>{value}</li>)}</ul> : <p>Подтверждённых факторов нет.</p>;
 }
 
-export function SectionContent({ section, data, heroNames, envelope }: { section: Section; data: Data; heroNames: Record<string, string>; envelope?: MatchEnvelope }) {
+export function SectionContent({ section, data, heroNames, envelope, playerIdentities }: { section: Section; data: Data; heroNames: Record<string, string>; envelope?: MatchEnvelope; playerIdentities?: MatchPlayer[] }) {
   if (section === 'overview') {
     return envelope ? <OverviewSection data={data} envelope={envelope} /> : null;
   }
@@ -46,15 +47,7 @@ export function SectionContent({ section, data, heroNames, envelope }: { section
           <details><summary>Основания оценки</summary><Notes values={list(final.reasons).map(reason => `${label(reason.text)} (${label(reason.code)}; ${label(reason.patch_applicability)})`)} /></details></article>;
       })}</div></>;
   }
-  if (section === 'ruiner') {
-    const summary = object(data.summary);
-    return <><p className="report-meta">Качество данных: {label(data.quality)} · Вывод: {summary.selection_status === 'selected' ? `игрок #${label(summary.selected_player_slot)} (${team(summary.selected_team)})` : 'недостаточно данных для выбора'}</p>
-      <div className="report-grid">{list(data.players).map((player, index) => <article className="card report-card" key={String(player.player_slot ?? index)}>
-        <h2>{hero(player.hero_id, heroNames)}</h2><p>{team(player.team)} · Игрок #{label(player.team_player_number)}</p>
-        <p>Индекс ошибок: {score(player.error_index)} · Уверенность: {label(player.confidence)}</p>
-        <h3>Положительные сигналы</h3><Notes values={list(player.positive_signals).map(item => label(item.text))} />
-        <h3>Отрицательные сигналы</h3><Notes values={list(player.negative_signals).map(item => label(item.text))} /></article>)}</div></>;
-  }
+  if (section === 'ruiner') return <RuinerSection key={String(data.match_id ?? '')} data={data} heroNames={heroNames} identities={playerIdentities} envelopeLimits={envelope?.limitations} />;
   const events = list(data.events), gold = list(data.gold_adv_points), xp = list(data.xp_adv_points);
   return <><p className="report-meta">Качество: {label(data.quality)} · Событий: {events.length} · Точек золота: {gold.length} · Точек опыта: {xp.length}</p>
     {!events.length && <p>{label(data.empty_state_text)}</p>}

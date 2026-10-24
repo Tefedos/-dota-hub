@@ -1,0 +1,77 @@
+{
+  "9051271323": {
+    "raw_and_reports_unchanged": true
+  },
+  "9057722463": {
+    "raw_and_reports_unchanged": true
+  },
+  "constraints": [
+    {
+      "table_name": "match_analyses",
+      "conname": "ck_match_analyses_algorithm_version",
+      "definition": "CHECK ((length(TRIM(BOTH FROM algorithm_version)) > 0))"
+    },
+    {
+      "table_name": "match_analyses",
+      "conname": "ck_match_analyses_completeness",
+      "definition": "CHECK (((completeness)::text = ANY ((ARRAY['full'::character varying, 'partial'::character varying, 'missing'::character varying])::text[])))"
+    },
+    {
+      "table_name": "match_analyses",
+      "conname": "ck_match_analyses_status",
+      "definition": "CHECK (((status)::text = ANY ((ARRAY['pending'::character varying, 'ready'::character varying, 'failed'::character varying])::text[])))"
+    },
+    {
+      "table_name": "match_analyses",
+      "conname": "fk_match_analyses_match_id_matches",
+      "definition": "FOREIGN KEY (match_id) REFERENCES matches(match_id) ON DELETE RESTRICT"
+    },
+    {
+      "table_name": "match_analyses",
+      "conname": "pk_match_analyses",
+      "definition": "PRIMARY KEY (id)"
+    },
+    {
+      "table_name": "match_analyses",
+      "conname": "uq_match_analyses_match_version",
+      "definition": "UNIQUE (match_id, algorithm_version)"
+    },
+    {
+      "table_name": "matches",
+      "conname": "ck_matches_fetch_status",
+      "definition": "CHECK (((fetch_status)::text = ANY ((ARRAY['pending'::character varying, 'ready'::character varying, 'unavailable'::character varying, 'failed'::character varying])::text[])))"
+    },
+    {
+      "table_name": "matches",
+      "conname": "ck_matches_positive_id",
+      "definition": "CHECK ((match_id > 0))"
+    },
+    {
+      "table_name": "matches",
+      "conname": "pk_matches",
+      "definition": "PRIMARY KEY (match_id)"
+    }
+  ],
+  "indexes": [
+    {
+      "tablename": "match_analyses",
+      "indexname": "ix_match_analyses_match_id",
+      "indexdef": "CREATE INDEX ix_match_analyses_match_id ON public.match_analyses USING btree (match_id)"
+    },
+    {
+      "tablename": "match_analyses",
+      "indexname": "pk_match_analyses",
+      "indexdef": "CREATE UNIQUE INDEX pk_match_analyses ON public.match_analyses USING btree (id)"
+    },
+    {
+      "tablename": "match_analyses",
+      "indexname": "uq_match_analyses_match_version",
+      "indexdef": "CREATE UNIQUE INDEX uq_match_analyses_match_version ON public.match_analyses USING btree (match_id, algorithm_version)"
+    },
+    {
+      "tablename": "matches",
+      "indexname": "pk_matches",
+      "indexdef": "CREATE UNIQUE INDEX pk_matches ON public.matches USING btree (match_id)"
+    }
+  ]
+}

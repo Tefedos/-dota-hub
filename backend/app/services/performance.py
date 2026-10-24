@@ -11,6 +11,8 @@ from app.models.performance import (
     PerformanceSelection, PerformanceSignal, PlayerPerformance, RuinerReport, TeamPerformanceReport,
 )
 from app.services.performance_config import PerformanceConfig
+from app.services.performance_preliminary import select_preliminary
+from app.services.match_normalization import kill_participation_counter_ratio
 
 METRICS = ('deaths_per_min', 'kill_participation', 'kda', 'gpm', 'xpm', 'hero_damage_per_min',
            'tower_damage_per_min', 'healing_per_min', 'obs_placed', 'sen_placed', 'observer_kills', 'sentry_kills')
@@ -27,17 +29,46 @@ def role_group(position: FarmPositionEvidence) -> Literal['core', 'support', 'un
     return 'unknown' if position.position is None else 'core' if position.position <= 3 else 'support'
 
 
+def participation_assessment(player: PlayerStat, match: NormalizedMatch,
+                             config: PerformanceConfig) -> tuple[float | None, float | None, str | None]:
+    """Return usable ratio, original counter ratio and an exact refusal reason.
+
+    The ratio is not the share of unique kills. An over-100% counter ratio has
+    unverified semantics, so it cannot enter the participation comparison yet.
+    """
+    total = (match.summary.radiant if player.team == Team.RADIANT else match.summary.dire).score
+    raw = kill_participation_counter_ratio(player.kills, player.assists, total)
+    if player.kills is None:
+        return None, raw, 'kill_participation_kills_missing'
+    if player.assists is None:
+        return None, raw, 'kill_participation_assists_missing'
+    if total is None:
+        return None, raw, 'kill_participation_team_score_missing'
+    if total == 0:
+        return None, raw, 'kill_participation_team_score_zero'
+    if total < config.minimum_team_kills:
+        return None, raw, 'kill_participation_team_score_small'
+    involvement = player.kills + player.assists
+    deaths = [p.deaths for p in match.players]
+    if player.kills > total or (len(deaths) == 10 and all(v is not None for v in deaths)
+                                and involvement > sum(v for v in deaths if v is not None)):
+        return None, raw, 'kill_participation_counter_anomaly'
+    if involvement > total:
+        return None, raw, 'kill_participation_over_team_score_unverified'
+    return raw, raw, None
+
+
 def observed(player: PlayerStat, match: NormalizedMatch, config: PerformanceConfig) -> dict[str, float | None]:
     duration = match.summary.duration
     minutes = duration / 60 if duration is not None else None
     def rate(value: int | None) -> float | None:
         return value / minutes if value is not None and minutes else None
-    total = (match.summary.radiant if player.team == Team.RADIANT else match.summary.dire).score
+    kp, raw_kp, _ = participation_assessment(player, match, config)
     involvement = player.kills + player.assists if player.kills is not None and player.assists is not None else None
-    kp = involvement / total if total is not None and total >= config.minimum_team_kills and involvement is not None and involvement <= total else None
     kda = involvement / player.deaths if involvement is not None and player.deaths else None
     return {
         'deaths_per_min': rate(player.deaths), 'kill_participation': kp, 'kda': kda,
+        **({'kill_participation_counter_ratio': raw_kp} if raw_kp is not None and kp is None else {}),
         'gpm': float(player.gpm) if player.gpm is not None else None,
         'xpm': float(player.xpm) if player.xpm is not None else None,
         'hero_damage_per_min': rate(player.hero_damage), 'tower_damage_per_min': rate(player.tower_damage),
@@ -117,8 +148,9 @@ class RoleAwarePerformanceEvaluator:
             team_valid = len(same_team) == 5 and len({p.hero_id for p in same_team}) == 5 and all(p.hero_id is not None and (p.player_slot < 128) == (p.team == Team.RADIANT) for p in same_team)
             if not team_valid:
                 reasons.append('incomplete_team')
-            if values['kill_participation'] is None:
-                reasons.append('team_kills_missing_small_or_inconsistent')
+            _, _, participation_reason = participation_assessment(player, match, config)
+            if participation_reason is not None:
+                reasons.append(participation_reason)
             if player.deaths == 0:
                 reasons.append('kda_zero_denominator')
             if values['kda'] is not None:
@@ -206,7 +238,8 @@ class RoleAwarePerformanceEvaluator:
             members = tuple(p for p in reports if p.team == team)
             teams[team] = TeamPerformanceReport(team=team, player_slots=tuple(p.player_slot for p in members),
                 scored_players=sum(p.error_index is not None for p in members), selection=select_team(members, team, config),
-                threshold=config.selection_threshold, minimum_margin=config.selection_margin)
+                threshold=config.selection_threshold, minimum_margin=config.selection_margin,
+                preliminary_selection=select_preliminary(members, team))
         summary = teams[selected_team].selection if selected_team is not None else PerformanceSelection(evidence=('team_context_not_provided',))
         scored = sum(p.error_index is not None for p in reports)
         quality: Literal['sufficient', 'partial', 'insufficient'] = 'sufficient' if len(reports) == 10 and all(p.confidence == 'medium' for p in reports) else 'partial' if scored else 'insufficient'
